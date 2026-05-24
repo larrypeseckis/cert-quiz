@@ -2,1773 +2,3037 @@ window.QUESTIONS = [
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which of the following is NOT one of the five essential characteristics of cloud computing as defined by NIST SP 800-145?",
-    "options": ["On-demand self-service", "Broad network access", "Vendor lock-in", "Measured service"],
+    "options": [
+      "On-demand self-service",
+      "Broad network access",
+      "Vendor lock-in",
+      "Measured service"
+    ],
     "answer": 2,
     "explanation": "NIST's five essential characteristics are on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service. Vendor lock-in is a risk associated with cloud, not a defining characteristic."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "A company wants the customer to retain control over the operating system, middleware, and applications while the cloud provider manages the underlying virtualization, servers, storage, and networking. Which service model best fits?",
-    "options": ["SaaS", "PaaS", "IaaS", "FaaS"],
+    "options": [
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "FaaS"
+    ],
     "answer": 2,
     "explanation": "Infrastructure as a Service (IaaS) provides virtualized compute, storage, and networking while leaving the OS, middleware, runtime, and applications under customer control."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which cloud deployment model is most appropriate when several organizations with common security and compliance requirements wish to share infrastructure to reduce cost?",
-    "options": ["Public cloud", "Private cloud", "Community cloud", "Hybrid cloud"],
+    "options": [
+      "Public cloud",
+      "Private cloud",
+      "Community cloud",
+      "Hybrid cloud"
+    ],
     "answer": 2,
     "explanation": "A community cloud is shared by several organizations with common concerns (security, compliance, mission). It strikes a balance between the isolation of private cloud and the economy of public cloud."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Under the shared responsibility model for SaaS, which security responsibility ALWAYS remains with the customer?",
-    "options": ["Patching the underlying operating system", "Physical security of the data center", "Managing user identities and access to the application", "Maintaining the hypervisor"],
+    "options": [
+      "Patching the underlying operating system",
+      "Physical security of the data center",
+      "Managing user identities and access to the application",
+      "Maintaining the hypervisor"
+    ],
     "answer": 2,
     "explanation": "Regardless of service model, the customer is always responsible for their data, their accounts, and managing user access. In SaaS the provider handles everything else, but identity and data governance stay with the customer."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which NIST characteristic of cloud computing refers to the ability for a consumer to provision computing capabilities automatically without human interaction with the provider?",
-    "options": ["Rapid elasticity", "On-demand self-service", "Resource pooling", "Measured service"],
+    "options": [
+      "Rapid elasticity",
+      "On-demand self-service",
+      "Resource pooling",
+      "Measured service"
+    ],
     "answer": 1,
     "explanation": "On-demand self-service describes the consumer's ability to unilaterally provision resources (compute, storage) as needed, without human interaction with the service provider."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Resource pooling in cloud computing introduces which key security concern that does NOT typically exist in traditional on-premises environments?",
-    "options": ["Loss of network bandwidth", "Multi-tenancy isolation risks", "Lack of redundant storage", "Excessive licensing fees"],
+    "options": [
+      "Loss of network bandwidth",
+      "Multi-tenancy isolation risks",
+      "Lack of redundant storage",
+      "Excessive licensing fees"
+    ],
     "answer": 1,
     "explanation": "Resource pooling enables multi-tenancy, where multiple customers share underlying physical infrastructure. This creates isolation concerns: a flaw in segregation could expose one tenant's data or workloads to another."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which of the following BEST describes 'rapid elasticity'?",
-    "options": ["Resources can be measured and reported", "Resources can be scaled out and back in to match demand", "Multiple customers share underlying resources", "Customers access services over the public internet"],
+    "options": [
+      "Resources can be measured and reported",
+      "Resources can be scaled out and back in to match demand",
+      "Multiple customers share underlying resources",
+      "Customers access services over the public internet"
+    ],
     "answer": 1,
     "explanation": "Rapid elasticity is the ability to scale capabilities outward (and inward) commensurate with demand, often automatically, so resources can appear unlimited to the consumer."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which service model leaves the customer responsible for the application code but not for runtime, middleware, or OS patching?",
-    "options": ["IaaS", "PaaS", "SaaS", "Bare metal"],
+    "options": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Bare metal"
+    ],
     "answer": 1,
     "explanation": "In PaaS, the provider manages the OS, middleware, and runtime. The customer is responsible for the application and the data."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "A retailer experiences large traffic spikes during the holiday season. The company wants to extend its private cloud capacity by temporarily 'bursting' workloads into a public cloud. This pattern is BEST described as:",
-    "options": ["Community cloud", "Hybrid cloud", "Multi-cloud", "Public cloud with reserved instances"],
+    "options": [
+      "Community cloud",
+      "Hybrid cloud",
+      "Multi-cloud",
+      "Public cloud with reserved instances"
+    ],
     "answer": 1,
     "explanation": "Hybrid cloud combines private and public deployments, often with cloud bursting to extend capacity. Multi-cloud refers specifically to using multiple public providers."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which of the following is a primary risk associated with vendor lock-in?",
-    "options": ["Reduced encryption strength", "Inability to easily migrate workloads to another provider", "Inability to receive bills from the provider", "Loss of multi-factor authentication"],
+    "options": [
+      "Reduced encryption strength",
+      "Inability to easily migrate workloads to another provider",
+      "Inability to receive bills from the provider",
+      "Loss of multi-factor authentication"
+    ],
     "answer": 1,
     "explanation": "Vendor lock-in occurs when proprietary services, APIs, or data formats make it difficult or costly to migrate workloads to another provider or back on-premises."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which cloud actor in the NIST cloud reference architecture is responsible for negotiating relationships between cloud consumers and providers, sometimes adding value through aggregation or integration?",
-    "options": ["Cloud auditor", "Cloud carrier", "Cloud broker", "Cloud subscriber"],
+    "options": [
+      "Cloud auditor",
+      "Cloud carrier",
+      "Cloud broker",
+      "Cloud subscriber"
+    ],
     "answer": 2,
     "explanation": "The cloud broker manages use, performance, and delivery of cloud services and negotiates relationships between consumers and providers. Carriers transport data; auditors verify operations."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which symmetric encryption algorithm is currently the most widely adopted standard for data at rest in commercial cloud services?",
-    "options": ["DES", "3DES", "AES", "RSA"],
+    "options": [
+      "DES",
+      "3DES",
+      "AES",
+      "RSA"
+    ],
     "answer": 2,
     "explanation": "AES (Advanced Encryption Standard) is the most widely adopted symmetric algorithm. RSA is asymmetric. DES and 3DES are deprecated."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "What is the principal security advantage of using a key length of 256 bits with AES compared to 128 bits?",
-    "options": ["Faster encryption performance", "Greater resistance to brute-force attacks, including by quantum computing for many years", "Smaller ciphertext output", "Eliminates the need for an IV"],
+    "options": [
+      "Faster encryption performance",
+      "Stronger resistance to brute-force, including future quantum attacks",
+      "Smaller ciphertext output",
+      "Eliminates the need for an IV"
+    ],
     "answer": 1,
     "explanation": "Longer key lengths provide stronger resistance to brute force. AES-256 is generally seen as more resilient to future cryptanalytic and quantum attacks than AES-128."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which property is NOT a requirement of a secure cryptographic hash function?",
-    "options": ["Pre-image resistance", "Collision resistance", "Reversibility", "Second pre-image resistance"],
+    "options": [
+      "Pre-image resistance",
+      "Collision resistance",
+      "Reversibility",
+      "Second pre-image resistance"
+    ],
     "answer": 2,
     "explanation": "A secure hash must be one-way (non-reversible). Pre-image, second pre-image, and collision resistance are required properties; reversibility is the opposite of what is needed."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "When Alice digitally signs a document, which key does she use?",
-    "options": ["Bob's public key", "Bob's private key", "Alice's public key", "Alice's private key"],
+    "options": [
+      "Bob's public key",
+      "Bob's private key",
+      "Alice's public key",
+      "Alice's private key"
+    ],
     "answer": 3,
     "explanation": "A digital signature is created with the signer's private key and verified using the signer's public key. This provides authentication, integrity, and non-repudiation."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which CSA program provides a publicly accessible registry that documents the security controls provided by various cloud computing offerings?",
-    "options": ["FedRAMP", "CSA STAR", "ISO/IEC 27018", "PCI DSS"],
+    "options": [
+      "FedRAMP",
+      "CSA STAR",
+      "ISO/IEC 27018",
+      "PCI DSS"
+    ],
     "answer": 1,
     "explanation": "The CSA Security, Trust, Assurance and Risk (STAR) registry documents the security and privacy controls provided by cloud providers using the CSA Cloud Controls Matrix."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which U.S. federal program standardizes the security assessment, authorization, and continuous monitoring of cloud products and services used by federal agencies?",
-    "options": ["FISMA", "FedRAMP", "FIPS 140-3", "DoD Impact Levels"],
+    "options": [
+      "FISMA",
+      "FedRAMP",
+      "FIPS 140-3",
+      "DoD Impact Levels"
+    ],
     "answer": 1,
     "explanation": "FedRAMP (Federal Risk and Authorization Management Program) provides a standardized approach to assessment, authorization, and continuous monitoring of cloud services for U.S. federal agencies."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which ISO/IEC standard focuses specifically on the protection of personally identifiable information (PII) in public cloud services acting as PII processors?",
-    "options": ["ISO/IEC 27001", "ISO/IEC 27002", "ISO/IEC 27017", "ISO/IEC 27018"],
+    "options": [
+      "ISO/IEC 27001",
+      "ISO/IEC 27002",
+      "ISO/IEC 27017",
+      "ISO/IEC 27018"
+    ],
     "answer": 3,
     "explanation": "ISO/IEC 27018 establishes controls and guidance for protecting PII in public clouds acting as PII processors. 27017 addresses cloud security controls more broadly."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which SOC report is intended for general distribution and provides assurance about a service organization's controls related to security, availability, processing integrity, confidentiality, and privacy?",
-    "options": ["SOC 1 Type II", "SOC 2 Type II", "SOC 3", "SAS 70"],
+    "options": [
+      "SOC 1 Type II",
+      "SOC 2 Type II",
+      "SOC 3",
+      "SAS 70"
+    ],
     "answer": 2,
     "explanation": "SOC 3 is a general-use report intended for public distribution. SOC 2 reports are restricted-use. SOC 1 addresses financial reporting controls."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Portability in cloud terms primarily refers to:",
-    "options": ["Ability to move data and applications between cloud providers or back on-premises", "Ability to access services from mobile devices", "Encryption of data during transit", "Use of containers to package code"],
+    "options": [
+      "Moving data and applications between providers or on-premises",
+      "Ability to access services from mobile devices",
+      "Encryption of data during transit",
+      "Use of containers to package code"
+    ],
     "answer": 0,
     "explanation": "Portability is the capability to migrate workloads, data, and applications between providers or environments with minimal modification, reducing lock-in."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Interoperability in cloud computing is BEST described as:",
-    "options": ["The ability for two cloud systems to exchange and use information through common interfaces", "The ability to migrate workloads between providers", "The ability for resources to scale automatically", "The ability for one provider to back up another's data"],
+    "options": [
+      "Cloud systems exchange and use information via common interfaces",
+      "The ability to migrate workloads between providers",
+      "The ability for resources to scale automatically",
+      "The ability for one provider to back up another's data"
+    ],
     "answer": 0,
     "explanation": "Interoperability is the ability of disparate systems to work together using common standards and APIs. Portability is about moving workloads."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Reversibility in cloud services refers to the customer's ability to:",
-    "options": ["Roll back encryption to plaintext", "Retrieve all of their data and have it deleted from the provider's systems at the end of the service", "Switch between active and passive modes of replication", "Restore deleted backups"],
+    "options": [
+      "Roll back encryption to plaintext",
+      "Retrieve all data and have it deleted at service end",
+      "Switch between active and passive modes of replication",
+      "Restore deleted backups"
+    ],
     "answer": 1,
     "explanation": "Reversibility (per ISO/IEC 17788) is the process by which customer data and derivatives are returned to the customer and removed from the cloud provider's systems at service termination."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Defense in depth is BEST described as:",
-    "options": ["Implementing the single strongest possible security control", "Layering multiple, redundant security controls so that failure of one does not compromise the system", "Hiding the architecture to make attacks harder", "Outsourcing all security to the cloud provider"],
+    "options": [
+      "Implementing the single strongest possible security control",
+      "Layered controls so one failure doesn't compromise the system",
+      "Hiding the architecture to make attacks harder",
+      "Outsourcing all security to the cloud provider"
+    ],
     "answer": 1,
     "explanation": "Defense in depth uses multiple layers of overlapping controls (technical, administrative, physical) so a failure in one layer is mitigated by others."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which principle assumes that breach has occurred or is inevitable, and therefore requires explicit verification for every access request regardless of source location?",
-    "options": ["Defense in depth", "Zero trust", "Least privilege", "Air gap"],
+    "options": [
+      "Defense in depth",
+      "Zero trust",
+      "Least privilege",
+      "Air gap"
+    ],
     "answer": 1,
     "explanation": "Zero trust assumes no implicit trust based on network location and requires authentication and authorization for every request, often expressed as 'never trust, always verify'."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "From a financial perspective, what is a key advantage of cloud computing over on-premises infrastructure?",
-    "options": ["Eliminates all costs", "Converts much of the capital expenditure (CapEx) into operational expenditure (OpEx)", "Removes the need for any contracts", "Provides zero downtime guaranteed"],
+    "options": [
+      "Eliminates all costs",
+      "Shifts much spending from CapEx to OpEx",
+      "Removes the need for any contracts",
+      "Provides zero downtime guaranteed"
+    ],
     "answer": 1,
     "explanation": "Cloud shifts IT spending from large up-front capital investments to ongoing operational costs based on consumption, improving financial flexibility."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which cloud actor performs an independent assessment of cloud services, including security, privacy, and performance?",
-    "options": ["Cloud broker", "Cloud auditor", "Cloud carrier", "Cloud consumer"],
+    "options": [
+      "Cloud broker",
+      "Cloud auditor",
+      "Cloud carrier",
+      "Cloud consumer"
+    ],
     "answer": 1,
     "explanation": "The cloud auditor is an independent party that performs assessments of cloud services, operations, and controls."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "In a Public Key Infrastructure, what is the role of a Certificate Authority (CA)?",
-    "options": ["Encrypts data at rest using its private key", "Verifies identity and issues digital certificates binding public keys to identities", "Maintains the only copy of all private keys", "Generates random session keys for users"],
+    "options": [
+      "Encrypts data at rest using its private key",
+      "Verifies identity and signs certificates binding keys to identities",
+      "Maintains the only copy of all private keys",
+      "Generates random session keys for users"
+    ],
     "answer": 1,
     "explanation": "The CA validates the identity of certificate requesters and digitally signs certificates that bind public keys to identities."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which characteristic of cloud computing provides visibility, control, and reporting that supports usage-based billing?",
-    "options": ["Broad network access", "Measured service", "On-demand self-service", "Resource pooling"],
+    "options": [
+      "Broad network access",
+      "Measured service",
+      "On-demand self-service",
+      "Resource pooling"
+    ],
     "answer": 1,
     "explanation": "Measured service uses metering capabilities so resource usage can be monitored, controlled, and reported, supporting pay-per-use models."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which deployment model offers the highest level of customer control over infrastructure but typically the lowest economies of scale?",
-    "options": ["Public", "Private", "Community", "Hybrid"],
+    "options": [
+      "Public",
+      "Private",
+      "Community",
+      "Hybrid"
+    ],
     "answer": 1,
     "explanation": "A private cloud is operated solely for one organization, providing maximum control but with less ability to spread cost across multiple tenants."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which of the following BEST describes 'cloud carrier' in the NIST reference architecture?",
-    "options": ["The party that owns the data center", "The intermediary providing connectivity and transport of cloud services", "The customer of a cloud provider", "An independent assessor of cloud services"],
+    "options": [
+      "The party that owns the data center",
+      "An intermediary providing connectivity for cloud services",
+      "The customer of a cloud provider",
+      "An independent assessor of cloud services"
+    ],
     "answer": 1,
     "explanation": "The cloud carrier is an intermediary that provides connectivity and transport (network access) between cloud consumers and cloud providers."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which is an example of a functional requirement for a cloud system?",
-    "options": ["Availability of 99.95% per month", "The system shall support OAuth 2.0 authentication", "The system must be highly performant", "All transactions must be encrypted"],
+    "options": [
+      "Availability of 99.95% per month",
+      "The system shall support OAuth 2.0 authentication",
+      "The system must be highly performant",
+      "All transactions must be encrypted"
+    ],
     "answer": 1,
     "explanation": "Functional requirements describe specific behaviors or features. Non-functional requirements address qualities such as availability, performance, and security overall."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "An organization wants to ensure that its applications will continue to operate if an entire cloud region becomes unavailable. Which architectural strategy BEST achieves this?",
-    "options": ["Use a single availability zone with strong access controls", "Deploy across multiple regions with automated failover", "Use the largest VM instance type available", "Encrypt all data with AES-256"],
+    "options": [
+      "Use a single availability zone with strong access controls",
+      "Deploy across multiple regions with automated failover",
+      "Use the largest VM instance type available",
+      "Encrypt all data with AES-256"
+    ],
     "answer": 1,
     "explanation": "Multi-region deployments with automated failover provide resilience against region-level outages. Encryption and instance sizing do not address regional availability."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which cloud security design principle states that users and services should be granted only the access necessary to perform their function?",
-    "options": ["Defense in depth", "Least privilege", "Separation of duties", "Zero trust"],
+    "options": [
+      "Defense in depth",
+      "Least privilege",
+      "Separation of duties",
+      "Zero trust"
+    ],
     "answer": 1,
     "explanation": "Least privilege minimizes blast radius by ensuring no entity has more access than strictly needed to perform its function."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which characteristic distinguishes IaaS from PaaS most clearly from a security responsibility standpoint?",
-    "options": ["In IaaS the customer manages the OS and middleware; in PaaS the provider does", "In IaaS the customer never touches encryption keys", "PaaS prohibits the use of databases", "In PaaS the customer always owns the hardware"],
+    "options": [
+      "In IaaS the customer manages the OS; in PaaS the provider does",
+      "In IaaS the customer avoids touching encryption keys",
+      "PaaS prohibits the use of databases",
+      "In PaaS the customer owns the hardware"
+    ],
     "answer": 0,
     "explanation": "In IaaS, the customer is responsible for the OS, middleware, runtime, application, and data. In PaaS the provider handles OS, middleware, and runtime."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "What is the PRIMARY purpose of a cloud reference architecture?",
-    "options": ["To describe a specific vendor's offering", "To provide a common framework that establishes consistent terminology and components for cloud services", "To eliminate the need for security controls", "To increase vendor lock-in"],
+    "options": [
+      "To describe a specific vendor's offering",
+      "A shared framework with consistent terminology and components",
+      "To eliminate the need for security controls",
+      "To increase vendor lock-in"
+    ],
     "answer": 1,
     "explanation": "A reference architecture provides a shared, vendor-neutral model for understanding and discussing cloud services, supporting comparison and design."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which is generally NOT an advantage of cloud computing?",
-    "options": ["Scalability", "Reduced time-to-market", "Decreased need for governance", "Cost flexibility"],
+    "options": [
+      "Scalability",
+      "Reduced time-to-market",
+      "Decreased need for governance",
+      "Cost flexibility"
+    ],
     "answer": 2,
-    "explanation": "Governance needs do not decrease in the cloud â€” they often increase due to shared responsibility, complex contracts, and reduced direct control."
+    "explanation": "Governance needs do not decrease in the cloud — they often increase due to shared responsibility, complex contracts, and reduced direct control."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which type of cryptography uses one key to encrypt and a mathematically related but different key to decrypt?",
-    "options": ["Symmetric", "Asymmetric", "Hashing", "Steganography"],
+    "options": [
+      "Symmetric",
+      "Asymmetric",
+      "Hashing",
+      "Steganography"
+    ],
     "answer": 1,
     "explanation": "Asymmetric (public-key) cryptography uses a key pair: a public key for encryption and a private key for decryption (or the reverse for signatures)."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which is the BEST description of 'shared responsibility' in cloud computing?",
-    "options": ["The provider is responsible for all security", "Security responsibilities are divided between provider and customer, with the split varying by service model", "The customer is responsible for all security", "Both parties handle exactly the same controls"],
+    "options": [
+      "The provider handles the entire security stack",
+      "Security responsibilities are split between provider and customer",
+      "The customer handles the entire security stack",
+      "Both parties handle exactly the same controls"
+    ],
     "answer": 1,
     "explanation": "The shared responsibility model splits security duties between provider and customer, with more responsibility shifting to the provider as you move from IaaS to PaaS to SaaS."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which is an example of broad network access?",
-    "options": ["Users can sign up for an account 24/7", "Users access services from laptops, phones, and tablets over standard internet protocols", "Resources can scale automatically", "The provider can audit consumer usage"],
+    "options": [
+      "Users can sign up for an account 24/7",
+      "Services available from any standard internet-connected device",
+      "Resources can scale automatically",
+      "The provider can audit consumer usage"
+    ],
     "answer": 1,
     "explanation": "Broad network access means capabilities are available over networks and accessed through standard mechanisms supporting heterogeneous client platforms."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "What is a primary security concern unique to multi-tenancy in cloud?",
-    "options": ["Risk of cross-tenant data leakage if isolation fails", "Limited storage capacity", "Loss of patching capability", "Inability to issue certificates"],
+    "options": [
+      "Risk of cross-tenant data leakage if isolation fails",
+      "Limited storage capacity",
+      "Loss of patching capability",
+      "Inability to issue certificates"
+    ],
     "answer": 0,
     "explanation": "Multi-tenancy means multiple customers share infrastructure. The principal concern is that failure of isolation controls (hypervisor, network, storage) could expose one tenant to another."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "Which of these is a non-functional security requirement?",
-    "options": ["The application must use TLS 1.3 for all client connections", "The system must support single sign-on with SAML 2.0", "The system shall maintain 99.9% availability", "The system shall log out users after 15 minutes idle"],
+    "options": [
+      "The application must use TLS 1.3 for all client connections",
+      "The system must support single sign-on with SAML 2.0",
+      "The system shall maintain 99.9% availability",
+      "The system shall log out users after 15 minutes idle"
+    ],
     "answer": 2,
     "explanation": "Availability is a quality attribute and therefore a non-functional requirement. The others describe specific functional behaviors."
   },
   {
     "domain": "1: Cloud Concepts, Architecture & Design",
     "question": "What is the BEST description of cryptographic 'salt' as used with password hashing?",
-    "options": ["A secret value added to keys to strengthen them", "A unique random value added to inputs before hashing to defeat precomputed rainbow tables", "An algorithm that increases hash speed", "A digital signature over the hash output"],
+    "options": [
+      "A secret value added to keys to strengthen them",
+      "A unique random value added before hashing to defeat rainbow tables",
+      "An algorithm that increases hash speed",
+      "A digital signature over the hash output"
+    ],
     "answer": 1,
     "explanation": "Salt is a per-record random value combined with the plaintext before hashing, ensuring identical passwords produce different hashes and rendering rainbow tables ineffective."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following lists the phases of the Cloud Secure Data Lifecycle in correct order?",
-    "options": ["Create, Store, Use, Share, Archive, Destroy", "Create, Use, Store, Share, Archive, Destroy", "Store, Create, Share, Use, Destroy, Archive", "Store, Use, Share, Create, Archive, Destroy"],
+    "options": [
+      "Create, Store, Use, Share, Archive, Destroy",
+      "Create, Use, Store, Share, Archive, Destroy",
+      "Store, Create, Share, Use, Destroy, Archive",
+      "Store, Use, Share, Create, Archive, Destroy"
+    ],
     "answer": 0,
     "explanation": "The Cloud Secure Data Lifecycle is Create, Store, Use, Share, Archive, Destroy. Security controls must be applied at every phase."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "During which phase of the cloud data lifecycle is data classification BEST established?",
-    "options": ["Store", "Use", "Create", "Destroy"],
+    "options": [
+      "Store",
+      "Use",
+      "Create",
+      "Destroy"
+    ],
     "answer": 2,
     "explanation": "Classification should be applied at the Create phase so that controls and handling can be enforced consistently from the earliest point of the data's life."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which storage architecture stores data as discrete units identified by a unique key, accessed through APIs, and is commonly used for unstructured data such as media files and backups?",
-    "options": ["Block storage", "File storage", "Object storage", "Volume storage"],
+    "options": [
+      "Block storage",
+      "File storage",
+      "Object storage",
+      "Volume storage"
+    ],
     "answer": 2,
     "explanation": "Object storage stores data as objects with unique identifiers and metadata, accessed via APIs (e.g., S3). Block and file storage have different access semantics."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which storage type is most commonly used to provide persistent disk volumes attached to virtual machines in IaaS?",
-    "options": ["Object storage", "Block storage", "File storage", "Ephemeral storage"],
+    "options": [
+      "Object storage",
+      "Block storage",
+      "File storage",
+      "Ephemeral storage"
+    ],
     "answer": 1,
     "explanation": "Block storage (e.g., EBS, Persistent Disk) provides raw block-level volumes that can be attached to VMs and formatted with file systems."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "An organization wants to provide a shared, NFS-mounted file system across multiple VMs. Which type of cloud storage is most appropriate?",
-    "options": ["Object", "Block", "File", "Ephemeral"],
+    "options": [
+      "Object",
+      "Block",
+      "File",
+      "Ephemeral"
+    ],
     "answer": 2,
     "explanation": "File storage exposes a network file system (NFS/SMB) that can be mounted by multiple VMs concurrently."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which type of cloud storage is automatically deleted when its associated VM is terminated?",
-    "options": ["Object", "Block (persistent disk)", "Ephemeral", "Archival"],
+    "options": [
+      "Object",
+      "Block (persistent disk)",
+      "Ephemeral",
+      "Archival"
+    ],
     "answer": 2,
     "explanation": "Ephemeral storage is tied to the lifecycle of the VM instance and is not retained after the instance is terminated."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which cryptographic key management approach allows the customer to retain ownership and control of the keys while the provider performs encryption operations using those keys within the provider's environment?",
-    "options": ["BYOK (Bring Your Own Key)", "HYOK (Hold Your Own Key)", "Provider-managed keys", "Plaintext-managed keys"],
+    "options": [
+      "BYOK",
+      "HYOK",
+      "Provider-managed keys",
+      "Plaintext-managed keys"
+    ],
     "answer": 0,
     "explanation": "BYOK allows the customer to generate or import keys but the cryptographic operations occur in the provider's KMS. HYOK keeps the keys (and sometimes operations) entirely outside the provider."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which key management approach BEST prevents the cloud provider from ever accessing the cryptographic keys in plaintext?",
-    "options": ["BYOK", "HYOK", "Provider-managed KMS", "Envelope encryption with provider keys"],
+    "options": [
+      "BYOK",
+      "HYOK",
+      "Provider-managed KMS",
+      "Envelope encryption with provider keys"
+    ],
     "answer": 1,
     "explanation": "HYOK (Hold Your Own Key) keeps the keys and key operations under customer control, outside the provider's environment, so the provider cannot access them."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "A hardware security module (HSM) provides which primary benefit?",
-    "options": ["Faster network throughput", "Tamper-resistant key storage and cryptographic operations within dedicated hardware", "Software-based encryption of file systems", "Replaces the need for backups"],
+    "options": [
+      "Faster network throughput",
+      "Tamper-resistant key storage and crypto operations in hardware",
+      "Software-based encryption of file systems",
+      "Replaces the need for backups"
+    ],
     "answer": 1,
     "explanation": "An HSM is a tamper-resistant hardware device that stores keys and performs cryptographic operations, often validated against FIPS 140-2/3."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which data obfuscation technique replaces sensitive values with non-sensitive substitutes that can be mapped back via a secure lookup table, often used to keep PCI-regulated data out of downstream systems?",
-    "options": ["Hashing", "Encryption", "Tokenization", "Compression"],
+    "options": [
+      "Hashing",
+      "Encryption",
+      "Tokenization",
+      "Compression"
+    ],
     "answer": 2,
     "explanation": "Tokenization substitutes sensitive data with a token. The mapping is stored in a separate, secured vault. Unlike encryption, tokens are typically meaningless outside that vault."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which technique modifies data so that individuals cannot be identified from it, in a way that is intended to be irreversible?",
-    "options": ["Pseudonymization", "Tokenization", "Anonymization", "Masking"],
+    "options": [
+      "Pseudonymization",
+      "Tokenization",
+      "Anonymization",
+      "Masking"
+    ],
     "answer": 2,
-    "explanation": "Anonymization is intended to be irreversible â€” the data can no longer be linked to an individual. Pseudonymization, by contrast, retains a means of re-identification."
+    "explanation": "Anonymization is intended to be irreversible — the data can no longer be linked to an individual. Pseudonymization, by contrast, retains a means of re-identification."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "An application returns the last four digits of a credit card number to authorized customer service agents and asterisks for all other digits. This is an example of:",
-    "options": ["Static data masking", "Dynamic data masking", "Tokenization", "Hashing"],
+    "options": [
+      "Static data masking",
+      "Dynamic data masking",
+      "Tokenization",
+      "Hashing"
+    ],
     "answer": 1,
     "explanation": "Dynamic data masking applies masking on the fly based on the user or query context. Static masking would create a separate masked copy of the dataset."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which data loss prevention (DLP) state focuses on protecting data being moved across networks, such as email or web traffic?",
-    "options": ["Data at rest", "Data in motion", "Data in use", "Data archived"],
+    "options": [
+      "Data at rest",
+      "Data in motion",
+      "Data in use",
+      "Data archived"
+    ],
     "answer": 1,
     "explanation": "Data in motion refers to data being transmitted across networks. DLP for this state typically inspects network traffic, emails, and file uploads."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which technology is BEST used to enforce restrictions on a document such that the recipient cannot print, copy, or forward it?",
-    "options": ["DLP", "IRM/DRM", "Tokenization", "TLS"],
+    "options": [
+      "DLP",
+      "IRM/DRM",
+      "Tokenization",
+      "TLS"
+    ],
     "answer": 1,
     "explanation": "Information Rights Management (IRM) / Digital Rights Management (DRM) embeds policy controls in the file itself, restricting actions like printing, copying, or forwarding."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following BEST describes 'crypto-shredding'?",
-    "options": ["Overwriting disk sectors with random data multiple times", "Destroying the encryption keys used to protect data so that the ciphertext becomes unrecoverable", "Encrypting backup tapes", "Hashing data before it is destroyed"],
+    "options": [
+      "Overwriting disk sectors with random data multiple times",
+      "Destroying the keys so encrypted data becomes unrecoverable",
+      "Encrypting backup tapes",
+      "Hashing data before it is destroyed"
+    ],
     "answer": 1,
     "explanation": "Crypto-shredding renders encrypted data effectively unrecoverable by destroying the keys. It is especially valuable in cloud where physical destruction of media is impossible."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Why is crypto-shredding often considered the most practical method of data destruction in a cloud environment?",
-    "options": ["Cloud providers physically destroy customer drives daily", "Customers cannot physically access or destroy the underlying media", "It is faster than reformatting drives", "It is required by all cloud SLAs"],
+    "options": [
+      "Cloud providers physically destroy customer drives daily",
+      "Customers cannot physically access or destroy the underlying media",
+      "It is faster than reformatting drives",
+      "It is required by all cloud SLAs"
+    ],
     "answer": 1,
     "explanation": "Cloud customers do not control the physical media. Destroying keys is the only reliable customer-controlled mechanism to render data unreadable on shared storage."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which type of encryption allows certain operations to be performed on ciphertext such that the result, when decrypted, matches the result of operations performed on the plaintext?",
-    "options": ["Symmetric encryption", "Asymmetric encryption", "Homomorphic encryption", "Format-preserving encryption"],
+    "options": [
+      "Symmetric encryption",
+      "Asymmetric encryption",
+      "Homomorphic encryption",
+      "Format-preserving encryption"
+    ],
     "answer": 2,
     "explanation": "Homomorphic encryption supports computation directly on ciphertexts. Fully homomorphic encryption supports arbitrary operations but is computationally expensive."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "What is the PRIMARY purpose of a data classification policy?",
-    "options": ["Establish how long data must be kept", "Determine the value and sensitivity of data so appropriate controls can be applied", "Identify owners of compute resources", "Set the encryption algorithm for all data"],
+    "options": [
+      "Establish how long data must be kept",
+      "Determine data sensitivity so appropriate controls apply",
+      "Identify owners of compute resources",
+      "Set the encryption algorithm for all data"
+    ],
     "answer": 1,
     "explanation": "Classification assigns a sensitivity level (e.g., Public, Internal, Confidential, Restricted) so that handling and protection requirements can be applied consistently."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "What is the difference between structured and unstructured data?",
-    "options": ["Structured data is encrypted, unstructured is not", "Structured data fits a predefined schema (e.g., database tables); unstructured data does not (e.g., emails, documents, media)", "Structured data is always more sensitive", "Structured data is stored in object storage, unstructured in block storage"],
+    "options": [
+      "Structured data is encrypted, unstructured is not",
+      "Structured fits a schema (e.g., tables); unstructured does not",
+      "Structured data is always more sensitive",
+      "Structured data is stored in object storage, unstructured in block storage"
+    ],
     "answer": 1,
     "explanation": "Structured data conforms to a schema and is easily queryable (e.g., relational databases). Unstructured data lacks predefined formatting and includes documents, images, and free-text."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "A retention policy specifies that customer records must be kept for seven years and then destroyed. Which of the following BEST supports compliance with this requirement?",
-    "options": ["Encrypt data with a strong algorithm", "Implement automated lifecycle policies that archive and then delete data after the retention period", "Snapshot data weekly", "Apply DLP to outgoing email"],
+    "options": [
+      "Encrypt data with a strong algorithm",
+      "Automated lifecycle policies that archive then delete after retention",
+      "Snapshot data weekly",
+      "Apply DLP to outgoing email"
+    ],
     "answer": 1,
     "explanation": "Automated lifecycle policies tied to retention requirements are the most reliable way to enforce both the keep-for-N-years and delete-after requirements."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "A litigation or regulatory event requires that all relevant records be preserved unaltered until further notice. This is BEST described as:",
-    "options": ["Archival", "Legal hold", "Long-term retention", "Backup"],
+    "options": [
+      "Archival",
+      "Legal hold",
+      "Long-term retention",
+      "Backup"
+    ],
     "answer": 1,
     "explanation": "A legal hold suspends normal retention/destruction processes so that potentially relevant records are preserved unaltered."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which control type writes data in a way that cannot be altered or deleted before its retention period expires, often referred to as Write-Once-Read-Many?",
-    "options": ["Versioning", "Immutable / WORM storage", "Encryption at rest", "Replication"],
+    "options": [
+      "Versioning",
+      "Immutable / WORM storage",
+      "Encryption at rest",
+      "Replication"
+    ],
     "answer": 1,
     "explanation": "Immutable / WORM storage enforces that objects cannot be modified or deleted for a defined period, helpful for compliance and ransomware resilience."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which feature in object storage allows previous versions of an object to be retained when an object is overwritten or deleted?",
-    "options": ["Lifecycle policy", "Versioning", "Replication", "Encryption"],
+    "options": [
+      "Lifecycle policy",
+      "Versioning",
+      "Replication",
+      "Encryption"
+    ],
     "answer": 1,
     "explanation": "Object versioning preserves prior versions of objects, supporting recovery from accidental deletion or overwrite."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which is the BEST description of 'data dispersion' (sometimes called bit splitting)?",
-    "options": ["Encrypting each chunk of data with a different key", "Splitting data into multiple fragments and storing them across different locations so that no single fragment is sufficient to reconstruct the original", "Backing up data nightly to tape", "Migrating data between regions"],
+    "options": [
+      "Encrypting each chunk of data with a different key",
+      "Splitting data into fragments stored separately; no fragment alone reconstructs",
+      "Backing up data nightly to tape",
+      "Migrating data between regions"
+    ],
     "answer": 1,
     "explanation": "Data dispersion (similar to secret sharing) splits data into shards distributed across locations so that compromise of a subset does not reveal the data."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "What is the primary difference between tokenization and encryption?",
-    "options": ["Encryption uses keys; tokenization does not require any secrets", "Encryption is reversible by anyone; tokenization is one-way", "Encryption mathematically transforms data with a key; tokenization substitutes data with unrelated tokens looked up via a secure mapping", "There is no meaningful difference"],
+    "options": [
+      "Encryption uses keys; tokenization does not require any secrets",
+      "Encryption is reversible by anyone; tokenization is one-way",
+      "Encryption uses keys; tokenization swaps data for unrelated tokens via a vault",
+      "There is no meaningful difference"
+    ],
     "answer": 2,
     "explanation": "Encryption uses an algorithm and key; ciphertext is mathematically related to plaintext. Tokenization replaces data with unrelated values and uses a secure vault for mapping."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following is the BEST way to ensure confidentiality of data at rest in object storage?",
-    "options": ["Use TLS for all uploads", "Apply server-side or client-side encryption with appropriate key management", "Enable versioning", "Use a private subnet"],
+    "options": [
+      "Use TLS for all uploads",
+      "Server- or client-side encryption with appropriate key management",
+      "Enable versioning",
+      "Use a private subnet"
+    ],
     "answer": 1,
     "explanation": "Encryption at rest, with strong keys managed appropriately, is the primary control for confidentiality of stored data. TLS protects only data in transit."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which type of DLP operates on data being written to or read from removable media, USB devices, or endpoints?",
-    "options": ["Network DLP", "Storage DLP", "Endpoint DLP", "Application DLP"],
+    "options": [
+      "Network DLP",
+      "Storage DLP",
+      "Endpoint DLP",
+      "Application DLP"
+    ],
     "answer": 2,
     "explanation": "Endpoint DLP runs on user devices and controls actions like copying to USB, printing, or sending to unsanctioned applications."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which encryption method is MOST relevant to protecting data while it is being processed in memory by an application?",
-    "options": ["AES-CBC for files", "Transport Layer Security", "Confidential computing / TEE-based execution", "Disk-level encryption"],
+    "options": [
+      "AES-CBC for files",
+      "Transport Layer Security",
+      "Confidential computing / TEE-based execution",
+      "Disk-level encryption"
+    ],
     "answer": 2,
     "explanation": "Confidential computing uses Trusted Execution Environments (TEEs) to protect data in use within memory from privileged software and operators."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "When TLS is used to transfer data to a cloud storage service, which property does it primarily protect?",
-    "options": ["Data at rest", "Data in transit", "Data in use", "Key escrow"],
+    "options": [
+      "Data at rest",
+      "Data in transit",
+      "Data in use",
+      "Key escrow"
+    ],
     "answer": 1,
     "explanation": "TLS protects confidentiality and integrity of data in transit over networks. It does not protect data once stored or while being processed."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which control is MOST effective in detecting unauthorized access to sensitive cloud storage buckets?",
-    "options": ["Enabling object versioning", "Configuring bucket policies", "Enabling detailed access logging and monitoring", "Using larger keys"],
+    "options": [
+      "Enabling object versioning",
+      "Configuring bucket policies",
+      "Enabling detailed access logging and monitoring",
+      "Using larger keys"
+    ],
     "answer": 2,
     "explanation": "Access logging and monitoring (with alerts on anomalous activity) provide visibility necessary to detect unauthorized access. Versioning helps with recovery; policies help with prevention."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following is the BEST example of a data discovery activity?",
-    "options": ["Encrypting all cloud storage by default", "Scanning storage and databases to locate sensitive data such as PII or PHI", "Implementing role-based access control", "Performing a penetration test"],
+    "options": [
+      "Encrypting all cloud storage by default",
+      "Scanning storage and databases to locate sensitive data",
+      "Implementing role-based access control",
+      "Performing a penetration test"
+    ],
     "answer": 1,
     "explanation": "Data discovery identifies where sensitive data resides, often using pattern matching, classification engines, and metadata analysis."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "An organization wants to ensure that even if their cloud provider is compelled to hand over data, the data will be unreadable. Which approach BEST achieves this?",
-    "options": ["Use the provider's default server-side encryption", "Encrypt data client-side with keys never exposed to the provider", "Apply DLP rules", "Use bucket-level permissions"],
+    "options": [
+      "Use the provider's default server-side encryption",
+      "Encrypt client-side with keys never exposed to the provider",
+      "Apply DLP rules",
+      "Use bucket-level permissions"
+    ],
     "answer": 1,
     "explanation": "Client-side encryption with customer-controlled keys (HYOK-style) ensures that the provider holds only ciphertext, even when legally compelled to produce data."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which is the BEST control for ensuring integrity of stored data, allowing detection of unauthorized modification?",
-    "options": ["Hashing files and comparing hashes over time", "Encrypting the data", "Compressing the data", "Increasing storage redundancy"],
+    "options": [
+      "Hashing files and comparing hashes over time",
+      "Encrypting the data",
+      "Compressing the data",
+      "Increasing storage redundancy"
+    ],
     "answer": 0,
     "explanation": "Hashing produces a fixed-size fingerprint that changes if the data changes. Comparing hashes over time detects unauthorized or accidental modification."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following is a benefit of using a Key Management Service (KMS) over storing keys in application configuration files?",
-    "options": ["Application keys can be embedded in code", "Centralized policy, audit, rotation, and access control for keys", "Eliminates the need for key rotation", "Allows keys to be shared via email"],
+    "options": [
+      "Application keys can be embedded in code",
+      "Centralized policy, audit, rotation, and access control for keys",
+      "Eliminates the need for key rotation",
+      "Allows keys to be shared via email"
+    ],
     "answer": 1,
     "explanation": "A KMS provides centralized control of keys with auditable access policies, automated rotation, and integration with cloud IAM."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following is TRUE about pseudonymization under GDPR?",
-    "options": ["It is considered fully anonymous data", "Data is still considered personal data because re-identification is possible", "It is the same as encryption", "It removes the need for any other controls"],
+    "options": [
+      "It is considered fully anonymous data",
+      "Still personal data because re-identification remains possible",
+      "It is the same as encryption",
+      "It removes the need for any other controls"
+    ],
     "answer": 1,
     "explanation": "Pseudonymized data is still personal data under GDPR because the ability to re-identify exists (via a key or mapping). Truly anonymized data is outside GDPR scope."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "When data is archived, which security concern is MOST often overlooked?",
-    "options": ["Confidentiality", "Integrity", "Long-term availability and ability to decrypt (key escrow)", "Audit logging"],
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Long-term ability to decrypt (key escrow)",
+      "Audit logging"
+    ],
     "answer": 2,
     "explanation": "Archived data can outlive the original encryption keys, key management systems, or applications. Ensuring the data is recoverable and decryptable over long periods requires careful key escrow planning."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following BEST illustrates the 'Share' phase of the data lifecycle?",
-    "options": ["A user types data into a form", "A database stores a new record", "A document is sent to an external partner via secure file transfer", "A backup is created"],
+    "options": [
+      "A user types data into a form",
+      "A database stores a new record",
+      "A document is sent to an external partner via secure transfer",
+      "A backup is created"
+    ],
     "answer": 2,
     "explanation": "The Share phase covers data being made accessible to others, internally or externally, and requires controls like DLP, IRM, and access governance."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which capability provides organizations the ability to enforce a 'cannot decrypt without my approval' policy on data hosted in the cloud?",
-    "options": ["Provider-managed KMS", "Customer-controlled key release with external KMS or HYOK", "Object versioning", "Replication"],
+    "options": [
+      "Provider-managed KMS",
+      "Customer-controlled key release via external KMS or HYOK",
+      "Object versioning",
+      "Replication"
+    ],
     "answer": 1,
     "explanation": "Customer-controlled or external key release means decryption requires customer-side authorization, even if the data sits with the provider."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following is generally NOT considered a method for sanitizing data in cloud storage?",
-    "options": ["Crypto-shredding", "Overwriting with random data multiple times", "Physical destruction by the customer", "Logical deletion combined with key destruction"],
+    "options": [
+      "Crypto-shredding",
+      "Overwriting with random data multiple times",
+      "Physical destruction by the customer",
+      "Logical deletion combined with key destruction"
+    ],
     "answer": 2,
     "explanation": "Customers cannot physically destroy storage media in cloud environments because they don't have access to it; that is the provider's responsibility, and only when media is decommissioned."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which is an example of metadata that might be created as part of data classification?",
-    "options": ["The block address of the file on disk", "A tag indicating the file is 'Confidential' and subject to GDPR", "A hash of the encryption key", "A list of users who recently logged in"],
+    "options": [
+      "The block address of the file on disk",
+      "A tag marking the file 'Confidential' and subject to GDPR",
+      "A hash of the encryption key",
+      "A list of users who recently logged in"
+    ],
     "answer": 1,
     "explanation": "Classification metadata typically includes labels indicating sensitivity, applicable regulations, and handling requirements."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which is the BEST description of 'data sovereignty'?",
-    "options": ["Data is owned by the cloud provider", "Data is subject to the laws of the jurisdiction in which it resides", "Data is stored redundantly across multiple regions", "Only the owner can decrypt data"],
+    "options": [
+      "Data is owned by the cloud provider",
+      "Data is subject to the laws of the jurisdiction it resides in",
+      "Data is stored redundantly across multiple regions",
+      "Only the owner can decrypt data"
+    ],
     "answer": 1,
     "explanation": "Data sovereignty means data is subject to the laws and regulations of the country in which it is physically stored or processed."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which model BEST describes encrypting a Data Encryption Key (DEK) with a Key Encryption Key (KEK) so that the DEK can be stored alongside the data while the KEK is held centrally?",
-    "options": ["Bring Your Own Key", "Envelope encryption", "Format-preserving encryption", "Homomorphic encryption"],
+    "options": [
+      "Bring Your Own Key",
+      "Envelope encryption",
+      "Format-preserving encryption",
+      "Homomorphic encryption"
+    ],
     "answer": 1,
     "explanation": "Envelope encryption uses a DEK to encrypt data and a KEK to encrypt the DEK. The KEK is managed centrally (e.g., in a KMS) while the encrypted DEK travels with the data."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "An auditor asks how an organization can prove that data was destroyed at the end of its lifecycle in a cloud environment. The BEST evidence is:",
-    "options": ["A screenshot of the storage console", "Audit logs of key destruction (crypto-shredding) and lifecycle policy execution", "A signed memo from the CIO", "The provider's marketing materials"],
+    "options": [
+      "A screenshot of the storage console",
+      "Audit logs of key destruction and lifecycle policy execution",
+      "A signed memo from the CIO",
+      "The provider's marketing materials"
+    ],
     "answer": 1,
     "explanation": "Audit logs documenting key destruction, lifecycle policy actions, and successful deletion provide verifiable evidence of data destruction."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "What is the BEST reason to use IRM rather than simple file encryption when sharing a confidential document externally?",
-    "options": ["IRM uses a smaller key size", "IRM enforces ongoing usage policies (e.g., no print, expiration) even after the recipient has the file", "IRM is faster", "IRM removes the need for authentication"],
+    "options": [
+      "IRM uses a smaller key size",
+      "IRM enforces usage policies (no print, expiration) after delivery",
+      "IRM is faster",
+      "IRM removes the need for authentication"
+    ],
     "answer": 1,
     "explanation": "IRM travels with the file and continually enforces policies like 'no print', 'expire after 30 days', and 'no forward', which static encryption cannot do."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which DLP component is responsible for performing inspection at the egress point of a network?",
-    "options": ["Endpoint agent", "Network DLP sensor/inline appliance", "Storage DLP scanner", "Identity provider"],
+    "options": [
+      "Endpoint agent",
+      "Network DLP sensor/inline appliance",
+      "Storage DLP scanner",
+      "Identity provider"
+    ],
     "answer": 1,
     "explanation": "Network DLP inspects traffic at egress (or inline) for sensitive content, typically using deep packet inspection and content fingerprinting."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which is the BEST approach to encrypting data shared with a third-party SaaS provider that must be searchable?",
-    "options": ["Use AES-CBC with a random IV per record", "Use searchable encryption or tokenization that preserves the ability to look up records", "Decrypt everything before sending to the SaaS", "Use a hashing algorithm such as SHA-256"],
+    "options": [
+      "Use AES-CBC with a random IV per record",
+      "Searchable encryption or tokenization preserving lookup ability",
+      "Decrypt everything before sending to the SaaS",
+      "Use a hashing algorithm such as SHA-256"
+    ],
     "answer": 1,
     "explanation": "Searchable encryption or tokenization schemes preserve some properties (like equality) needed for search while still protecting the underlying data."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which storage characteristic is MOST important to verify when designing for ransomware resilience?",
-    "options": ["High IOPS", "Immutability and tested restore procedures", "Lowest cost per GB", "Compression ratio"],
+    "options": [
+      "High IOPS",
+      "Immutability and tested restore procedures",
+      "Lowest cost per GB",
+      "Compression ratio"
+    ],
     "answer": 1,
     "explanation": "Ransomware resilience depends on having backups or copies that cannot be altered or deleted by an attacker, plus regular restore testing."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following BEST describes 'data remanence'?",
-    "options": ["Data that is intentionally retained for backups", "Residual data that remains on storage media after deletion attempts", "Data replicated across multiple regions", "Data marked as immutable"],
+    "options": [
+      "Data that is intentionally retained for backups",
+      "Residual data remaining on media after deletion attempts",
+      "Data replicated across multiple regions",
+      "Data marked as immutable"
+    ],
     "answer": 1,
     "explanation": "Data remanence is the residual representation of data that remains on media after attempts to remove it, which is why secure sanitization is needed."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "A regulation requires that PII never leave the European Economic Area. Which control BEST enforces this?",
-    "options": ["AES-256 encryption", "Region restrictions on storage and processing, configured in cloud account guardrails", "Logging of access events", "MFA for administrators"],
+    "options": [
+      "AES-256 encryption",
+      "Region restrictions enforced via cloud account guardrails",
+      "Logging of access events",
+      "MFA for administrators"
+    ],
     "answer": 1,
     "explanation": "Region or geographic restrictions enforced via cloud account-level guardrails (e.g., service control policies) directly enforce data residency requirements."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following is the strongest indicator that an organization has effective data governance?",
-    "options": ["Use of the latest encryption standards", "A defined data classification scheme with documented owners and applied controls", "Use of a single cloud provider", "A high uptime SLA"],
+    "options": [
+      "Use of the latest encryption standards",
+      "A classification scheme with documented owners and applied controls",
+      "Use of a single cloud provider",
+      "A high uptime SLA"
+    ],
     "answer": 1,
-    "explanation": "Effective data governance is demonstrated by an established classification scheme, documented data ownership, applied controls, and regular review â€” not by any single technology."
+    "explanation": "Effective data governance is demonstrated by an established classification scheme, documented data ownership, applied controls, and regular review — not by any single technology."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following BEST describes 'format-preserving encryption' (FPE)?",
-    "options": ["Encryption that produces ciphertext in the same format as the plaintext (e.g., 16-digit number)", "Encryption that uses a fixed format key length", "Encryption that automatically converts to JSON", "Encryption with a digital signature appended"],
+    "options": [
+      "Ciphertext shares the plaintext's format (e.g., 16-digit number)",
+      "Encryption that uses a fixed format key length",
+      "Encryption that automatically converts to JSON",
+      "Encryption with a digital signature appended"
+    ],
     "answer": 0,
     "explanation": "FPE encrypts data such that the ciphertext shares the same format as the plaintext (e.g., a 16-digit credit card number remains a 16-digit number), simplifying integration with legacy systems."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which is a key consideration when archiving data subject to regulatory retention requirements?",
-    "options": ["Lowest possible cost only", "Ensuring that retention policies, immutability, retrievability, and ability to decrypt are maintained for the full retention period", "Compression ratio", "Highest possible storage class regardless of access patterns"],
+    "options": [
+      "Lowest possible cost only",
+      "Maintain retention, immutability, retrievability, and decryptability",
+      "Compression ratio",
+      "Highest possible storage class regardless of access patterns"
+    ],
     "answer": 1,
     "explanation": "Archived data must remain retrievable and readable for the full retention period, which requires aligning storage class, encryption keys, immutability, and policies with the retention requirement."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following BEST describes the 'Use' phase of the cloud data lifecycle from a security perspective?",
-    "options": ["The phase where data is initially created", "The phase where data is shared externally", "The phase where data is accessed by applications and users, potentially decrypted in memory", "The phase where data is destroyed"],
+    "options": [
+      "The phase where data is initially created",
+      "The phase where data is shared externally",
+      "Phase when data is accessed by apps and decrypted in memory",
+      "The phase where data is destroyed"
+    ],
     "answer": 2,
     "explanation": "Use is when data is actively processed by applications. Confidentiality controls like access control and runtime protections (TEEs) apply."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following is the BEST reason to enable object-level access logging on a cloud storage bucket?",
-    "options": ["To reduce storage costs", "To support forensic investigation and detect anomalous access", "To improve application performance", "To enable replication"],
+    "options": [
+      "To reduce storage costs",
+      "Support forensic investigation and detect anomalous access",
+      "To improve application performance",
+      "To enable replication"
+    ],
     "answer": 1,
     "explanation": "Object-level access logs are key inputs for detecting unusual access patterns and reconstructing events during incident investigations."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "An organization uses tokenization to remove credit card numbers from its application databases. Which compliance benefit is MOST directly realized?",
-    "options": ["Reduced GDPR breach notification timeframe", "Reduction in PCI DSS scope for systems that no longer store cardholder data", "Automatic SOC 2 certification", "Removal of the need for any access controls"],
+    "options": [
+      "Reduced GDPR breach notification timeframe",
+      "Reduces PCI DSS scope for systems no longer storing card data",
+      "Automatic SOC 2 certification",
+      "Removal of the need for any access controls"
+    ],
     "answer": 1,
     "explanation": "Tokenization removes cardholder data from many systems, which can significantly reduce the scope of PCI DSS assessments for those systems."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which of the following is the MOST appropriate use of a cryptographic salt?",
-    "options": ["Encrypt session keys", "Strengthen password hashing by ensuring identical passwords produce different hashes", "Authenticate users at login", "Provide non-repudiation for transactions"],
+    "options": [
+      "Encrypt session keys",
+      "Strengthens hashing so identical passwords produce different hashes",
+      "Authenticate users at login",
+      "Provide non-repudiation for transactions"
+    ],
     "answer": 1,
     "explanation": "Salt is added to passwords before hashing so that identical passwords across users produce distinct hashes, defeating precomputed rainbow tables."
   },
   {
     "domain": "2: Cloud Data Security",
     "question": "Which is the FIRST step in establishing a data classification program?",
-    "options": ["Encrypt all data", "Identify data owners and define classification categories", "Implement DLP", "Purchase a tokenization product"],
+    "options": [
+      "Encrypt all data",
+      "Identify data owners and define classification categories",
+      "Implement DLP",
+      "Purchase a tokenization product"
+    ],
     "answer": 1,
     "explanation": "You cannot classify what you have not inventoried, and classification requires defined categories and accountable owners before applying controls."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which type of hypervisor runs directly on the host hardware without an underlying operating system?",
-    "options": ["Type 1 (bare metal)", "Type 2 (hosted)", "Containerized", "Para-virtualized"],
+    "options": [
+      "Type 1 (bare metal)",
+      "Type 2 (hosted)",
+      "Containerized",
+      "Para-virtualized"
+    ],
     "answer": 0,
     "explanation": "A Type 1 hypervisor (e.g., ESXi, Hyper-V) runs directly on hardware. Type 2 (e.g., VirtualBox) runs on top of a host OS."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which attack involves a malicious VM breaking out of its isolation and gaining access to the underlying hypervisor or host?",
-    "options": ["Hyperjacking", "VM escape", "Side-channel attack", "VM sprawl"],
+    "options": [
+      "Hyperjacking",
+      "VM escape",
+      "Side-channel attack",
+      "VM sprawl"
+    ],
     "answer": 1,
     "explanation": "VM escape exploits hypervisor or virtualization stack vulnerabilities so that code in a guest VM can affect the hypervisor or other VMs."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which attack involves placing a rogue hypervisor below a legitimate one to gain control of the system?",
-    "options": ["VM escape", "Hyperjacking", "Cross-site scripting", "Denial of service"],
+    "options": [
+      "VM escape",
+      "Hyperjacking",
+      "Cross-site scripting",
+      "Denial of service"
+    ],
     "answer": 1,
     "explanation": "Hyperjacking inserts a malicious hypervisor under the legitimate one, granting an attacker control of all VMs running above."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which technology partitions a network into many small isolated zones to limit lateral movement between workloads, often at the workload level?",
-    "options": ["Microsegmentation", "VLAN tagging", "Stateful firewalls", "Air gap"],
+    "options": [
+      "Microsegmentation",
+      "VLAN tagging",
+      "Stateful firewalls",
+      "Air gap"
+    ],
     "answer": 0,
     "explanation": "Microsegmentation applies fine-grained network policies between workloads (often per-workload or per-tier), reducing the blast radius of a compromise."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which type of network traffic is most commonly addressed by microsegmentation that traditional perimeter firewalls miss?",
-    "options": ["North-south traffic", "East-west traffic", "Out-of-band traffic", "Management traffic"],
+    "options": [
+      "North-south traffic",
+      "East-west traffic",
+      "Out-of-band traffic",
+      "Management traffic"
+    ],
     "answer": 1,
     "explanation": "East-west traffic flows between workloads inside the perimeter. Perimeter firewalls primarily address north-south (in/out) traffic, leaving east-west less controlled."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which technology enables a network's data plane and control plane to be decoupled, allowing programmatic, software-driven configuration of networks?",
-    "options": ["Software-defined networking (SDN)", "Network address translation", "Virtual private network", "Border gateway protocol"],
+    "options": [
+      "Software-defined networking (SDN)",
+      "Network address translation",
+      "Virtual private network",
+      "Border gateway protocol"
+    ],
     "answer": 0,
     "explanation": "SDN separates the control plane (decisions) from the data plane (forwarding) and exposes APIs for programmatic configuration of network behavior."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "What is the PRIMARY purpose of a Trusted Platform Module (TPM)?",
-    "options": ["Provide hardware-based storage of cryptographic keys and platform measurements to support secure boot and attestation", "Accelerate network traffic", "Provide redundant power", "Implement a virtual switch"],
+    "options": [
+      "Hardware-based key storage and measurements for secure boot",
+      "Accelerate network traffic",
+      "Provide redundant power",
+      "Implement a virtual switch"
+    ],
     "answer": 0,
     "explanation": "A TPM is a hardware module that stores keys, performs cryptographic operations, and stores measurements used for attestation and secure boot."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which boot security mechanism verifies the digital signature of each component loaded during system startup to ensure only trusted code runs?",
-    "options": ["BIOS password", "Secure Boot", "Encrypted swap", "BitLocker"],
+    "options": [
+      "BIOS password",
+      "Secure Boot",
+      "Encrypted swap",
+      "BitLocker"
+    ],
     "answer": 1,
     "explanation": "Secure Boot uses UEFI-stored signatures to verify each boot component, ensuring an unmodified, trusted boot path."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following BEST describes a 'bastion host' or 'jump server' in a cloud environment?",
-    "options": ["A general-purpose application server", "A hardened host used as a controlled entry point to access internal resources", "A backup server", "A storage gateway"],
+    "options": [
+      "A general-purpose application server",
+      "Hardened entry point used to reach internal resources",
+      "A backup server",
+      "A storage gateway"
+    ],
     "answer": 1,
     "explanation": "A bastion/jump host is a tightly controlled and hardened intermediary that administrators must traverse to reach internal systems, enabling controls and auditing."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which BCDR strategy involves a fully provisioned, replicated environment that can take over operations with minimal delay?",
-    "options": ["Hot site", "Warm site", "Cold site", "Mobile site"],
+    "options": [
+      "Hot site",
+      "Warm site",
+      "Cold site",
+      "Mobile site"
+    ],
     "answer": 0,
     "explanation": "A hot site is fully equipped and continuously synchronized for near-immediate failover. Warm sites need some setup; cold sites are essentially empty."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Recovery Time Objective (RTO) represents:",
-    "options": ["The maximum amount of data loss the organization can tolerate", "The targeted duration of time within which a service must be restored after a disruption", "The historical average time to recover", "The cost of recovery"],
+    "options": [
+      "The maximum amount of data loss the organization can tolerate",
+      "The targeted duration within which a service must be restored",
+      "The historical average time to recover",
+      "The cost of recovery"
+    ],
     "answer": 1,
     "explanation": "RTO is the targeted time within which a service must be restored. RPO addresses data loss tolerance."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Recovery Point Objective (RPO) represents:",
-    "options": ["The maximum amount of data, measured in time, that the organization can afford to lose", "The total time required for full recovery", "The cost of backup software", "The acceptable downtime"],
+    "options": [
+      "The maximum data loss, measured in time, the org can tolerate",
+      "The total time required for full recovery",
+      "The cost of backup software",
+      "The acceptable downtime"
+    ],
     "answer": 0,
     "explanation": "RPO is expressed in time and reflects how far back data restoration can be (e.g., RPO of 1 hour = backups at least hourly)."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Maximum Tolerable Downtime (MTD) is BEST described as:",
-    "options": ["The longest period a business function can be inoperable before causing unacceptable consequences", "The duration of a restoration test", "The mean time between failures", "The acceptable data loss"],
+    "options": [
+      "Longest a business function can be down before unacceptable harm",
+      "The duration of a restoration test",
+      "The mean time between failures",
+      "The acceptable data loss"
+    ],
     "answer": 0,
     "explanation": "MTD is the absolute outer limit a process can be down. RTO must be less than MTD to remain within tolerance."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following is the BEST description of a security threat unique to multi-tenant cloud platforms?",
-    "options": ["Phishing", "Side-channel attacks across co-resident VMs", "SQL injection", "Endpoint malware"],
+    "options": [
+      "Phishing",
+      "Side-channel attacks across co-resident VMs",
+      "SQL injection",
+      "Endpoint malware"
+    ],
     "answer": 1,
     "explanation": "Side-channel attacks exploit shared physical hardware (e.g., caches) to leak information across tenants in multi-tenant environments."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following is generally considered the LEAST mature security capability in container orchestration platforms compared to VM platforms, requiring extra attention?",
-    "options": ["Network connectivity", "Image provenance and runtime isolation", "Storage provisioning", "DNS resolution"],
+    "options": [
+      "Network connectivity",
+      "Image provenance and runtime isolation",
+      "Storage provisioning",
+      "DNS resolution"
+    ],
     "answer": 1,
     "explanation": "Container isolation relies on shared kernel features, and image supply chain integrity (provenance, scanning, signing) is a notable area for special focus."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which CSPM (Cloud Security Posture Management) function is MOST important for preventing misconfigurations from being exploited?",
-    "options": ["Continuously monitoring cloud configurations against benchmarks and policies, alerting on drift", "Replacing the cloud provider's IAM", "Generating bills for cloud usage", "Acting as a firewall"],
+    "options": [
+      "Continuously monitor configurations and alert on drift",
+      "Replacing the cloud provider's IAM",
+      "Generating bills for cloud usage",
+      "Acting as a firewall"
+    ],
     "answer": 0,
     "explanation": "CSPM continuously evaluates cloud configurations against frameworks (e.g., CIS, NIST) and alerts on misconfigurations or drift."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which platform is BEST described as providing runtime threat detection and protection for workloads (VMs, containers, serverless)?",
-    "options": ["CSPM", "CWPP", "CIEM", "CASB"],
+    "options": [
+      "CSPM",
+      "CWPP",
+      "CIEM",
+      "CASB"
+    ],
     "answer": 1,
     "explanation": "A Cloud Workload Protection Platform (CWPP) provides protection at runtime across workload types, including detection, file integrity monitoring, and exploit prevention."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which type of solution sits between users and cloud services to enforce security policies, often providing visibility, DLP, and threat protection for SaaS apps?",
-    "options": ["CASB", "WAF", "IDS", "SIEM"],
+    "options": [
+      "CASB",
+      "WAF",
+      "IDS",
+      "SIEM"
+    ],
     "answer": 0,
     "explanation": "A Cloud Access Security Broker (CASB) sits between users and cloud services to enforce policies such as access control, DLP, and threat protection."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Identity federation in cloud computing primarily enables:",
-    "options": ["Single sign-on across multiple, separately administered organizations or domains", "Faster password resets", "Stronger encryption", "Local-only authentication"],
+    "options": [
+      "SSO across multiple, separately administered organizations",
+      "Faster password resets",
+      "Stronger encryption",
+      "Local-only authentication"
+    ],
     "answer": 0,
     "explanation": "Federation allows users in one identity domain to access resources in another via trust relationships, enabling SSO across organizations."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following is a PRIMARY benefit of Privileged Access Management (PAM) in cloud?",
-    "options": ["Allows users to share passwords more easily", "Vaults privileged credentials, enforces approvals, and audits administrative actions", "Eliminates the need for MFA", "Replaces SIEM"],
+    "options": [
+      "Allows users to share passwords more easily",
+      "Vaults, rotates, brokers, and audits privileged credential use",
+      "Eliminates the need for MFA",
+      "Replaces SIEM"
+    ],
     "answer": 1,
     "explanation": "PAM solutions vault and rotate privileged credentials, broker access (often with session recording), and enforce approvals for sensitive actions."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which access pattern grants administrators access only when they need it, for a limited duration, after approval?",
-    "options": ["Standing access", "Just-in-time (JIT) access", "Standing privileges", "Continuous access"],
+    "options": [
+      "Standing access",
+      "Just-in-time (JIT) access",
+      "Standing privileges",
+      "Continuous access"
+    ],
     "answer": 1,
-    "explanation": "JIT access limits administrative privileges to time-bounded windows, granted on demand and revoked automatically â€” reducing standing access risk."
+    "explanation": "JIT access limits administrative privileges to time-bounded windows, granted on demand and revoked automatically — reducing standing access risk."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following BEST describes the function of a Web Application Firewall (WAF)?",
-    "options": ["Block malicious network packets based on IP only", "Inspect HTTP/HTTPS traffic to detect and block web application attacks like SQL injection and XSS", "Provide endpoint antivirus protection", "Encrypt data at rest"],
+    "options": [
+      "Block malicious network packets based on IP only",
+      "Inspect HTTP/HTTPS to block attacks like SQL injection and XSS",
+      "Provide endpoint antivirus protection",
+      "Encrypt data at rest"
+    ],
     "answer": 1,
     "explanation": "A WAF operates at Layer 7 and inspects HTTP(S) traffic to detect and block common web attacks, often guided by rulesets like OWASP CRS."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following BEST differentiates IDS from IPS?",
-    "options": ["IDS detects and alerts; IPS detects and actively blocks", "IDS encrypts traffic; IPS does not", "IPS is signature-based; IDS is anomaly-based", "There is no difference"],
+    "options": [
+      "IDS detects and alerts; IPS detects and actively blocks",
+      "IDS encrypts traffic; IPS does not",
+      "IPS is signature-based; IDS is anomaly-based",
+      "There is no difference"
+    ],
     "answer": 0,
     "explanation": "IDS is monitoring-only and generates alerts. IPS is inline and can drop or modify traffic to actively prevent intrusions."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "An organization wants to detect and study attacker behavior by placing intentionally vulnerable-looking systems in their environment. This technique is called:",
-    "options": ["Honeypot", "Sandbox", "DMZ", "Tar pit"],
+    "options": [
+      "Honeypot",
+      "Sandbox",
+      "DMZ",
+      "Tar pit"
+    ],
     "answer": 0,
     "explanation": "A honeypot is a decoy system designed to attract attackers, providing detection signals and intelligence about adversary techniques."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following is a primary security concern when patching the hypervisor in a multi-tenant cloud?",
-    "options": ["Patches may need to be staged to avoid impacting many tenants simultaneously", "Patches always require a complete data center shutdown", "Hypervisors do not need to be patched", "Patches can be applied by the customer"],
+    "options": [
+      "Patches need staging to avoid impacting many tenants at once",
+      "Patches always require a complete data center shutdown",
+      "Hypervisors do not need to be patched",
+      "Patches can be applied by the customer"
+    ],
     "answer": 0,
     "explanation": "Because hypervisors host many tenants' workloads, patching needs to be scheduled, staged, and tested to avoid widespread impact while addressing critical vulnerabilities quickly."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which is the MOST critical control to address newly discovered hypervisor zero-day vulnerabilities at a cloud provider?",
-    "options": ["Prompt patching/upgrade combined with workload mobility to drain hosts", "Adding more bandwidth", "Increasing user passwords length", "Replacing storage controllers"],
+    "options": [
+      "Prompt patching plus workload mobility to drain hosts",
+      "Adding more bandwidth",
+      "Increasing user passwords length",
+      "Replacing storage controllers"
+    ],
     "answer": 0,
     "explanation": "Cloud providers typically use live migration to evacuate workloads from affected hosts, apply patches, and then return them to service to address hypervisor zero-days quickly."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which Uptime Institute Tier rating describes a data center with fully redundant components AND multiple, independent active distribution paths capable of supporting concurrent maintenance and a single fault?",
-    "options": ["Tier I", "Tier II", "Tier III", "Tier IV"],
+    "options": [
+      "Tier I",
+      "Tier II",
+      "Tier III",
+      "Tier IV"
+    ],
     "answer": 3,
     "explanation": "Tier IV provides fault tolerance with multiple independent active distribution paths and component redundancy, allowing it to withstand a single equipment failure or distribution path failure without disruption."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which is the BEST description of network segmentation?",
-    "options": ["Use of encryption on all network links", "Dividing a network into multiple zones with controls between them to limit access and movement", "Reducing the bandwidth available to users", "Using a single subnet for all systems"],
+    "options": [
+      "Encryption applied to every network link",
+      "Dividing a network into zones with controls between them",
+      "Reducing the bandwidth available to users",
+      "Using a single subnet for the environment"
+    ],
     "answer": 1,
     "explanation": "Network segmentation creates separate zones (subnets, VPCs, security groups) and restricts traffic between them to limit blast radius."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following BEST illustrates the concept of 'blast radius' in cloud security design?",
-    "options": ["The geographic reach of a CDN", "The scope of impact if a particular account, role, or resource is compromised", "The ability to scale workloads", "The encryption strength"],
+    "options": [
+      "The geographic reach of a CDN",
+      "Scope of impact when an account or resource is compromised",
+      "The ability to scale workloads",
+      "The encryption strength"
+    ],
     "answer": 1,
     "explanation": "Blast radius refers to how much can be affected by a compromise of a particular identity or resource. Minimizing blast radius drives least-privilege and account segmentation designs."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following BEST describes Network Function Virtualization (NFV)?",
-    "options": ["Replacing physical network appliances with virtualized software equivalents running on commodity hardware", "Adding more physical switches to a network", "Encrypting all network traffic", "Routing traffic only through one provider"],
+    "options": [
+      "Virtualized network appliances running on commodity hardware",
+      "Adding more physical switches to a network",
+      "Encrypting network traffic end-to-end",
+      "Routing traffic through a single provider"
+    ],
     "answer": 0,
     "explanation": "NFV decouples network functions (firewalls, load balancers, routers) from proprietary hardware and runs them as software on standard servers."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which type of attack against shared infrastructure can leak information by analyzing patterns such as power, timing, or cache behavior across tenants?",
-    "options": ["SQL injection", "Side-channel attack", "Brute force", "Phishing"],
+    "options": [
+      "SQL injection",
+      "Side-channel attack",
+      "Brute force",
+      "Phishing"
+    ],
     "answer": 1,
     "explanation": "Side-channel attacks exploit unintended physical signals or shared hardware behavior to extract information across security boundaries."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which is a defining characteristic of a Trusted Execution Environment (TEE)?",
-    "options": ["A separate, isolated execution environment that protects code and data from privileged software like the OS or hypervisor", "A backup copy of memory", "An encrypted hard drive", "A firewall appliance"],
+    "options": [
+      "Isolated execution environment protecting code from the OS",
+      "A backup copy of memory",
+      "An encrypted hard drive",
+      "A firewall appliance"
+    ],
     "answer": 0,
     "explanation": "A TEE (e.g., Intel SGX, AMD SEV, ARM TrustZone) provides hardware-enforced isolation so code and data are protected from inspection or tampering by privileged software."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which is the BEST design approach to limit damage if a single cloud administrator account is compromised?",
-    "options": ["Issue all admins the same high-privilege role", "Apply least privilege, role separation, MFA, and JIT elevation", "Disable logging on admin accounts", "Avoid using SSO"],
+    "options": [
+      "Issue all admins the same high-privilege role",
+      "Apply least privilege, role separation, MFA, and JIT elevation",
+      "Disable logging on admin accounts",
+      "Avoid using SSO"
+    ],
     "answer": 1,
     "explanation": "Least privilege, role separation, MFA, and just-in-time elevation collectively reduce both the chance and impact of a compromised admin."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following is a recommended control to mitigate VM sprawl?",
-    "options": ["Provision VMs without tagging", "Implement tagging, ownership, lifecycle policies, and regular inventory reconciliation", "Disable monitoring", "Allow any user to create VMs without approval"],
+    "options": [
+      "Provision VMs without tagging",
+      "Tagging, ownership, lifecycle policies, and inventory reconciliation",
+      "Disable monitoring",
+      "Allow any user to create VMs without approval"
+    ],
     "answer": 1,
     "explanation": "VM sprawl risk grows when unused or unowned VMs accumulate. Tagging, ownership, lifecycle and inventory reviews help control sprawl."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following BEST describes the purpose of a network ACL in a cloud VPC?",
-    "options": ["Filter traffic at the subnet level using stateless rules", "Encrypt traffic between VPCs", "Provide identity-based access to APIs", "Replace IAM policies"],
+    "options": [
+      "Filter traffic at the subnet level using stateless rules",
+      "Encrypt traffic between VPCs",
+      "Provide identity-based access to APIs",
+      "Replace IAM policies"
+    ],
     "answer": 0,
     "explanation": "Network ACLs in a VPC typically operate at the subnet level and are stateless, evaluating both ingress and egress rules separately."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which BCDR strategy provides minimal upfront cost but the longest recovery time?",
-    "options": ["Hot site", "Warm site", "Cold site", "Mirrored site"],
+    "options": [
+      "Hot site",
+      "Warm site",
+      "Cold site",
+      "Mirrored site"
+    ],
     "answer": 2,
     "explanation": "A cold site provides space and minimal infrastructure but requires extensive setup before operations can resume, making it the cheapest but slowest option."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which type of cloud-based BCDR offers the greatest economic advantage for an SMB requiring fast recovery without maintaining a duplicate facility?",
-    "options": ["Cold standby in a colocation facility", "Cloud-based DRaaS with on-demand failover", "Tape-based recovery", "Manual restoration from local backups"],
+    "options": [
+      "Cold standby in a colocation facility",
+      "Cloud-based DRaaS with on-demand failover",
+      "Tape-based recovery",
+      "Manual restoration from local backups"
+    ],
     "answer": 1,
     "explanation": "DRaaS (Disaster Recovery as a Service) leverages cloud economics to provide rapid failover capability without maintaining a full duplicate site."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which control BEST prevents lateral movement within a compromised cloud environment?",
-    "options": ["Disable logging", "Apply microsegmentation and identity-based network access controls", "Use long-lived static credentials", "Co-locate all workloads in one subnet"],
+    "options": [
+      "Disable logging",
+      "Microsegmentation plus identity-based network access controls",
+      "Use long-lived static credentials",
+      "Co-locate all workloads in one subnet"
+    ],
     "answer": 1,
     "explanation": "Microsegmentation combined with identity-aware network controls restricts which workloads and users can talk to which, hindering lateral movement after initial compromise."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which of the following is NOT typically a responsibility of the cloud provider in IaaS?",
-    "options": ["Physical security", "Hypervisor patching", "Operating system patching", "Maintenance of the underlying network"],
+    "options": [
+      "Physical security",
+      "Hypervisor patching",
+      "Operating system patching",
+      "Maintenance of the underlying network"
+    ],
     "answer": 2,
     "explanation": "In IaaS, OS patching is the customer's responsibility. The provider handles physical security, hypervisor, and underlying network."
   },
   {
     "domain": "3: Cloud Platform & Infrastructure Security",
     "question": "Which is the PRIMARY purpose of a 'landing zone' in a cloud environment?",
-    "options": ["A staging area for marketing materials", "A pre-configured baseline environment that enforces security, identity, and governance guardrails for new workloads", "A specific availability zone", "A storage class"],
+    "options": [
+      "A staging area for marketing materials",
+      "Baseline environment enforcing security and governance guardrails",
+      "A specific availability zone",
+      "A storage class"
+    ],
     "answer": 1,
     "explanation": "A landing zone is a baseline environment that codifies organizational standards (IAM, networking, logging, encryption) so new workloads start with proper guardrails."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "In the secure software development lifecycle, which phase typically includes threat modeling?",
-    "options": ["Operations", "Design", "Deployment", "Decommissioning"],
+    "options": [
+      "Operations",
+      "Design",
+      "Deployment",
+      "Decommissioning"
+    ],
     "answer": 1,
     "explanation": "Threat modeling is most effective during design, where threats can be identified and mitigations baked into the architecture before code is written."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which threat modeling framework uses the categories Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, and Elevation of privilege?",
-    "options": ["DREAD", "PASTA", "STRIDE", "OCTAVE"],
+    "options": [
+      "DREAD",
+      "PASTA",
+      "STRIDE",
+      "OCTAVE"
+    ],
     "answer": 2,
     "explanation": "STRIDE is Microsoft's threat categorization model corresponding to violations of authentication, integrity, non-repudiation, confidentiality, availability, and authorization."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which OWASP Top 10 (2021) category covers issues like improperly restricting URLs, exposing object references, or allowing privilege escalation?",
-    "options": ["A01: Broken Access Control", "A02: Cryptographic Failures", "A03: Injection", "A07: Identification and Authentication Failures"],
+    "options": [
+      "A01: Broken Access Control",
+      "A02: Cryptographic Failures",
+      "A03: Injection",
+      "A07: Identification and Authentication Failures"
+    ],
     "answer": 0,
     "explanation": "A01 in the 2021 OWASP Top 10 is Broken Access Control, the most common category, covering insecure direct object references, missing function-level access, and privilege escalation."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "An application directly incorporates user input into a SQL query without parameterization. Which OWASP Top 10 category is this MOST likely violating?",
-    "options": ["A02: Cryptographic Failures", "A03: Injection", "A05: Security Misconfiguration", "A07: Authentication Failures"],
+    "options": [
+      "A02: Cryptographic Failures",
+      "A03: Injection",
+      "A05: Security Misconfiguration",
+      "A07: Authentication Failures"
+    ],
     "answer": 1,
     "explanation": "Injection (A03) covers SQL, NoSQL, OS, and LDAP injection caused by mixing untrusted input into commands or queries without proper separation."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which OWASP Top 10 (2021) category addresses risks introduced by using outdated libraries with known CVEs?",
-    "options": ["A05: Security Misconfiguration", "A06: Vulnerable and Outdated Components", "A07: Identification and Authentication Failures", "A09: Security Logging and Monitoring Failures"],
+    "options": [
+      "A05: Security Misconfiguration",
+      "A06: Vulnerable and Outdated Components",
+      "A07: Identification and Authentication Failures",
+      "A09: Security Logging and Monitoring Failures"
+    ],
     "answer": 1,
     "explanation": "A06 specifically covers risks from outdated, unsupported, or vulnerable components in the application's dependency tree."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which OWASP Top 10 (2021) category was newly added to highlight risks like ones where the design itself fails to anticipate threats, even if the code is correct?",
-    "options": ["A04: Insecure Design", "A06: Vulnerable Components", "A10: SSRF", "A09: Logging Failures"],
+    "options": [
+      "A04: Insecure Design",
+      "A06: Vulnerable Components",
+      "A10: SSRF",
+      "A09: Logging Failures"
+    ],
     "answer": 0,
-    "explanation": "A04 Insecure Design was added in 2021 to highlight that some risks cannot be fixed by clean code alone â€” they stem from inadequate threat modeling or design choices."
+    "explanation": "A04 Insecure Design was added in 2021 to highlight that some risks cannot be fixed by clean code alone — they stem from inadequate threat modeling or design choices."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which security testing technique analyzes application source code without executing it?",
-    "options": ["DAST", "SAST", "IAST", "RASP"],
+    "options": [
+      "DAST",
+      "SAST",
+      "IAST",
+      "RASP"
+    ],
     "answer": 1,
     "explanation": "Static Application Security Testing (SAST) examines source, bytecode, or binaries without executing the application."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which testing technique probes a running application by sending malicious or unexpected inputs and observing responses?",
-    "options": ["SAST", "DAST", "Code review", "SBOM analysis"],
+    "options": [
+      "SAST",
+      "DAST",
+      "Code review",
+      "SBOM analysis"
+    ],
     "answer": 1,
     "explanation": "Dynamic Application Security Testing (DAST) tests a running application from the outside, sending crafted inputs and analyzing responses."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which technique combines elements of SAST and DAST by instrumenting the application to observe internal state during dynamic testing?",
-    "options": ["IAST", "SBOM", "WAF", "RASP"],
+    "options": [
+      "IAST",
+      "SBOM",
+      "WAF",
+      "RASP"
+    ],
     "answer": 0,
     "explanation": "Interactive Application Security Testing (IAST) uses instrumentation to gain SAST-like internal visibility while the application runs and is tested."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "What does RASP stand for and what does it do?",
-    "options": ["Runtime Application Self-Protection: instrumentation inside the running application that detects and blocks attacks in real time", "Remote Application Stack Profiling: profiles application performance", "Real Asset Storage Provisioning: provisions assets dynamically", "Rapid Application Source Patching: patches code automatically"],
+    "options": [
+      "Runtime Application Self-Protection: in-app instrumentation that blocks attacks",
+      "Remote Application Stack Profiling: profiles application performance",
+      "Real Asset Storage Provisioning: provisions assets dynamically",
+      "Rapid Application Source Patching: patches code automatically"
+    ],
     "answer": 0,
     "explanation": "RASP embeds protective logic inside the running application, allowing context-aware detection and blocking of attacks."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which artifact provides an inventory of components, libraries, and modules included in a software product, enabling vulnerability tracking through the supply chain?",
-    "options": ["SBOM (Software Bill of Materials)", "SLA", "SOC 2 report", "ISO 27001 certificate"],
+    "options": [
+      "SBOM",
+      "SLA",
+      "SOC 2 report",
+      "ISO 27001 certificate"
+    ],
     "answer": 0,
     "explanation": "An SBOM enumerates components and their versions, supporting vulnerability management, license compliance, and supply chain security."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which is the MOST important secure DevOps practice when integrating security into a CI/CD pipeline?",
-    "options": ["Manual code review only at the end of release", "Automated security testing (SAST, dependency scanning, secrets detection, IaC scanning) integrated into builds", "Performing security testing only annually", "Disabling security tests to keep builds fast"],
+    "options": [
+      "Manual code review near release time",
+      "Automated security testing integrated into the build pipeline",
+      "Performing security testing on an annual cycle",
+      "Disabling security tests to keep builds fast"
+    ],
     "answer": 1,
     "explanation": "DevSecOps embeds automated security testing throughout the CI/CD pipeline so issues are detected early and frequently, not just at the end."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which protocol is an open standard for authorization that allows a user to grant a third-party application limited access to their resources without sharing credentials?",
-    "options": ["SAML", "OAuth 2.0", "LDAP", "Kerberos"],
+    "options": [
+      "SAML",
+      "OAuth 2.0",
+      "LDAP",
+      "Kerberos"
+    ],
     "answer": 1,
     "explanation": "OAuth 2.0 is an authorization framework where a user grants a client app limited access to a protected resource via tokens, without sharing credentials."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which protocol is an authentication layer built on top of OAuth 2.0?",
-    "options": ["SAML", "OpenID Connect (OIDC)", "Kerberos", "RADIUS"],
+    "options": [
+      "SAML",
+      "OpenID Connect (OIDC)",
+      "Kerberos",
+      "RADIUS"
+    ],
     "answer": 1,
     "explanation": "OpenID Connect (OIDC) provides identity and authentication on top of OAuth 2.0, defining ID tokens and standard user info endpoints."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which XML-based protocol is commonly used for SSO with enterprise applications, exchanging authentication and authorization data between identity providers and service providers?",
-    "options": ["OAuth 2.0", "OpenID Connect", "SAML 2.0", "SCIM"],
+    "options": [
+      "OAuth 2.0",
+      "OpenID Connect",
+      "SAML 2.0",
+      "SCIM"
+    ],
     "answer": 2,
     "explanation": "SAML 2.0 is widely used in enterprise SSO and exchanges signed XML assertions between an Identity Provider and Service Provider."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which standard provides a protocol for automating the provisioning and de-provisioning of user identities across systems?",
-    "options": ["SCIM", "SAML", "OAuth", "LDAP"],
+    "options": [
+      "SCIM",
+      "SAML",
+      "OAuth",
+      "LDAP"
+    ],
     "answer": 0,
     "explanation": "System for Cross-domain Identity Management (SCIM) defines a REST-based protocol for managing user identities across systems."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which access control model assigns permissions based on attributes of subjects, resources, actions, and environment, often expressed as policies?",
-    "options": ["RBAC", "MAC", "DAC", "ABAC"],
+    "options": [
+      "RBAC",
+      "MAC",
+      "DAC",
+      "ABAC"
+    ],
     "answer": 3,
     "explanation": "Attribute-Based Access Control (ABAC) uses policies that evaluate attributes (e.g., department, sensitivity, time of day) for fine-grained decisions."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which access control model assigns permissions to roles, and users obtain permissions by being assigned to those roles?",
-    "options": ["RBAC", "ABAC", "DAC", "MAC"],
+    "options": [
+      "RBAC",
+      "ABAC",
+      "DAC",
+      "MAC"
+    ],
     "answer": 0,
     "explanation": "Role-Based Access Control (RBAC) groups permissions into roles and assigns users to roles, simplifying administration."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which is the BEST defense against Cross-Site Scripting (XSS)?",
-    "options": ["Use of strong passwords", "Contextual output encoding and Content Security Policy", "Disable HTTP", "Use of session timeouts"],
+    "options": [
+      "Use of strong passwords",
+      "Contextual output encoding and Content Security Policy",
+      "Disable HTTP",
+      "Use of session timeouts"
+    ],
     "answer": 1,
     "explanation": "Output encoding (per output context: HTML, JS, URL) plus Content Security Policy is the standard defense. Input validation alone is insufficient."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which control BEST defends against Cross-Site Request Forgery (CSRF)?",
-    "options": ["Strong passwords", "Anti-CSRF tokens combined with SameSite cookies", "Use of HTTPS only", "Disabling JavaScript"],
+    "options": [
+      "Strong passwords",
+      "Anti-CSRF tokens combined with SameSite cookies",
+      "Use of HTTPS only",
+      "Disabling JavaScript"
+    ],
     "answer": 1,
     "explanation": "Synchronizer tokens (anti-CSRF tokens) bound to the session, combined with SameSite cookie attributes, are the primary defenses against CSRF."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which API security risk is BEST mitigated by enforcing rate limits and quotas?",
-    "options": ["Broken object level authorization", "Resource exhaustion / abuse / brute force", "Improper input validation", "Insecure deserialization"],
+    "options": [
+      "Broken object level authorization",
+      "Resource exhaustion / abuse / brute force",
+      "Improper input validation",
+      "Insecure deserialization"
+    ],
     "answer": 1,
     "explanation": "Rate limiting protects APIs against abuse, brute force, and resource exhaustion, though it doesn't address authorization or input issues directly."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "What is BOLA (Broken Object Level Authorization)?",
-    "options": ["Failure to enforce that the authenticated user is authorized to access the specific object requested", "An attack on TLS configurations", "An XML parser flaw", "A buffer overflow in libraries"],
+    "options": [
+      "Failing to verify the user is authorized for the specific object",
+      "An attack on TLS configurations",
+      "An XML parser flaw",
+      "A buffer overflow in libraries"
+    ],
     "answer": 0,
     "explanation": "BOLA is the OWASP API top risk where APIs trust client-supplied object IDs without verifying the caller is authorized to access that specific object."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which is the MOST appropriate technique for managing secrets (API keys, DB credentials) used by cloud applications?",
-    "options": ["Hard-code into source", "Place in environment variables checked into source control", "Use a managed secrets store with rotation and access control", "Print them in logs for ease of debugging"],
+    "options": [
+      "Hard-code into source",
+      "Place in environment variables checked into source control",
+      "Use a managed secrets store with rotation and access control",
+      "Print them in logs for ease of debugging"
+    ],
     "answer": 2,
     "explanation": "Secrets should be stored in a managed secrets service (e.g., AWS Secrets Manager, HashiCorp Vault) with rotation, access controls, and audit logging."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which of the following is a benefit of using an API gateway?",
-    "options": ["Eliminates need for authentication", "Centralizes concerns such as authentication, rate limiting, transformation, and logging across APIs", "Removes the need for any backend service", "Increases coupling between services"],
+    "options": [
+      "Eliminates need for authentication",
+      "Centralizes auth, rate limiting, transformation, and logging",
+      "Removes the need for any backend service",
+      "Increases coupling between services"
+    ],
     "answer": 1,
     "explanation": "API gateways centralize cross-cutting concerns: authentication, throttling, observability, transformation, routing, and policy enforcement."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which container security control verifies that only signed, approved images can be deployed?",
-    "options": ["Image scanning at build time", "Image signing and admission control verifying signatures at deploy time", "Network policies", "Pod security policies"],
+    "options": [
+      "Image scanning at build time",
+      "Image signing plus admission control verifying signatures on deploy",
+      "Network policies",
+      "Pod security policies"
+    ],
     "answer": 1,
     "explanation": "Image signing (e.g., via Notation, Cosign) combined with admission controllers that verify signatures ensures only trusted images run in the cluster."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which type of testing simulates a real-world attack against an application or environment with the goal of demonstrating exploitation?",
-    "options": ["SAST", "Penetration testing", "Code review", "Unit testing"],
+    "options": [
+      "SAST",
+      "Penetration testing",
+      "Code review",
+      "Unit testing"
+    ],
     "answer": 1,
     "explanation": "Penetration testing simulates adversary actions to identify vulnerabilities and demonstrate impact, typically with manual expert effort."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which is the MOST important consideration when planning a cloud penetration test?",
-    "options": ["Bandwidth of the tester", "Authorization from and coordination with the cloud provider per their rules of engagement", "Color of the diagrams", "Time of day"],
+    "options": [
+      "Bandwidth of the tester",
+      "Authorization and coordination with the provider per their rules",
+      "Color of the diagrams",
+      "Time of day"
+    ],
     "answer": 1,
     "explanation": "Cloud providers have rules of engagement defining what types of pen tests are allowed and how to notify them. Failing to obtain authorization can violate ToS and constitute unauthorized access."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which of the following is NOT a typical microservices security concern?",
-    "options": ["Service-to-service authentication", "Distributed tracing for forensics", "Mainframe-style monolithic patching", "Secret distribution to many services"],
+    "options": [
+      "Service-to-service authentication",
+      "Distributed tracing for forensics",
+      "Mainframe-style monolithic patching",
+      "Secret distribution to many services"
+    ],
     "answer": 2,
     "explanation": "Mainframe-style monolithic patching is not a microservices concern. Service-to-service auth, distributed tracing, and secret management are central to microservices security."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which technology provides mutual TLS, traffic policy, and observability between microservices, often via sidecar proxies?",
-    "options": ["Service mesh", "WAF", "API gateway", "Load balancer"],
+    "options": [
+      "Service mesh",
+      "WAF",
+      "API gateway",
+      "Load balancer"
+    ],
     "answer": 0,
     "explanation": "A service mesh (e.g., Istio, Linkerd) deploys sidecar proxies alongside services and centralizes east-west security and observability concerns."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which is a key serverless (FaaS) security consideration that is LESS common in traditional applications?",
-    "options": ["Use of HTTPS", "Function-level permissions and event source authorization for many small, ephemeral functions", "Patching the OS regularly", "Using application logs"],
+    "options": [
+      "Use of HTTPS",
+      "Function-level permissions and event source authorization",
+      "Patching the OS regularly",
+      "Using application logs"
+    ],
     "answer": 1,
     "explanation": "Serverless platforms remove OS patching from the customer but add concerns: many small permissions per function, event source trust, cold-start state, and dependency risk."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which is the BEST control to prevent injection attacks in API and database queries?",
-    "options": ["Use parameterized queries / prepared statements", "Increase password complexity", "Encrypt all responses", "Block all input that contains special characters"],
+    "options": [
+      "Use parameterized queries / prepared statements",
+      "Increase password complexity",
+      "Encrypt API responses in transit",
+      "Block input containing special characters"
+    ],
     "answer": 0,
     "explanation": "Parameterized queries / prepared statements (or equivalent ORM APIs) separate code from data, eliminating most injection classes."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "What is the PRIMARY purpose of multi-factor authentication?",
-    "options": ["Make passwords longer", "Require multiple independent factors (something you know, have, are) to reduce risk of compromised credentials", "Speed up login", "Eliminate the need for passwords"],
+    "options": [
+      "Make passwords longer",
+      "Combine independent factors to reduce stolen-credential risk",
+      "Speed up login",
+      "Eliminate the need for passwords"
+    ],
     "answer": 1,
     "explanation": "MFA combines independent factors so a stolen password alone is not enough to gain access. It substantially reduces credential-stuffing and phishing risk."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which OWASP Top 10 (2021) category specifically covers Server-Side Request Forgery?",
-    "options": ["A07", "A08", "A09", "A10"],
+    "options": [
+      "A07",
+      "A08",
+      "A09",
+      "A10"
+    ],
     "answer": 3,
     "explanation": "A10 in the OWASP 2021 Top 10 is Server-Side Request Forgery (SSRF), where a server is tricked into making requests to internal or unintended destinations."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which is the BEST description of 'shift left' in software security?",
-    "options": ["Move developers to a different team", "Address security earlier in the SDLC (design, code, build) rather than only at the end", "Use only Linux for development", "Replace QA with security testers"],
+    "options": [
+      "Move developers to a different team",
+      "Address security earlier in the SDLC, not just at the end",
+      "Use only Linux for development",
+      "Replace QA with security testers"
+    ],
     "answer": 1,
-    "explanation": "Shift left integrates security earlier in development â€” threat modeling, code review, SAST, dependency checks â€” to catch issues when they are cheapest to fix."
+    "explanation": "Shift left integrates security earlier in development — threat modeling, code review, SAST, dependency checks — to catch issues when they are cheapest to fix."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which is a common risk in identity federation that organizations should evaluate before establishing trust?",
-    "options": ["Increased bandwidth usage", "Compromise of the partner identity provider potentially granting access to your systems", "Inability to encrypt data", "Need for a new SAN device"],
+    "options": [
+      "Increased bandwidth usage",
+      "Compromise of a partner IdP could grant access to your systems",
+      "Inability to encrypt data",
+      "Need for a new SAN device"
+    ],
     "answer": 1,
     "explanation": "Federated trust transitively extends risk: if the partner IdP is compromised, attackers may obtain valid assertions for your systems."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which is the BEST practice for managing OAuth scopes for a third-party application?",
-    "options": ["Always grant full account access", "Apply least privilege by granting only the minimum scopes the application needs to function", "Use no scopes at all", "Avoid logging scope grants"],
+    "options": [
+      "Grant full account access by default",
+      "Grant the minimum scopes the application needs to function",
+      "Use no scope restrictions",
+      "Avoid logging scope grants"
+    ],
     "answer": 1,
     "explanation": "OAuth scopes should follow least privilege. Granting excessive scopes is a common source of breaches when third-party apps are compromised."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "Which is the BEST way to detect leaked credentials and secrets in source code repositories?",
-    "options": ["Manual review of every commit", "Use automated secret-scanning tools integrated into pre-commit hooks and CI", "Wait for someone to report a breach", "Encrypt the repository"],
+    "options": [
+      "Manual review of every commit",
+      "Automated secret-scanning in pre-commit hooks and CI",
+      "Wait for someone to report a breach",
+      "Encrypt the repository"
+    ],
     "answer": 1,
     "explanation": "Automated secret scanning catches credentials in commits early. Integrated into pre-commit hooks and CI, it prevents most leaks from being merged or pushed."
   },
   {
     "domain": "4: Cloud Application Security",
     "question": "What is the MOST significant security risk in adopting a 'bring your own identity' (BYOI) approach using consumer identity providers (e.g., social login)?",
-    "options": ["The need to issue badges to users", "Reliance on the security of an external IdP and the potential lack of strong identity assurance", "Lack of UI customization", "Inability to track logins"],
+    "options": [
+      "The need to issue badges to users",
+      "Reliance on external IdPs that may lack identity assurance",
+      "Lack of UI customization",
+      "Inability to track logins"
+    ],
     "answer": 1,
     "explanation": "BYOI shifts assurance to external IdPs that may have weak identity vetting or be compromised. Strong assurance requirements or step-up authentication may be needed."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following BEST defines a Security Information and Event Management (SIEM) system?",
-    "options": ["A tool that encrypts log data", "A platform that aggregates, normalizes, correlates, and analyzes security events from many sources to produce alerts and reports", "A backup management tool", "A web application firewall"],
+    "options": [
+      "A tool that encrypts log data",
+      "Aggregates and correlates security events for alerts and reports",
+      "A backup management tool",
+      "A web application firewall"
+    ],
     "answer": 1,
     "explanation": "A SIEM ingests events from many sources, normalizes and correlates them, and supports detection, alerting, dashboards, and investigation."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following BEST describes a SOAR platform?",
-    "options": ["A storage tier for archived logs", "A platform that orchestrates and automates incident response workflows, often integrating with SIEM and other tools", "A type of malware sandbox", "A managed firewall service"],
+    "options": [
+      "A storage tier for archived logs",
+      "Orchestrates and automates incident response workflows",
+      "A type of malware sandbox",
+      "A managed firewall service"
+    ],
     "answer": 1,
     "explanation": "Security Orchestration, Automation and Response (SOAR) platforms codify response playbooks and automate actions across tools to reduce mean time to respond."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which capability uses machine learning to detect deviations from normal user or entity behavior patterns?",
-    "options": ["UEBA", "WAF", "DLP", "CASB"],
+    "options": [
+      "UEBA",
+      "WAF",
+      "DLP",
+      "CASB"
+    ],
     "answer": 0,
     "explanation": "User and Entity Behavior Analytics (UEBA) baselines behavior and surfaces anomalies, helping detect insider threats and compromised accounts."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the FIRST phase of the NIST incident response lifecycle?",
-    "options": ["Detection and Analysis", "Preparation", "Containment, Eradication, and Recovery", "Post-Incident Activity"],
+    "options": [
+      "Detection and Analysis",
+      "Preparation",
+      "Containment, Eradication, and Recovery",
+      "Post-Incident Activity"
+    ],
     "answer": 1,
     "explanation": "NIST SP 800-61 defines four phases: Preparation; Detection and Analysis; Containment, Eradication, and Recovery; Post-Incident Activity."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which incident response phase focuses on improving the organization's posture based on lessons learned from the incident?",
-    "options": ["Containment", "Eradication", "Post-Incident Activity", "Recovery"],
+    "options": [
+      "Containment",
+      "Eradication",
+      "Post-Incident Activity",
+      "Recovery"
+    ],
     "answer": 2,
     "explanation": "Post-Incident Activity (or 'lessons learned') reviews the response, captures improvements, and updates playbooks, controls, and training."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the GREATEST challenge of conducting forensic investigation in a cloud environment?",
-    "options": ["Lack of internet access at provider data centers", "Limited customer access to underlying physical evidence, hypervisor state, and multi-tenant infrastructure", "Encryption being too strong", "Logs are unavailable in all cases"],
+    "options": [
+      "Lack of internet access at provider data centers",
+      "Limited customer access to underlying systems and multi-tenant evidence",
+      "Encryption being too strong",
+      "Logs are unavailable in all cases"
+    ],
     "answer": 1,
     "explanation": "Cloud forensics is constrained by limited customer access to underlying systems, complex multi-tenancy, ephemeral resources, and jurisdictional issues."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which forensic principle ensures evidence is documented from collection through presentation, with each handoff recorded?",
-    "options": ["Reasonable doubt", "Chain of custody", "Hearsay rule", "Best evidence rule"],
+    "options": [
+      "Reasonable doubt",
+      "Chain of custody",
+      "Hearsay rule",
+      "Best evidence rule"
+    ],
     "answer": 1,
     "explanation": "Chain of custody documents every person who handled the evidence and every action taken, ensuring admissibility and integrity."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which type of evidence is MOST volatile and should be collected first when possible?",
-    "options": ["Disk images", "Network captures", "Memory contents and running process state", "Archived backups"],
+    "options": [
+      "Disk images",
+      "Network captures",
+      "Memory contents and running process state",
+      "Archived backups"
+    ],
     "answer": 2,
     "explanation": "Per the order of volatility, memory and running state are most ephemeral and should be captured early before the system is shut down or rebooted."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which process ensures that legally relevant electronically stored information (ESI) is identified, preserved, collected, processed, reviewed, and produced for litigation?",
-    "options": ["Vulnerability management", "eDiscovery", "Risk assessment", "Patch management"],
+    "options": [
+      "Vulnerability management",
+      "eDiscovery",
+      "Risk assessment",
+      "Patch management"
+    ],
     "answer": 1,
     "explanation": "Electronic discovery (eDiscovery) is the legal process for handling ESI, often guided by the Electronic Discovery Reference Model (EDRM)."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following BEST describes vulnerability management?",
-    "options": ["Performing a one-time scan annually", "A continuous cycle of discovery, prioritization, remediation, and verification of vulnerabilities", "Buying additional firewalls", "Disabling alerts to reduce noise"],
+    "options": [
+      "Performing a one-time scan annually",
+      "Continuous discovery, prioritization, remediation, and verification",
+      "Buying additional firewalls",
+      "Disabling alerts to reduce noise"
+    ],
     "answer": 1,
     "explanation": "Vulnerability management is an ongoing program: discover assets and vulnerabilities, prioritize based on risk, remediate, verify, and repeat."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the BEST sequence of patch management activities?",
-    "options": ["Deploy immediately to production whenever vendor releases a patch", "Inventory assets, identify applicable patches, test, deploy in stages, verify, and monitor", "Apply patches randomly across systems", "Apply only patches that look interesting"],
+    "options": [
+      "Deploy immediately to production whenever vendor releases a patch",
+      "Inventory, identify, test, stage, deploy, verify, monitor",
+      "Apply patches randomly across systems",
+      "Apply only patches that look interesting"
+    ],
     "answer": 1,
     "explanation": "Effective patch management is structured: know your assets, identify relevant patches, test in lower environments, deploy in stages, and verify outcomes."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the PRIMARY purpose of a change management process?",
-    "options": ["Slow down all changes", "Provide a controlled, documented mechanism for proposing, approving, implementing, and reviewing changes to minimize risk", "Eliminate the need for testing", "Reduce documentation burden"],
+    "options": [
+      "Slow down all changes",
+      "Controlled mechanism to propose, approve, and review changes",
+      "Eliminate the need for testing",
+      "Reduce documentation burden"
+    ],
     "answer": 1,
     "explanation": "Change management reduces operational and security risk by ensuring changes are reviewed, approved, tested, communicated, and documented."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which type of change is typically pre-approved due to its low risk and well-known procedure?",
-    "options": ["Standard change", "Emergency change", "Normal change", "Major change"],
+    "options": [
+      "Standard change",
+      "Emergency change",
+      "Normal change",
+      "Major change"
+    ],
     "answer": 0,
     "explanation": "Standard changes are pre-approved, low-risk, repeatable changes (e.g., routine certificate renewals) that can proceed without full CAB review."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which exercise involves walking through a hypothetical incident scenario without actually performing technical actions, to test response plans and team coordination?",
-    "options": ["Tabletop exercise", "Red team exercise", "Penetration test", "Vulnerability scan"],
+    "options": [
+      "Tabletop exercise",
+      "Red team exercise",
+      "Penetration test",
+      "Vulnerability scan"
+    ],
     "answer": 0,
     "explanation": "A tabletop exercise is a discussion-based scenario where participants walk through a simulated incident to test plans, decision-making, and communication."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the MOST important characteristic of a BCDR test?",
-    "options": ["It is performed annually whether useful or not", "It validates that procedures actually work under realistic conditions and identifies gaps", "It always involves a full failover", "It is purely a documentation exercise"],
+    "options": [
+      "It is performed annually whether useful or not",
+      "Validates procedures work under realistic conditions and finds gaps",
+      "It always involves a full failover",
+      "It is purely a documentation exercise"
+    ],
     "answer": 1,
     "explanation": "Useful BCDR testing validates plans against realistic scenarios so that procedures, dependencies, and recovery times are confirmed and gaps are identified."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which monitoring approach continuously assesses configurations, vulnerabilities, and control effectiveness over time?",
-    "options": ["Continuous monitoring", "Point-in-time audit only", "Annual review", "Manual log scanning"],
+    "options": [
+      "Continuous monitoring",
+      "Point-in-time audit only",
+      "Annual review",
+      "Manual log scanning"
+    ],
     "answer": 0,
     "explanation": "Continuous monitoring (per NIST SP 800-137) provides ongoing awareness of risk by continuously assessing controls and posture."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which cloud provider service typically produces an immutable audit trail of API activity for accountability and forensics?",
-    "options": ["Workload protection", "Cloud audit/event logs (e.g., CloudTrail equivalents)", "DNS service", "Block storage service"],
+    "options": [
+      "Workload protection",
+      "Cloud audit/event logs (e.g., CloudTrail equivalents)",
+      "DNS service",
+      "Block storage service"
+    ],
     "answer": 1,
     "explanation": "Cloud audit logs (CloudTrail in AWS, Cloud Audit Logs in GCP, Activity Log in Azure) record API actions and are essential for monitoring, alerting, and forensics."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which monitoring activity focuses on proactively searching for indicators of compromise that may have been missed by existing detection?",
-    "options": ["Alert triage", "Threat hunting", "Vulnerability scanning", "Penetration testing"],
+    "options": [
+      "Alert triage",
+      "Threat hunting",
+      "Vulnerability scanning",
+      "Penetration testing"
+    ],
     "answer": 1,
     "explanation": "Threat hunting is a proactive activity that uses hypotheses and analytics to seek out adversary activity that didn't trigger automated alerts."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the BEST description of EDR (Endpoint Detection and Response)?",
-    "options": ["A backup tool for endpoints", "A tool that continuously monitors endpoints, records telemetry, detects threats, and supports response actions", "Antivirus-only software", "A network firewall"],
+    "options": [
+      "A backup tool for endpoints",
+      "Continuously monitors endpoints and supports detection and response",
+      "Antivirus-only software",
+      "A network firewall"
+    ],
     "answer": 1,
     "explanation": "EDR captures rich endpoint telemetry, correlates it for threat detection, and enables investigation and response actions on endpoints."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "What is the PRIMARY purpose of a configuration management database (CMDB)?",
-    "options": ["Store source code", "Maintain authoritative records of configuration items (CIs) and their relationships, supporting change and incident management", "Replace SIEM", "Encrypt configurations at rest"],
+    "options": [
+      "Store source code",
+      "Authoritative records of configuration items and relationships",
+      "Replace SIEM",
+      "Encrypt configurations at rest"
+    ],
     "answer": 1,
     "explanation": "A CMDB tracks CIs and their relationships, supporting impact analysis, change planning, and incident triage."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the BEST practice for backup management?",
-    "options": ["Keep all backups in the same location as primary data", "Implement the 3-2-1 rule (three copies, two media types, one off-site or air-gapped) and test restores regularly", "Skip restore testing to save resources", "Use only one backup type"],
+    "options": [
+      "Keep backups in the same location as primary data",
+      "3-2-1 rule with regularly tested restorations",
+      "Skip restore testing to save resources",
+      "Use a single backup type"
+    ],
     "answer": 1,
     "explanation": "The 3-2-1 rule and regular restore testing provide resilience against many failure modes including ransomware, hardware failure, and disasters."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the PRIMARY reason to test backup restoration regularly?",
-    "options": ["Reduce storage costs", "Verify that backups are intact and that restoration procedures will work when needed", "Comply with marketing requirements", "Encrypt the backups"],
+    "options": [
+      "Reduce storage costs",
+      "Verify backups are intact and restoration procedures work",
+      "Comply with marketing requirements",
+      "Encrypt the backups"
+    ],
     "answer": 1,
     "explanation": "Untested backups have a high probability of failure when needed. Regular restoration testing verifies both data integrity and operational procedures."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the BEST description of the difference between BCP and DRP?",
-    "options": ["BCP covers IT only; DRP covers business", "BCP is the overarching plan to keep the business running; DRP focuses on restoring IT systems and infrastructure", "They are identical", "DRP applies only to natural disasters"],
+    "options": [
+      "BCP covers IT systems; DRP covers business operations",
+      "BCP keeps the business running; DRP restores the IT systems",
+      "They are identical",
+      "DRP applies to natural disasters"
+    ],
     "answer": 1,
     "explanation": "Business Continuity Plans address how the entire business continues operating during disruption. Disaster Recovery Plans focus more narrowly on restoring IT capability."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following is the BEST way to coordinate incident response with a cloud provider during a security incident?",
-    "options": ["Wait for them to call you", "Have pre-established communication channels, contacts, and a documented escalation process in the contract", "Use only social media to communicate", "Refuse to share any details"],
+    "options": [
+      "Wait for them to call you",
+      "Pre-established communication channels and escalation in the contract",
+      "Use only social media to communicate",
+      "Refuse to share any details"
+    ],
     "answer": 1,
     "explanation": "Effective coordination requires pre-arranged points of contact, communication channels, and processes; these should be defined in the contract and tested."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following BEST describes 'mean time to detect' (MTTD)?",
-    "options": ["Average time between failures", "Average time it takes the organization to detect that an incident has occurred", "Time to restore a service", "Time between patches"],
+    "options": [
+      "Average time between failures",
+      "Average time to detect that an incident has occurred",
+      "Time to restore a service",
+      "Time between patches"
+    ],
     "answer": 1,
     "explanation": "MTTD measures detection efficiency. Improving MTTD reduces dwell time and is a primary goal of monitoring and detection programs."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following BEST describes 'mean time to respond' (MTTR)?",
-    "options": ["The average time taken to contain or remediate after detection", "The time between major releases", "The time between backups", "The average uptime"],
+    "options": [
+      "Average time to contain or remediate after detection",
+      "The time between major releases",
+      "The time between backups",
+      "The average uptime"
+    ],
     "answer": 0,
     "explanation": "MTTR (response or recovery, depending on definition) measures how quickly the organization responds to or recovers from incidents."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following is a key advantage of immutable infrastructure for security operations?",
-    "options": ["No need for any monitoring", "Servers are replaced rather than patched, reducing configuration drift and providing known-good baselines", "Allows shared root accounts", "Eliminates need for backups"],
+    "options": [
+      "No need for any monitoring",
+      "Servers are replaced rather than patched, limiting drift",
+      "Allows shared root accounts",
+      "Eliminates need for backups"
+    ],
     "answer": 1,
     "explanation": "Immutable infrastructure replaces components rather than modifying them, providing repeatable, known-good baselines and limiting configuration drift."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the BEST practice for log retention in a cloud environment?",
-    "options": ["Delete logs after one week to save space", "Retain logs based on legal, regulatory, and operational requirements, with immutable storage where appropriate", "Keep all logs forever regardless of cost", "Store logs only on the system that generated them"],
+    "options": [
+      "Delete logs after one week to save space",
+      "Retain per legal/regulatory needs in immutable storage when possible",
+      "Retain logs indefinitely regardless of cost",
+      "Store logs on the system that generated them"
+    ],
     "answer": 1,
     "explanation": "Retention should be driven by requirements (regulation, contract, investigation needs). Centralizing logs in immutable storage protects them from tampering."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which monitoring approach uses traffic-baseline statistical models to flag unusual flows that might indicate intrusion?",
-    "options": ["Signature-based detection", "Anomaly-based detection", "Allow-list filtering", "Antivirus scanning"],
+    "options": [
+      "Signature-based detection",
+      "Anomaly-based detection",
+      "Allow-list filtering",
+      "Antivirus scanning"
+    ],
     "answer": 1,
     "explanation": "Anomaly-based detection learns 'normal' patterns and surfaces deviations. It can catch novel attacks but is prone to more false positives than signature-based detection."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following BEST describes 'tabletop' versus 'full interruption' BCDR testing?",
-    "options": ["Tabletop is discussion-based; full interruption actually fails over to alternate facilities", "They are the same", "Tabletop is the most expensive and full interruption the cheapest", "Only tabletop involves running systems"],
+    "options": [
+      "Tabletop is discussion-based; full interruption actually fails over",
+      "They are the same",
+      "Tabletop is the most expensive and full interruption the cheapest",
+      "Only tabletop involves running systems"
+    ],
     "answer": 0,
     "explanation": "Tabletop walks through scenarios in conversation. Full interruption testing actually fails over, providing the most realistic but riskiest validation."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following is the BEST way to ensure that cloud environment access remains tightly controlled over time?",
-    "options": ["Perform a one-time access review", "Implement regular access reviews and recertifications combined with automated lifecycle controls", "Provide standing admin access to all engineers", "Disable access logging"],
+    "options": [
+      "Perform a one-time access review",
+      "Periodic access reviews plus automated lifecycle controls",
+      "Provide standing admin access to all engineers",
+      "Disable access logging"
+    ],
     "answer": 1,
     "explanation": "Periodic recertification and automated joiner-mover-leaver processes keep access aligned with current need and reduce accumulated privilege."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which type of testing best exercises an organization's ability to respond to and recover from a cyberattack scenario, often with adversary emulation?",
-    "options": ["Code review", "Red team / purple team exercises", "Vulnerability scanning", "Tabletop walkthrough"],
+    "options": [
+      "Code review",
+      "Red team / purple team exercises",
+      "Vulnerability scanning",
+      "Tabletop walkthrough"
+    ],
     "answer": 1,
     "explanation": "Red team exercises emulate an adversary end-to-end and stress detection and response; purple teaming pairs offensive and defensive teams to improve both."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following BEST illustrates a cloud-specific incident response challenge?",
-    "options": ["Difficulty buying laptops", "Ephemeral resources (containers, functions) may be gone by the time investigators look at them, requiring preservation in advance", "Lack of email", "Excessive bandwidth"],
+    "options": [
+      "Difficulty buying laptops",
+      "Ephemeral resources may be gone before investigators look",
+      "Lack of email",
+      "Excessive bandwidth"
+    ],
     "answer": 1,
     "explanation": "Ephemerality of cloud resources means evidence can vanish quickly. Architectures must capture logs, snapshots, and forensic artifacts proactively."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following BEST describes 'evidence preservation' in cloud forensics?",
-    "options": ["Taking screenshots", "Using snapshots, log exports, and write-protected storage to capture and protect the state of resources as evidence", "Deleting data to prevent leaks", "Replicating data to many regions"],
+    "options": [
+      "Taking screenshots",
+      "Snapshots, log exports, and write-protected storage capture state",
+      "Deleting data to prevent leaks",
+      "Replicating data to many regions"
+    ],
     "answer": 1,
     "explanation": "Evidence preservation in cloud uses snapshots, immutable log copies, and chain-of-custody-aware storage to capture state for later analysis."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following metrics is MOST relevant for measuring SOC effectiveness?",
-    "options": ["Average number of dashboards", "MTTD, MTTR, and accuracy (true vs false positives)", "Office occupancy rate", "Number of monitors per analyst"],
+    "options": [
+      "Average number of dashboards",
+      "MTTD, MTTR, and accuracy (true vs false positives)",
+      "Office occupancy rate",
+      "Number of monitors per analyst"
+    ],
     "answer": 1,
     "explanation": "Detection and response time metrics, combined with detection accuracy, are core indicators of SOC performance."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the BEST description of 'detection engineering'?",
-    "options": ["Building dashboards for executives", "Developing, tuning, and maintaining detections (rules, analytics) based on threat intelligence and observed behavior", "Patching operating systems", "Maintaining incident wiki"],
+    "options": [
+      "Building dashboards for executives",
+      "Developing and tuning detections based on threat intelligence",
+      "Patching operating systems",
+      "Maintaining incident wiki"
+    ],
     "answer": 1,
     "explanation": "Detection engineering is the disciplined practice of creating, testing, and maintaining detection logic with attention to coverage, fidelity, and tuning."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following BEST mitigates the risk of malicious insiders in cloud operations?",
-    "options": ["Separation of duties combined with logging, monitoring, and behavioral analytics", "Allowing all engineers to share an admin account", "Disabling audit logs", "Trusting all employees implicitly"],
+    "options": [
+      "Separation of duties plus logging, monitoring, and analytics",
+      "Letting engineers share an admin account",
+      "Disabling audit logs",
+      "Granting implicit trust to employees"
+    ],
     "answer": 0,
     "explanation": "Separation of duties prevents any single user from completing sensitive actions alone, while monitoring and analytics increase the likelihood of detection."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which approach is the BEST way to handle suspicious activity from a privileged account?",
-    "options": ["Ignore until business hours", "Trigger automated response playbooks (e.g., session termination, credential rotation, alert escalation) and investigate immediately", "Wait for the user to confirm whether it was them", "Disable the SIEM until the alert clears"],
+    "options": [
+      "Ignore until business hours",
+      "Automated response playbooks plus immediate investigation",
+      "Wait for the user to confirm whether it was them",
+      "Disable the SIEM until the alert clears"
+    ],
     "answer": 1,
     "explanation": "Privileged account anomalies warrant immediate, often automated, containment and investigation due to the potential blast radius."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which is the BEST way to verify integrity of forensic disk images during analysis?",
-    "options": ["Encrypt the image", "Compute and verify cryptographic hashes (e.g., SHA-256) at acquisition and at each access", "Compress the image", "Rename the image to indicate its source"],
+    "options": [
+      "Encrypt the image",
+      "Compute and verify cryptographic hashes at acquisition and access",
+      "Compress the image",
+      "Rename the image to indicate its source"
+    ],
     "answer": 1,
     "explanation": "Hashing at acquisition and at each subsequent verification proves the image has not changed, supporting integrity for evidentiary purposes."
   },
   {
     "domain": "5: Cloud Security Operations",
     "question": "Which of the following BEST describes 'communication strategy' during a major incident?",
-    "options": ["No communication should occur until the incident is fully resolved", "Pre-defined audiences (internal, customers, regulators, media) and message templates align communications and avoid speculation", "Send the same message to everyone", "Only the CEO should communicate, and only by email"],
+    "options": [
+      "No communication should occur until the incident is fully resolved",
+      "Pre-defined audiences and approved message templates align comms",
+      "Send the same message to everyone",
+      "Only the CEO should communicate, and only by email"
+    ],
     "answer": 1,
     "explanation": "Effective incident communication uses pre-defined audiences, channels, and approved message templates so accurate and appropriate information is shared with each stakeholder."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Under the GDPR, which entity determines the purposes and means of processing personal data?",
-    "options": ["Data Processor", "Data Subject", "Data Controller", "Data Protection Officer"],
+    "options": [
+      "Data Processor",
+      "Data Subject",
+      "Data Controller",
+      "Data Protection Officer"
+    ],
     "answer": 2,
     "explanation": "The data controller determines the purposes and means of processing. Processors act on behalf of controllers under contract."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Within what timeframe does the GDPR generally require notification of a personal data breach to the supervisory authority?",
-    "options": ["Within 24 hours", "Within 72 hours of becoming aware", "Within 7 days", "Within 30 days"],
+    "options": [
+      "Within 24 hours",
+      "Within 72 hours of becoming aware",
+      "Within 7 days",
+      "Within 30 days"
+    ],
     "answer": 1,
     "explanation": "GDPR Article 33 requires controllers to notify the supervisory authority of a personal data breach without undue delay and where feasible within 72 hours of becoming aware."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Under the GDPR, which right allows an individual to request that their personal data be deleted?",
-    "options": ["Right to portability", "Right to rectification", "Right to erasure ('right to be forgotten')", "Right of access"],
+    "options": [
+      "Right to portability",
+      "Right to rectification",
+      "Right to erasure ('right to be forgotten')",
+      "Right of access"
+    ],
     "answer": 2,
     "explanation": "Article 17 of GDPR establishes the right to erasure, requiring deletion of personal data in certain circumstances."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which GDPR activity must a controller perform before initiating processing that is likely to result in a high risk to the rights and freedoms of natural persons?",
-    "options": ["Privacy impact statement", "Data Protection Impact Assessment (DPIA)", "Business continuity plan", "SOC 2 audit"],
+    "options": [
+      "Privacy impact statement",
+      "Data Protection Impact Assessment (DPIA)",
+      "Business continuity plan",
+      "SOC 2 audit"
+    ],
     "answer": 1,
     "explanation": "Article 35 requires a Data Protection Impact Assessment (DPIA) for processing likely to result in high risk to data subjects."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which US law governs the security and privacy of protected health information (PHI)?",
-    "options": ["GLBA", "HIPAA", "SOX", "FERPA"],
+    "options": [
+      "GLBA",
+      "HIPAA",
+      "SOX",
+      "FERPA"
+    ],
     "answer": 1,
     "explanation": "HIPAA's Privacy and Security Rules govern the use, disclosure, and protection of PHI."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which of the following is BEST described by PCI DSS?",
-    "options": ["A US federal law", "A contractual security standard for organizations handling payment card data, maintained by the PCI SSC", "An EU regulation for privacy", "A British accounting standard"],
+    "options": [
+      "A US federal law",
+      "A contractual security standard for payment-card data, set by PCI SSC",
+      "An EU regulation for privacy",
+      "A British accounting standard"
+    ],
     "answer": 1,
     "explanation": "PCI DSS is a contractual security standard set by the PCI Security Standards Council; compliance is required of entities handling cardholder data."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which US law primarily addresses corporate governance and financial reporting, including internal control over financial reporting?",
-    "options": ["SOX (Sarbanes-Oxley)", "HIPAA", "GLBA", "FERPA"],
+    "options": [
+      "SOX",
+      "HIPAA",
+      "GLBA",
+      "FERPA"
+    ],
     "answer": 0,
     "explanation": "The Sarbanes-Oxley Act (SOX) requires publicly traded companies to maintain and assert effective internal controls over financial reporting."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which of the following is a defining feature of the California Consumer Privacy Act (CCPA / CPRA)?",
-    "options": ["Applies only to non-profit entities", "Provides California residents rights to know, delete, correct, and opt out of sale/sharing of personal information", "Requires data localization in California", "Is identical to GDPR"],
+    "options": [
+      "Applies only to non-profit entities",
+      "Rights to know, delete, correct, and opt out of sale/sharing",
+      "Requires data localization in California",
+      "Is identical to GDPR"
+    ],
     "answer": 1,
     "explanation": "CCPA/CPRA grants California consumers rights regarding their personal information, including knowledge, deletion, correction, and opting out of sale/sharing."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which of the following is the GREATEST challenge in performing eDiscovery in a cloud environment?",
-    "options": ["Encryption strength", "Identifying the location of data, custody, and ability to produce data within legal timeframes given multi-tenant, multi-region environments", "Lack of internet bandwidth", "Difficulty buying licenses"],
+    "options": [
+      "Encryption strength",
+      "Locating data and producing it in time across multi-tenant systems",
+      "Lack of internet bandwidth",
+      "Difficulty buying licenses"
+    ],
     "answer": 1,
     "explanation": "Cloud's distributed, multi-tenant nature complicates locating, preserving, and producing ESI. Contracts and architecture should address eDiscovery up front."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which contract concept obligates the cloud provider to maintain a specified level of service performance, such as availability or response time?",
-    "options": ["NDA", "Master Service Agreement (MSA)", "Service Level Agreement (SLA)", "Statement of Work (SOW)"],
+    "options": [
+      "NDA",
+      "Master Service Agreement (MSA)",
+      "Service Level Agreement (SLA)",
+      "Statement of Work (SOW)"
+    ],
     "answer": 2,
     "explanation": "An SLA defines measurable service performance commitments and typically includes credits or remedies for missed targets."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the BEST description of an MSA (Master Service Agreement)?",
-    "options": ["A confidentiality agreement", "An overarching contract setting general terms and conditions, under which specific SOWs may operate", "A specific deliverable list", "A pricing list"],
+    "options": [
+      "A confidentiality agreement",
+      "An overarching contract; SOWs operate under it",
+      "A specific deliverable list",
+      "A pricing list"
+    ],
     "answer": 1,
     "explanation": "An MSA establishes general business and legal terms between parties, with specific work (and pricing) defined under separate SOWs."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the BEST way for a customer to maintain trust in a cloud provider's controls over time?",
-    "options": ["Take the provider's marketing material at face value", "Rely on independent, periodic audits (e.g., SOC 2 Type II, ISO 27001) and a right-to-audit clause in the contract", "Visit the data center monthly", "Avoid all contracts"],
+    "options": [
+      "Take the provider's marketing material at face value",
+      "Independent periodic audits plus a right-to-audit clause",
+      "Visit the data center monthly",
+      "Avoid all contracts"
+    ],
     "answer": 1,
     "explanation": "Periodic independent audits combined with contract provisions like right-to-audit and continuous monitoring provide sustained assurance."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which risk treatment option involves transferring risk to a third party, such as via insurance or a contractual indemnity?",
-    "options": ["Avoidance", "Acceptance", "Transference", "Mitigation"],
+    "options": [
+      "Avoidance",
+      "Acceptance",
+      "Transference",
+      "Mitigation"
+    ],
     "answer": 2,
     "explanation": "Risk transference moves financial or operational impact of a risk to another party, commonly through insurance or contracts."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which type of risk remains after controls have been applied?",
-    "options": ["Inherent risk", "Residual risk", "Operational risk", "Strategic risk"],
+    "options": [
+      "Inherent risk",
+      "Residual risk",
+      "Operational risk",
+      "Strategic risk"
+    ],
     "answer": 1,
     "explanation": "Residual risk is what remains after controls have reduced inherent risk. Organizations must decide whether residual risk is within appetite."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the BEST description of quantitative risk analysis?",
-    "options": ["Uses categories like 'high/medium/low'", "Assigns numerical values to assets, threats, impact, and likelihood to produce metrics like ALE", "Ignores impact and likelihood", "Only counts past incidents"],
+    "options": [
+      "Uses categories like 'high/medium/low'",
+      "Numerical values for assets, impact, and likelihood (e.g., ALE)",
+      "Ignores impact and likelihood",
+      "Only counts past incidents"
+    ],
     "answer": 1,
     "explanation": "Quantitative analysis assigns numeric values (e.g., asset value, SLE, ARO) to compute metrics such as Annualized Loss Expectancy (ALE)."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
-    "question": "Which framework establishes a structured six-step approach to risk management â€” Categorize, Select, Implement, Assess, Authorize, Monitor â€” used widely in U.S. federal systems?",
-    "options": ["ISO 31000", "COBIT", "NIST Risk Management Framework (RMF)", "FAIR"],
+    "question": "Which framework establishes a structured six-step approach to risk management — Categorize, Select, Implement, Assess, Authorize, Monitor — used widely in U.S. federal systems?",
+    "options": [
+      "ISO 31000 (general risk standard)",
+      "COBIT (IT governance framework)",
+      "NIST Risk Management Framework",
+      "FAIR (risk quantification)"
+    ],
     "answer": 2,
     "explanation": "NIST RMF (SP 800-37) defines six steps for managing security and privacy risk to information systems."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which standard provides general guidelines for risk management applicable across industries and organizations?",
-    "options": ["ISO 31000", "ISO 27017", "PCI DSS", "HIPAA"],
+    "options": [
+      "ISO 31000",
+      "ISO 27017",
+      "PCI DSS",
+      "HIPAA"
+    ],
     "answer": 0,
     "explanation": "ISO 31000 provides principles, framework, and processes for risk management applicable to any organization."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the BEST description of 'privacy by design'?",
-    "options": ["Privacy is considered after launch", "Privacy is built into systems and processes proactively from the start, as a default", "Privacy applies only to PHI", "Privacy is delegated entirely to the cloud provider"],
+    "options": [
+      "Privacy is considered after launch",
+      "Privacy is built in proactively from the start, as a default",
+      "Privacy applies only to PHI",
+      "Privacy is delegated entirely to the cloud provider"
+    ],
     "answer": 1,
     "explanation": "Privacy by Design (and by Default) requires privacy to be considered proactively and integrated into systems from the earliest stages."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which mechanism is commonly used to legitimize cross-border transfers of personal data from the EU to a country lacking an adequacy decision?",
-    "options": ["A SOC 2 report", "Standard Contractual Clauses (SCCs) or Binding Corporate Rules (BCRs)", "An MSA", "A vendor questionnaire"],
+    "options": [
+      "A SOC 2 report",
+      "Standard Contractual Clauses or Binding Corporate Rules",
+      "An MSA",
+      "A vendor questionnaire"
+    ],
     "answer": 1,
     "explanation": "SCCs and BCRs are common transfer mechanisms under GDPR for transferring personal data outside the EEA in the absence of an adequacy decision."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which of the following BEST describes data localization requirements?",
-    "options": ["Requirements that specific categories of data be stored or processed within particular jurisdictions", "Requirements that data be replicated globally", "Encryption standards mandated by ISO", "Rules about VM placement"],
+    "options": [
+      "Specific data must be stored or processed within a jurisdiction",
+      "Requirements that data be replicated globally",
+      "Encryption standards mandated by ISO",
+      "Rules about VM placement"
+    ],
     "answer": 0,
     "explanation": "Data localization laws require certain data to remain within national borders, often impacting cloud region choices."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the PRIMARY purpose of a vendor management program?",
-    "options": ["Reduce procurement paperwork", "Identify, assess, and manage risks associated with third-party providers throughout the relationship lifecycle", "Eliminate need for SLAs", "Bypass legal reviews"],
+    "options": [
+      "Reduce procurement paperwork",
+      "Identify, assess, and manage third-party risk across the lifecycle",
+      "Eliminate need for SLAs",
+      "Bypass legal reviews"
+    ],
     "answer": 1,
     "explanation": "Vendor management addresses risks from selection through offboarding, including due diligence, contracting, monitoring, and termination."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the GREATEST risk introduced by a cloud provider's subcontractors?",
-    "options": ["Higher network latency", "The customer's data and services may be exposed to additional parties whose controls may not be visible or assessed", "Slower software development", "Lack of color in dashboards"],
+    "options": [
+      "Higher network latency",
+      "Customer data may be exposed to parties whose controls aren't visible",
+      "Slower software development",
+      "Lack of color in dashboards"
+    ],
     "answer": 1,
     "explanation": "Subcontractors expand the supply chain and may not be subject to the same controls or visibility. Contracts should require notification, flowdown of obligations, and right to object."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which type of audit report focuses on controls relevant to financial reporting at a service organization?",
-    "options": ["SOC 1", "SOC 2", "SOC 3", "ISO 27001"],
+    "options": [
+      "SOC 1",
+      "SOC 2",
+      "SOC 3",
+      "ISO 27001"
+    ],
     "answer": 0,
     "explanation": "SOC 1 reports address controls at a service organization relevant to user entities' internal control over financial reporting."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the BEST description of the difference between a SOC 2 Type I and Type II report?",
-    "options": ["Type I covers design at a point in time; Type II covers design and operating effectiveness over a period", "There is no difference", "Type I covers privacy; Type II covers security", "Type II is shorter than Type I"],
+    "options": [
+      "Type I covers design at a point in time; Type II covers operating effectiveness over a period",
+      "There is no difference",
+      "Type I covers privacy; Type II covers security",
+      "Type II is shorter than Type I"
+    ],
     "answer": 0,
     "explanation": "SOC 2 Type I assesses control design at a point in time. Type II assesses both design and operating effectiveness across a period (often 6-12 months)."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which of the following is the BEST initial step in conducting a vendor risk assessment?",
-    "options": ["Sign a contract immediately", "Inventory the vendors, classify based on risk, and determine assessment depth", "Buy insurance", "Ask the vendor for references only"],
+    "options": [
+      "Sign a contract immediately",
+      "Inventory vendors, classify by risk, set assessment depth",
+      "Buy insurance",
+      "Ask the vendor for references only"
+    ],
     "answer": 1,
     "explanation": "Risk-based vendor management starts with inventory and risk-tiering so that effort matches each vendor's risk profile."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the BEST description of 'gap analysis' in compliance?",
-    "options": ["Identifying network bandwidth gaps", "Comparing current controls and processes against a target framework or regulation to identify deficiencies", "Pen testing the perimeter", "Hiring more analysts"],
+    "options": [
+      "Identifying network bandwidth gaps",
+      "Compare current controls against a target framework to find gaps",
+      "Pen testing the perimeter",
+      "Hiring more analysts"
+    ],
     "answer": 1,
     "explanation": "Gap analysis compares current state against required or desired state (regulation, framework) and identifies remediation needed."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which forensic challenge arises specifically because cloud workloads can move across countries with different laws?",
-    "options": ["Jurisdictional issues for evidence collection and disclosure", "Inability to use IPv6", "Lack of disk encryption", "Inability to use SSH"],
+    "options": [
+      "Jurisdictional issues for evidence collection and disclosure",
+      "Inability to use IPv6",
+      "Lack of disk encryption",
+      "Inability to use SSH"
+    ],
     "answer": 0,
     "explanation": "Cross-border data movement raises jurisdictional questions about which laws apply, whether subpoenas are honored, and how evidence can be legally obtained."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which document typically specifies the metrics by which provider performance is measured and the consequences of missing those metrics?",
-    "options": ["SLA", "NDA", "MOU", "MSA"],
+    "options": [
+      "SLA",
+      "NDA",
+      "MOU",
+      "MSA"
+    ],
     "answer": 0,
     "explanation": "The SLA defines measurable performance metrics (e.g., availability percentage, response time) and remedies if targets are missed."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which of the following BEST describes the concept of 'compensating controls'?",
-    "options": ["Controls that are required for high-risk systems only", "Alternative controls that achieve the intent of a required control when the standard control cannot be implemented", "Controls that fully eliminate risk", "Controls that increase risk"],
+    "options": [
+      "Controls that are required for high-risk systems only",
+      "Alternative meeting the intent of a required control when needed",
+      "Controls that fully eliminate risk",
+      "Controls that increase risk"
+    ],
     "answer": 1,
     "explanation": "Compensating controls are alternative measures that satisfy the intent of a required control when the original control is not feasible."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which of the following BEST illustrates 'risk acceptance'?",
-    "options": ["Buying insurance against a risk", "Documenting and formally agreeing that a residual risk is within tolerance, with no further treatment", "Implementing additional controls", "Avoiding the activity that creates the risk"],
+    "options": [
+      "Buying insurance against a risk",
+      "Formally agreeing residual risk is within tolerance, no further action",
+      "Implementing additional controls",
+      "Avoiding the activity that creates the risk"
+    ],
     "answer": 1,
     "explanation": "Risk acceptance is a formal decision (often documented and approved) to live with a level of residual risk because treatment is not justified or feasible."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the BEST way to address risks from a cloud provider unilaterally changing its terms or services?",
-    "options": ["Hope they don't", "Negotiate change-control, notification, and exit provisions in the contract; track vendor announcements", "Refuse to read emails from the provider", "Move all workloads to email"],
+    "options": [
+      "Hope they don't",
+      "Negotiate change-control, notification, and exit provisions",
+      "Refuse to read emails from the provider",
+      "Move all workloads to email"
+    ],
     "answer": 1,
     "explanation": "Contractual change-control, advance notification of material changes, and well-defined exit/transition provisions help manage provider-driven changes."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the BEST way to ensure that compliance obligations flow down to sub-processors used by the cloud provider?",
-    "options": ["Rely on goodwill", "Contractual flow-down clauses requiring sub-processors meet equivalent obligations, plus disclosure and right-to-object", "A simple email", "Mandatory marketing reviews"],
+    "options": [
+      "Rely on goodwill",
+      "Contractual flow-down clauses, disclosure, and right-to-object",
+      "A simple email",
+      "Mandatory marketing reviews"
+    ],
     "answer": 1,
     "explanation": "Flow-down clauses obligate sub-processors to meet the same protections as the primary provider, often with notification and customer rights to object."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which is the BEST description of 'control inheritance' in compliance frameworks like FedRAMP?",
-    "options": ["The customer inherits all responsibility from the provider", "Customers can inherit certain controls implemented by the cloud provider as part of the shared responsibility model", "All controls are inherited automatically without documentation", "Inheritance is the same as transference"],
+    "options": [
+      "Customer inherits full responsibility from the provider",
+      "Customers inherit controls implemented by the provider",
+      "Controls are inherited automatically without documentation",
+      "Inheritance is the same as transference"
+    ],
     "answer": 1,
     "explanation": "Control inheritance allows customers to leverage controls implemented and assessed at the provider (e.g., physical security) rather than implementing those themselves."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which of the following BEST describes a 'right to audit' clause?",
-    "options": ["The provider can audit the customer at any time", "The customer (directly or via an agent) has contractual right to assess the provider's controls, often via independent audit reports", "The customer has unlimited physical access to data centers", "There is no such concept"],
+    "options": [
+      "The provider can audit the customer at any time",
+      "Customer has contractual right to assess provider controls",
+      "The customer has unlimited physical access to data centers",
+      "There is no such concept"
+    ],
     "answer": 1,
     "explanation": "Right-to-audit provisions allow the customer to verify controls, often satisfied via third-party audit reports rather than direct on-site assessments."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which of the following BEST describes 'jurisdiction' in cloud forensics?",
-    "options": ["Which cloud region is least expensive", "The legal authority of a court or governmental body to make decisions about the data or system in question", "Which DLP product is being used", "The encryption algorithm in use"],
+    "options": [
+      "Which cloud region is least expensive",
+      "Legal authority of a court over data or systems in question",
+      "Which DLP product is being used",
+      "The encryption algorithm in use"
+    ],
     "answer": 1,
     "explanation": "Jurisdiction in forensics refers to which legal authority applies. Cloud data may simultaneously be subject to multiple jurisdictions, complicating investigations."
   },
   {
     "domain": "6: Legal, Risk & Compliance",
     "question": "Which of the following BEST describes 'data protection officer (DPO)' duties under GDPR?",
-    "options": ["Operate the firewall", "Inform and advise on data protection obligations, monitor compliance, and serve as a point of contact with the supervisory authority and data subjects", "Approve all marketing campaigns", "Run penetration tests"],
+    "options": [
+      "Operate the firewall",
+      "Advise on obligations, monitor compliance, serve as contact point",
+      "Approve all marketing campaigns",
+      "Run penetration tests"
+    ],
     "answer": 1,
     "explanation": "Under GDPR Articles 37-39, the DPO advises on obligations, monitors compliance, cooperates with supervisory authorities, and is a contact point for data subjects."
   }
-]
-;
+];
