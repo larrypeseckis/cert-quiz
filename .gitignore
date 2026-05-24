@@ -1,0 +1,16 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor junk
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local-only files (downloaded weights, personal score reports, etc.)
+weights.md
+*_scoreReport*.js
+*_scoreReport*.json
