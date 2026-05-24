@@ -4,7 +4,7 @@ window.QUESTIONS = [
     "question": "Which three properties make up the classic CIA triad of information security?",
     "options": ["Confidentiality, Integrity, Availability", "Control, Identity, Authority", "Confidentiality, Identity, Auditing", "Capability, Integrity, Authorization"],
     "answer": 0,
-    "explanation": "The CIA triad â€” Confidentiality, Integrity, and Availability â€” is the foundational model used to evaluate security objectives."
+    "explanation": "The CIA triad — Confidentiality, Integrity, and Availability — is the foundational model used to evaluate security objectives."
   },
   {
     "domain": "1: Security Operations and Administration",
@@ -214,7 +214,7 @@ window.QUESTIONS = [
     "question": "Which functional control type discovers an incident after it has occurred?",
     "options": ["Preventive", "Detective", "Compensating", "Corrective"],
     "answer": 1,
-    "explanation": "Detective controls identify and report incidents â€” examples include IDS, audit logs, and CCTV review."
+    "explanation": "Detective controls identify and report incidents — examples include IDS, audit logs, and CCTV review."
   },
   {
     "domain": "1: Security Operations and Administration",
@@ -270,7 +270,7 @@ window.QUESTIONS = [
     "question": "Which of the following is a key responsibility of senior management with respect to information security?",
     "options": ["Configuring firewalls", "Establishing direction, providing resources, and being accountable for the security program", "Triaging help-desk tickets", "Writing detection rules"],
     "answer": 1,
-    "explanation": "Senior management owns the security program â€” setting direction, allocating resources, and accepting accountability â€” even though execution is delegated."
+    "explanation": "Senior management owns the security program — setting direction, allocating resources, and accepting accountability — even though execution is delegated."
   },
   {
     "domain": "1: Security Operations and Administration",
@@ -298,7 +298,7 @@ window.QUESTIONS = [
     "question": "Which authentication factor is BEST described as 'something you have'?",
     "options": ["Password", "PIN", "Smart card or hardware token", "Fingerprint"],
     "answer": 2,
-    "explanation": "Authentication factors are Knowledge (something you know), Possession (something you have â€” token, smart card), and Inherence (something you are â€” biometric)."
+    "explanation": "Authentication factors are Knowledge (something you know), Possession (something you have — token, smart card), and Inherence (something you are — biometric)."
   },
   {
     "domain": "2: Access Controls",
@@ -515,7 +515,7 @@ window.QUESTIONS = [
     "question": "Which is the BEST control to ensure that a terminated employee's access is removed promptly?",
     "options": ["Manual review at the next access certification", "Automated tie-in between HR offboarding and identity management for prompt disablement", "Annual password rotation", "Adding more MFA tokens"],
     "answer": 1,
-    "explanation": "An automated tie-in (HR system â†’ IdM) ensures access is removed close to real time upon termination, eliminating the gap."
+    "explanation": "An automated tie-in (HR system → IdM) ensures access is removed close to real time upon termination, eliminating the gap."
   },
   {
     "domain": "2: Access Controls",
@@ -550,7 +550,7 @@ window.QUESTIONS = [
     "question": "Which is the BEST definition of 'risk'?",
     "options": ["A weakness in a system", "The likelihood that a threat will exploit a vulnerability, combined with the potential impact", "An identified attacker", "An impact only"],
     "answer": 1,
-    "explanation": "Risk = likelihood (a threat exploiting a vulnerability) Ã— impact. It captures both probability and consequence."
+    "explanation": "Risk = likelihood (a threat exploiting a vulnerability) x impact. It captures both probability and consequence."
   },
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
@@ -576,23 +576,23 @@ window.QUESTIONS = [
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
     "question": "Which formula correctly defines Annualized Loss Expectancy (ALE)?",
-    "options": ["AV Ã— EF", "SLE Ã— ARO", "ARO âˆ’ EF", "AV / ARO"],
+    "options": ["AV x EF", "SLE x ARO", "ARO - EF", "AV / ARO"],
     "answer": 1,
-    "explanation": "ALE = SLE Ã— ARO. SLE = Asset Value Ã— Exposure Factor. ARO is the Annualized Rate of Occurrence."
+    "explanation": "ALE = SLE x ARO. SLE = Asset Value x Exposure Factor. ARO is the Annualized Rate of Occurrence."
   },
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
     "question": "If an asset is worth $200,000 and a particular incident would destroy 25% of it, what is the SLE?",
     "options": ["$5,000", "$25,000", "$50,000", "$200,000"],
     "answer": 2,
-    "explanation": "SLE = AV Ã— EF = $200,000 Ã— 0.25 = $50,000."
+    "explanation": "SLE = AV x EF = $200,000 x 0.25 = $50,000."
   },
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
     "question": "If the SLE is $50,000 and the incident is expected to occur twice per year, what is the ALE?",
     "options": ["$25,000", "$50,000", "$75,000", "$100,000"],
     "answer": 3,
-    "explanation": "ALE = SLE Ã— ARO = $50,000 Ã— 2 = $100,000."
+    "explanation": "ALE = SLE x ARO = $50,000 x 2 = $100,000."
   },
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
@@ -744,7 +744,7 @@ window.QUESTIONS = [
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
     "question": "Which is a fundamental property required for log evidence to be useful in investigations or legal proceedings?",
-    "options": ["Random log format", "Integrity â€” logs must not be modifiable by attackers and changes should be detectable", "Logs must be exposed to all employees", "Logs must be compressed"],
+    "options": ["Random log format", "Integrity — logs must not be modifiable by attackers and changes should be detectable", "Logs must be exposed to all employees", "Logs must be compressed"],
     "answer": 1,
     "explanation": "Logs must be tamper-evident or tamper-resistant (write-once storage, hashing, central forwarding) to be trusted as evidence."
   },
@@ -800,7 +800,7 @@ window.QUESTIONS = [
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
     "question": "Which is the BEST description of 'risk appetite'?",
-    "options": ["Maximum technical impact possible", "The level of risk an organization is willing to accept in pursuit of its objectives", "Number of incidents per year", "ALE Ã— 2"],
+    "options": ["Maximum technical impact possible", "The level of risk an organization is willing to accept in pursuit of its objectives", "Number of incidents per year", "ALE x 2"],
     "answer": 1,
     "explanation": "Risk appetite is the organization's declared willingness to accept risk in pursuit of objectives. Risk tolerance describes acceptable variation around objectives."
   },
@@ -830,7 +830,7 @@ window.QUESTIONS = [
     "question": "Which is the BEST description of 'eradication' in the incident response process?",
     "options": ["Removing the attacker's foothold (malware, accounts, persistence) so the threat cannot re-emerge", "Documenting findings", "Restoring backups", "Updating SLAs"],
     "answer": 0,
-    "explanation": "Eradication removes the threat from systems â€” deleting malware, eliminating attacker accounts, closing exploited vulnerabilities."
+    "explanation": "Eradication removes the threat from systems — deleting malware, eliminating attacker accounts, closing exploited vulnerabilities."
   },
   {
     "domain": "4: Incident Response and Recovery",
@@ -956,7 +956,7 @@ window.QUESTIONS = [
     "question": "Which type of alternate site has the hardware and infrastructure but requires recent data restoration before going live?",
     "options": ["Hot site", "Warm site", "Cold site", "Mirrored site"],
     "answer": 1,
-    "explanation": "Warm sites have equipment but not current data â€” they trade some recovery speed for lower cost compared to hot sites."
+    "explanation": "Warm sites have equipment but not current data — they trade some recovery speed for lower cost compared to hot sites."
   },
   {
     "domain": "4: Incident Response and Recovery",
@@ -991,7 +991,7 @@ window.QUESTIONS = [
     "question": "Which is the BEST first action upon discovering a possible major security incident?",
     "options": ["Re-image the machine immediately", "Notify the incident response team / follow the documented IR plan", "Tell your manager via personal email", "Power off all servers"],
     "answer": 1,
-    "explanation": "Follow the documented IR plan â€” that includes timely notification of the IR team, preserving evidence, and coordinated decision-making."
+    "explanation": "Follow the documented IR plan — that includes timely notification of the IR team, preserving evidence, and coordinated decision-making."
   },
   {
     "domain": "4: Incident Response and Recovery",
@@ -1012,7 +1012,7 @@ window.QUESTIONS = [
     "question": "Which is the BEST description of 'eradication' confirmation?",
     "options": ["The attacker's last login time", "Validating, through scanning, hunting, and monitoring, that the attacker's tools and access are removed before recovery", "Confirming the firewall is on", "Verifying licenses"],
     "answer": 1,
-    "explanation": "Before recovery, the IR team must confirm with high confidence that the attacker has been removed â€” otherwise restoration may re-introduce compromise."
+    "explanation": "Before recovery, the IR team must confirm with high confidence that the attacker has been removed — otherwise restoration may re-introduce compromise."
   },
   {
     "domain": "4: Incident Response and Recovery",
@@ -1086,7 +1086,7 @@ window.QUESTIONS = [
   },
   {
     "domain": "5: Cryptography",
-    "question": "Which algorithm is used for KEY EXCHANGE â€” allowing two parties to derive a shared secret over an insecure channel â€” but cannot encrypt or sign by itself?",
+    "question": "Which algorithm is used for KEY EXCHANGE — allowing two parties to derive a shared secret over an insecure channel — but cannot encrypt or sign by itself?",
     "options": ["AES", "Diffie-Hellman", "SHA-256", "RC4"],
     "answer": 1,
     "explanation": "Diffie-Hellman key exchange (and its variants like ECDH) lets two parties derive a shared secret over an insecure channel; it doesn't perform encryption or signing itself."
@@ -1236,7 +1236,7 @@ window.QUESTIONS = [
     "question": "Which step in the TCP three-way handshake follows the client's initial SYN?",
     "options": ["FIN", "ACK only", "SYN-ACK from the server", "RST from the server"],
     "answer": 2,
-    "explanation": "TCP three-way handshake: SYN (client) â†’ SYN-ACK (server) â†’ ACK (client)."
+    "explanation": "TCP three-way handshake: SYN (client) → SYN-ACK (server) → ACK (client)."
   },
   {
     "domain": "6: Network and Communications Security",
@@ -1348,7 +1348,7 @@ window.QUESTIONS = [
     "question": "Which is the GREATEST issue with WEP for wireless security?",
     "options": ["Strong encryption is too slow", "Weak key scheduling and small IVs make it trivially broken by modern attacks", "Requires too many devices", "It is too complex to deploy"],
     "answer": 1,
-    "explanation": "WEP is broken due to RC4 weaknesses and a 24-bit IV â€” it can be cracked in minutes. It should not be used."
+    "explanation": "WEP is broken due to RC4 weaknesses and a 24-bit IV — it can be cracked in minutes. It should not be used."
   },
   {
     "domain": "6: Network and Communications Security",
@@ -1481,7 +1481,7 @@ window.QUESTIONS = [
     "question": "Which is the BEST first step when designing a network for defense?",
     "options": ["Implement an IDS", "Identify what needs to be protected and define a network architecture with appropriate zones and controls", "Buy the most expensive firewall", "Encrypt all traffic"],
     "answer": 1,
-    "explanation": "Sound network defense begins with knowing what to protect and designing zones, choke points, and controls intentionally â€” not by buying products first."
+    "explanation": "Sound network defense begins with knowing what to protect and designing zones, choke points, and controls intentionally — not by buying products first."
   },
   {
     "domain": "6: Network and Communications Security",
@@ -1614,7 +1614,7 @@ window.QUESTIONS = [
     "question": "Which is the BEST description of a 'patch management' process?",
     "options": ["Apply all patches as soon as they are released, everywhere", "Inventory assets, identify applicable patches, test, deploy in stages, and verify", "Wait until incidents force patching", "Avoid patching to keep stability"],
     "answer": 1,
-    "explanation": "Effective patch management is structured: identify assets/patches, test, stage deployment, verify, and monitor â€” balancing risk and stability."
+    "explanation": "Effective patch management is structured: identify assets/patches, test, stage deployment, verify, and monitor — balancing risk and stability."
   },
   {
     "domain": "7: Systems and Application Security",
@@ -1628,7 +1628,7 @@ window.QUESTIONS = [
     "question": "Which is the BEST description of 'application allowlisting' (whitelisting)?",
     "options": ["Allow only approved applications to run; everything else is blocked", "Allow everything except a list of known-bad", "Block only viruses by signature", "A type of antivirus"],
     "answer": 0,
-    "explanation": "Allowlisting permits only known-good applications to execute, blocking everything else by default â€” strong against malware but requires careful management."
+    "explanation": "Allowlisting permits only known-good applications to execute, blocking everything else by default — strong against malware but requires careful management."
   },
   {
     "domain": "7: Systems and Application Security",
@@ -1766,7 +1766,7 @@ window.QUESTIONS = [
   {
     "domain": "7: Systems and Application Security",
     "question": "Which is the BEST description of 'security through obscurity'?",
-    "options": ["Effective primary security strategy", "Relying on secrecy of design as the main protection â€” discouraged as a sole defense", "Use of encryption", "A patching method"],
+    "options": ["Effective primary security strategy", "Relying on secrecy of design as the main protection — discouraged as a sole defense", "Use of encryption", "A patching method"],
     "answer": 1,
     "explanation": "Security through obscurity (relying on hidden design as the main control) is widely discouraged as a primary defense, though some obscurity can layer on real controls."
   },
@@ -1782,7 +1782,7 @@ window.QUESTIONS = [
     "question": "Which is the BEST description of an SDLC's 'requirements' phase from a security perspective?",
     "options": ["Skip security to save time", "Identify security and privacy requirements early so they can be designed in", "Add security only at the end", "Use only functional requirements"],
     "answer": 1,
-    "explanation": "Identifying security and privacy requirements early supports 'shift left' â€” building security into the design rather than retrofitting it later."
+    "explanation": "Identifying security and privacy requirements early supports 'shift left' — building security into the design rather than retrofitting it later."
   }
 ]
 ;

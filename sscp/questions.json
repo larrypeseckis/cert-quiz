@@ -550,7 +550,7 @@
     "question": "Which is the BEST definition of 'risk'?",
     "options": ["A weakness in a system", "The likelihood that a threat will exploit a vulnerability, combined with the potential impact", "An identified attacker", "An impact only"],
     "answer": 1,
-    "explanation": "Risk = likelihood (a threat exploiting a vulnerability) × impact. It captures both probability and consequence."
+    "explanation": "Risk = likelihood (a threat exploiting a vulnerability) x impact. It captures both probability and consequence."
   },
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
@@ -576,23 +576,23 @@
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
     "question": "Which formula correctly defines Annualized Loss Expectancy (ALE)?",
-    "options": ["AV × EF", "SLE × ARO", "ARO − EF", "AV / ARO"],
+    "options": ["AV x EF", "SLE x ARO", "ARO - EF", "AV / ARO"],
     "answer": 1,
-    "explanation": "ALE = SLE × ARO. SLE = Asset Value × Exposure Factor. ARO is the Annualized Rate of Occurrence."
+    "explanation": "ALE = SLE x ARO. SLE = Asset Value x Exposure Factor. ARO is the Annualized Rate of Occurrence."
   },
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
     "question": "If an asset is worth $200,000 and a particular incident would destroy 25% of it, what is the SLE?",
     "options": ["$5,000", "$25,000", "$50,000", "$200,000"],
     "answer": 2,
-    "explanation": "SLE = AV × EF = $200,000 × 0.25 = $50,000."
+    "explanation": "SLE = AV x EF = $200,000 x 0.25 = $50,000."
   },
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
     "question": "If the SLE is $50,000 and the incident is expected to occur twice per year, what is the ALE?",
     "options": ["$25,000", "$50,000", "$75,000", "$100,000"],
     "answer": 3,
-    "explanation": "ALE = SLE × ARO = $50,000 × 2 = $100,000."
+    "explanation": "ALE = SLE x ARO = $50,000 x 2 = $100,000."
   },
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
@@ -800,7 +800,7 @@
   {
     "domain": "3: Risk Identification, Monitoring, and Analysis",
     "question": "Which is the BEST description of 'risk appetite'?",
-    "options": ["Maximum technical impact possible", "The level of risk an organization is willing to accept in pursuit of its objectives", "Number of incidents per year", "ALE × 2"],
+    "options": ["Maximum technical impact possible", "The level of risk an organization is willing to accept in pursuit of its objectives", "Number of incidents per year", "ALE x 2"],
     "answer": 1,
     "explanation": "Risk appetite is the organization's declared willingness to accept risk in pursuit of objectives. Risk tolerance describes acceptable variation around objectives."
   },
