@@ -74,6 +74,14 @@ button.ghost { background: transparent; }
   border-radius: 12px;
   font-size: 11px;
 }
+.timer {
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 13px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.timer.timer-warn { color: #fbbf24; }
+.timer.timer-crit { color: var(--bad); font-weight: 600; }
 .options { list-style: none; padding: 0; margin: 16px 0; }
 .options li {
   background: var(--panel2);

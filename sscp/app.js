@@ -129,10 +129,16 @@ function renderHome() {
     const domain = domainSel.value;
     const count = parseInt(document.getElementById("count").value, 10);
     const order = document.getElementById("order").value;
+    const timeLimit = parseInt(document.getElementById("time-limit").value, 10) || 0;
     const qs = pickQuestions(domain, count, order);
     if (qs.length === 0) { alert("No questions match that selection."); return; }
-    state.session = { questions: qs, index: 0, answers: [], startedAt: Date.now() };
+    state.session = {
+      questions: qs, index: 0, answers: [], startedAt: Date.now(),
+      timeLimit, deadline: timeLimit > 0 ? Date.now() + timeLimit * 1000 : null,
+      timerId: null, expired: false
+    };
     renderQuiz();
+    if (timeLimit > 0) startTimer();
   });
   document.getElementById("reset").addEventListener("click", () => {
     if (confirm("Erase all stored progress?")) { saveProgress({ sessions: [], perDomain: {} }); renderHome(); }
@@ -424,6 +430,49 @@ function renderQuiz() {
   document.getElementById("quit").addEventListener("click", () => {
     if (s.answers.length === 0 || confirm("End session and see results so far?")) finalize();
   });
+  updateTimerDisplay();
+}
+
+function startTimer() {
+  const s = state.session;
+  if (!s || !s.timeLimit) return;
+  stopTimer();
+  s.timerId = setInterval(() => {
+    const remaining = s.deadline - Date.now();
+    if (remaining <= 0) {
+      s.expired = true;
+      stopTimer();
+      finalize();
+      return;
+    }
+    updateTimerDisplay();
+  }, 500);
+}
+
+function stopTimer() {
+  const s = state.session;
+  if (s && s.timerId) { clearInterval(s.timerId); s.timerId = null; }
+}
+
+function updateTimerDisplay() {
+  const el = document.getElementById("timer");
+  if (!el) return;
+  const s = state.session;
+  if (!s || !s.timeLimit) { el.classList.add("hidden"); return; }
+  el.classList.remove("hidden");
+  const remaining = Math.max(0, s.deadline - Date.now());
+  el.textContent = formatDuration(remaining);
+  el.classList.toggle("timer-warn", remaining < 5 * 60 * 1000 && remaining >= 60 * 1000);
+  el.classList.toggle("timer-crit", remaining < 60 * 1000);
+}
+
+function formatDuration(ms) {
+  const totalSec = Math.ceil(ms / 1000);
+  const h = Math.floor(totalSec / 3600);
+  const m = Math.floor((totalSec % 3600) / 60);
+  const sec = totalSec % 60;
+  const pad = n => String(n).padStart(2, "0");
+  return h > 0 ? `${h}:${pad(m)}:${pad(sec)}` : `${m}:${pad(sec)}`;
 }
 
 function selectAnswer(idx, liEl) {
@@ -456,6 +505,7 @@ function advance() {
 
 function finalize() {
   const s = state.session;
+  stopTimer();
   const answered = s.answers.filter(a => a !== undefined).length;
   const correct = s.answers.reduce((acc, a, i) => acc + (a === s.questions[i].answer ? 1 : 0), 0);
   const byDomain = {};
@@ -466,6 +516,7 @@ function finalize() {
     byDomain[q.domain].total += 1;
     if (a === q.answer) byDomain[q.domain].correct += 1;
   });
+  const elapsedMs = Date.now() - s.startedAt;
   const progress = loadProgress();
   progress.sessions.push({ correct, total: answered, at: Date.now() });
   for (const [d, v] of Object.entries(byDomain)) {
@@ -474,13 +525,20 @@ function finalize() {
     progress.perDomain[d].total += v.total;
   }
   saveProgress(progress);
-  renderResults({ correct, total: answered, byDomain });
+  renderResults({ correct, total: answered, byDomain, elapsedMs, expired: s.expired, timeLimit: s.timeLimit });
 }
 
-function renderResults({ correct, total, byDomain }) {
+function renderResults({ correct, total, byDomain, elapsedMs, expired, timeLimit }) {
   mount("tpl-results");
   const pct = total ? Math.round(100 * correct / total) : 0;
   document.getElementById("score").textContent = `${correct} / ${total}  (${pct}%)`;
+  const meta = document.getElementById("results-meta");
+  if (meta) {
+    const parts = [`Time: ${formatDuration(elapsedMs)}`];
+    if (timeLimit) parts.push(`limit: ${formatDuration(timeLimit * 1000)}`);
+    if (expired) parts.push(`<span class="timer-crit">time expired</span>`);
+    meta.innerHTML = parts.join(" · ");
+  }
   const tbody = document.querySelector("#bydomain tbody");
   for (const [d, v] of Object.entries(byDomain)) {
     const tr = document.createElement("tr");

@@ -3058,5 +3058,2945 @@ window.QUESTIONS = [
     ],
     "answer": 1,
     "explanation": "Identifying security and privacy requirements early supports 'shift left' — building security into the design rather than retrofitting it later."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which is the FIRST canon of the ISC2 Code of Ethics?",
+    "options": [
+      "Act honorably, honestly, justly, responsibly, and legally",
+      "Provide diligent and competent service to principals",
+      "Advance and protect the profession",
+      "Protect society, the common good, and public trust"
+    ],
+    "answer": 3,
+    "explanation": "The four canons are ordered by priority. Canon I (highest) is to protect society and the common good. Conflicts between canons are resolved by canon order."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "When two canons of the ISC2 Code of Ethics appear to conflict, how should the conflict be resolved?",
+    "options": [
+      "By the consensus of peers in the field",
+      "By following the canon listed first in order",
+      "By choosing the option with the least cost",
+      "By deferring to the employer's instructions"
+    ],
+    "answer": 1,
+    "explanation": "When canons conflict, the canon listed earlier takes precedence. Protecting society outranks duty to a principal."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "A complaint that an ISC2 member violated the Code of Ethics may result in which outcome after committee review?",
+    "options": [
+      "Automatic certification renewal",
+      "Revocation of the member's certification",
+      "Government criminal prosecution",
+      "Mandatory new training only"
+    ],
+    "answer": 1,
+    "explanation": "Substantiated Code of Ethics violations can result in revocation of the credential by the ISC2 Ethics Committee."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Crime Prevention Through Environmental Design (CPTED) primarily relies on which approach?",
+    "options": [
+      "Hiring more security guards per shift",
+      "Shaping the physical environment to discourage criminal acts",
+      "Adding cryptographic controls to facilities",
+      "Issuing pepper spray to staff"
+    ],
+    "answer": 1,
+    "explanation": "CPTED uses environmental design — sightlines, lighting, landscaping, access paths — to discourage criminal behavior and increase the perception of risk to offenders."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which physical control is BEST suited to stop a vehicle from being driven into the side of a building?",
+    "options": [
+      "Surveillance cameras",
+      "Bollards or vehicle barriers",
+      "Visitor sign-in sheet",
+      "Motion-detection alarms"
+    ],
+    "answer": 1,
+    "explanation": "Bollards are designed to absorb or stop vehicle impact. Cameras and alarms detect; they don't physically prevent a vehicle attack."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which is the BEST practice when admitting a visitor into a sensitive facility area?",
+    "options": [
+      "Issue a temporary access badge and require escort",
+      "Provide an employee badge for the day",
+      "Let them sign in and walk freely",
+      "Allow access if they know an employee's name"
+    ],
+    "answer": 0,
+    "explanation": "Visitors should receive distinct, time-limited badges and be escorted in sensitive areas. This both controls access and creates an audit trail."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "An attacker follows an authorized employee through a badge-controlled door without their own badge. This is BEST described as:",
+    "options": [
+      "Phishing",
+      "Tailgating (piggybacking)",
+      "Shoulder surfing",
+      "Dumpster diving"
+    ],
+    "answer": 1,
+    "explanation": "Tailgating (or piggybacking) is unauthorized physical access by following an authenticated person. Mantraps and turnstiles are common countermeasures."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which is the PRIMARY security purpose of a clean desk policy?",
+    "options": [
+      "Increase office aesthetics",
+      "Reduce exposure of sensitive information to unauthorized eyes",
+      "Improve cleaning crew productivity",
+      "Reduce paper costs"
+    ],
+    "answer": 1,
+    "explanation": "Clean desk policies reduce the chance that confidential documents, sticky-note credentials, or screens with sensitive data are seen by unauthorized parties."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which control BEST mitigates the risk of an attacker plugging an unauthorized USB device into a workstation?",
+    "options": [
+      "Antivirus updates",
+      "Endpoint USB device control / port blocking",
+      "Stronger Wi-Fi passwords",
+      "Increased password complexity"
+    ],
+    "answer": 1,
+    "explanation": "Endpoint USB controls (allowlist/blocklist by device class, vendor/product ID) directly address unauthorized USB devices. Antivirus may catch payloads but not the connection itself."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "When a laptop reaches end of life and is being decommissioned, which step is MOST important from a data-protection standpoint?",
+    "options": [
+      "Re-image with a fresh OS",
+      "Securely sanitize or destroy the storage media",
+      "Update the asset tag color",
+      "Return the keyboard to inventory"
+    ],
+    "answer": 1,
+    "explanation": "Decommissioning must include secure sanitization or destruction of storage media to prevent data leakage. Re-imaging alone does not reliably erase residual data, especially on SSDs."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which NIST SP 800-88 sanitization category renders data infeasible to recover using laboratory techniques?",
+    "options": [
+      "Clear",
+      "Purge",
+      "Destroy",
+      "Format"
+    ],
+    "answer": 2,
+    "explanation": "NIST 800-88 defines Clear, Purge, and Destroy. Destroy renders the media itself unusable and data infeasible to recover even with lab techniques."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which media is degaussing effective against?",
+    "options": [
+      "Solid-state drives",
+      "Magnetic media such as HDDs and tape",
+      "Optical discs",
+      "Flash drives"
+    ],
+    "answer": 1,
+    "explanation": "Degaussing uses a strong magnetic field to disrupt magnetic media. It is not effective against SSDs, flash, or optical media."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Why is overwriting an entire SSD less reliable than overwriting a traditional HDD for data sanitization?",
+    "options": [
+      "SSDs operate at higher temperatures",
+      "Wear-leveling may leave data in cells not exposed via the logical interface",
+      "SSDs use different file systems",
+      "Overwrites do not work at all on SSDs"
+    ],
+    "answer": 1,
+    "explanation": "Wear-leveling and over-provisioning on SSDs mean physically present data may not be visible through normal logical addresses, so overwrites cannot guarantee complete erasure. Crypto-erase or destruction is preferred."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which data classification scheme is MOST commonly used in U.S. government environments?",
+    "options": [
+      "Public / Internal / Confidential / Restricted",
+      "Unclassified / Confidential / Secret / Top Secret",
+      "Tier 1 / Tier 2 / Tier 3 / Tier 4",
+      "Bronze / Silver / Gold / Platinum"
+    ],
+    "answer": 1,
+    "explanation": "U.S. government uses Unclassified, Confidential, Secret, and Top Secret with possible compartments. Commercial schemes vary but commonly use Public/Internal/Confidential/Restricted."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "When labeling physical printouts of classified material, the marking should appear:",
+    "options": [
+      "Only on the cover sheet",
+      "On every page, typically top and bottom",
+      "Only on the document's last page",
+      "Only on the digital original"
+    ],
+    "answer": 1,
+    "explanation": "Classification markings should appear on every page (often top and bottom) so the classification level is clear regardless of which page is viewed."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Health insurance claim records that include patient name, treatment codes, and provider would BEST be classified as:",
+    "options": [
+      "PII only",
+      "PHI (protected health information)",
+      "PCI data",
+      "Public information"
+    ],
+    "answer": 1,
+    "explanation": "Protected Health Information (PHI) covers individually identifiable health information held or transmitted by covered entities under HIPAA. The records described include both identifiers and health data."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which is the PRIMARY purpose of a privacy notice provided to customers?",
+    "options": [
+      "Replace the terms of service",
+      "Disclose what personal data is collected, why, and how it is used",
+      "Eliminate the need for encryption",
+      "Authorize secondary uses without restriction"
+    ],
+    "answer": 1,
+    "explanation": "Privacy notices inform individuals about data practices — collection, purpose, sharing, retention, rights — and are foundational to consent and most privacy frameworks."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which behavior is MOST suggestive of a potential insider threat warranting investigation?",
+    "options": [
+      "Working approved overtime occasionally",
+      "Repeatedly accessing data well outside the employee's normal role and hours",
+      "Asking for cross-training opportunities",
+      "Reporting suspicious emails to security"
+    ],
+    "answer": 1,
+    "explanation": "Unusual access patterns — broad data access outside job role, off-hours activity, large downloads — are classic insider-threat indicators that warrant further analysis."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which statement BEST reflects organizational handling of whistleblowers reporting policy violations?",
+    "options": [
+      "Whistleblowers should be terminated for disloyalty",
+      "Reporters should have a protected, retaliation-free channel",
+      "Reports are best ignored to avoid drama",
+      "Reports should be made public immediately"
+    ],
+    "answer": 1,
+    "explanation": "Mature programs offer protected reporting channels (often anonymous) and prohibit retaliation, which encourages disclosure of misconduct and reduces fraud risk."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which is the PRIMARY difference between cross-training and job rotation as security controls?",
+    "options": [
+      "Cross-training rotates people; rotation trains people",
+      "Cross-training prepares others to perform a role; rotation periodically reassigns roles to detect issues",
+      "They are interchangeable terms",
+      "Job rotation only applies to executives"
+    ],
+    "answer": 1,
+    "explanation": "Cross-training builds backup skills (continuity); job rotation reassigns staff periodically and can expose long-running issues like ongoing fraud."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which step in the employee onboarding process is MOST important from an access-control perspective?",
+    "options": [
+      "Issuing a parking pass",
+      "Provisioning accounts with role-appropriate least-privilege access",
+      "Assigning a desk location",
+      "Adding the employee to a company calendar"
+    ],
+    "answer": 1,
+    "explanation": "Onboarding should provision accounts based on the role's required access — least privilege from day one — to limit exposure and reduce later cleanup."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which background check element typically requires explicit candidate consent and may have legal limits on use?",
+    "options": [
+      "Identity verification",
+      "Credit history check",
+      "Reference checks",
+      "Education verification"
+    ],
+    "answer": 1,
+    "explanation": "Credit checks are subject to specific legal limits (e.g., FCRA in the U.S., similar laws elsewhere) and generally require explicit candidate consent and a permissible purpose."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which is a typical security justification for pre-employment drug testing?",
+    "options": [
+      "Reduces office equipment costs",
+      "Helps mitigate insider risk in safety- or trust-sensitive roles",
+      "Replaces background checks entirely",
+      "Eliminates the need for training"
+    ],
+    "answer": 1,
+    "explanation": "Drug testing is often justified in safety-critical or trust-sensitive roles as part of broader workforce risk management. Legal/regulatory frameworks vary by jurisdiction."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "A RACI matrix in a security context primarily identifies which of the following for each task?",
+    "options": [
+      "Tools, dependencies, and budget",
+      "Who is Responsible, Accountable, Consulted, and Informed",
+      "Risk, Asset, Compliance, and Impact",
+      "Roles, Auditors, Customers, Investors"
+    ],
+    "answer": 1,
+    "explanation": "RACI is a responsibility assignment chart — Responsible (does the work), Accountable (owns the outcome), Consulted (provides input), Informed (kept aware)."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which is the correct order from most general to most specific in security documentation?",
+    "options": [
+      "Procedure, standard, policy, guideline",
+      "Policy, standard, procedure, guideline",
+      "Standard, guideline, procedure, policy",
+      "Guideline, policy, procedure, standard"
+    ],
+    "answer": 1,
+    "explanation": "Policies set intent; standards are mandatory requirements; procedures describe how; guidelines are recommended practices. Each layer derives from the layer above."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which BEST indicates a healthy security culture in an organization?",
+    "options": [
+      "Security incidents are hidden to protect careers",
+      "Staff feel safe reporting near-misses without fear of blame",
+      "Security training happens once at hire only",
+      "Only the security team thinks about security"
+    ],
+    "answer": 1,
+    "explanation": "A blameless reporting environment encourages disclosure of near-misses and mistakes, surfacing risks before they become incidents."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which metric is commonly used to measure the effectiveness of a phishing awareness program?",
+    "options": [
+      "Number of policies published",
+      "Click-through rate on simulated phishing campaigns",
+      "Average employee tenure",
+      "Number of awareness videos posted"
+    ],
+    "answer": 1,
+    "explanation": "Simulated phishing click-through rate is a direct behavioral metric showing whether training is reducing susceptibility over time."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which is a BEST practice for conducting an internal phishing simulation?",
+    "options": [
+      "Surprise leadership with a high-pressure scenario",
+      "Coordinate with HR and provide just-in-time training when users click",
+      "Publicly post which users clicked",
+      "Use only easy-to-spot test messages"
+    ],
+    "answer": 1,
+    "explanation": "Effective simulations are coordinated with HR/comms, escalate difficulty over time, and provide immediate just-in-time training when users click — without publicly shaming individuals."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which BEST describes role-based security training?",
+    "options": [
+      "The same training given to everyone annually",
+      "Training tailored to the specific risks of each role (developer, admin, exec)",
+      "Training in physical security only",
+      "Training in cybersecurity only"
+    ],
+    "answer": 1,
+    "explanation": "Role-based training addresses the specific threats and responsibilities of each role: developers learn secure coding, admins learn hardening, executives learn social-engineering targeting."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which is the PRIMARY purpose of a vendor security assessment before signing a contract?",
+    "options": [
+      "Evaluate the vendor's marketing materials",
+      "Identify and address security risks introduced by the third-party relationship",
+      "Compare vendor pricing structures",
+      "Schedule the implementation roadmap"
+    ],
+    "answer": 1,
+    "explanation": "Vendor risk assessments aim to surface and remediate security/compliance risks introduced by the vendor before commitment, scoped to the data and access involved."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "When an employee violates the Acceptable Use Policy, which action is MOST appropriate?",
+    "options": [
+      "Immediate termination regardless of severity",
+      "Investigate, apply progressive consequences per policy, and document",
+      "Ignore the violation if the employee is senior",
+      "Make the violation public on internal forums"
+    ],
+    "answer": 1,
+    "explanation": "Documented investigation and proportional consequences per policy (warning, suspension, training, termination depending on severity) are standard. Consistent application is critical for fairness and legal defensibility."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which scenario BEST illustrates a conflict of interest that should be disclosed?",
+    "options": [
+      "A staff member uses the company lunchroom",
+      "A security manager evaluating vendors has a financial stake in one of the vendors",
+      "An employee attends an industry conference",
+      "An auditor reviews the same documents twice"
+    ],
+    "answer": 1,
+    "explanation": "A financial stake in a vendor being evaluated creates clear bias and must be disclosed. Many organizations require recusal in such situations."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Who is ultimately responsible for assigning a classification to a piece of organizational data?",
+    "options": [
+      "The IT operations team",
+      "The data owner",
+      "The legal department",
+      "Any employee handling the data"
+    ],
+    "answer": 1,
+    "explanation": "The data owner — typically a business leader for that data — is accountable for classification, access decisions, and approving handling requirements."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which is the PRIMARY purpose of a tamper-evident seal on a server case or evidence bag?",
+    "options": [
+      "Prevent any access to the contents",
+      "Provide visible indication if the seal has been disturbed",
+      "Encrypt the contents inside",
+      "Cool the equipment"
+    ],
+    "answer": 1,
+    "explanation": "Tamper-evident seals do not prevent tampering — they make it visible, supporting chain of custody and detection of unauthorized access."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which lock type provides the BEST audit trail of who entered and when?",
+    "options": [
+      "Traditional pin-tumbler key lock",
+      "Electronic lock integrated with an access control system",
+      "Combination padlock",
+      "Cipher lock with shared code"
+    ],
+    "answer": 1,
+    "explanation": "Electronic locks tied to access control systems record per-user entry events with timestamps. Mechanical locks and shared codes lack per-user auditing."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which BEST distinguishes split knowledge from dual control?",
+    "options": [
+      "They mean the same thing",
+      "Split knowledge divides a secret between people; dual control requires two people to act together",
+      "Split knowledge applies only to admins",
+      "Dual control requires three or more people"
+    ],
+    "answer": 1,
+    "explanation": "Split knowledge: no single person knows the full secret (e.g., half the key). Dual control: two people must both act to perform the action. They can be combined."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "A maker-checker process in security operations BEST exemplifies which principle?",
+    "options": [
+      "Least privilege",
+      "Separation of duties",
+      "Defense in depth",
+      "Need to know"
+    ],
+    "answer": 1,
+    "explanation": "Maker-checker (one person initiates, another approves) is a classic separation of duties pattern that reduces single-point fraud or error risk."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "How often should security policies typically be reviewed and updated?",
+    "options": [
+      "Only when an incident occurs",
+      "On a defined cadence (e.g., annually) and when material changes happen",
+      "Every ten years",
+      "Whenever leadership changes"
+    ],
+    "answer": 1,
+    "explanation": "Policies should be reviewed on a defined regular cadence plus event-driven (regulatory change, incident, business change) to remain relevant and accurate."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Which BEST describes 'configuration drift'?",
+    "options": [
+      "Configurations being deliberately rotated for security",
+      "Systems gradually deviating from their approved baseline over time",
+      "Changes documented in the change management system",
+      "Network latency variability"
+    ],
+    "answer": 1,
+    "explanation": "Configuration drift is the gradual divergence from documented baselines due to ad-hoc changes. Drift is a primary risk addressed by configuration management."
+  },
+  {
+    "domain": "1: Security Operations and Administration",
+    "question": "Why is separation of development, test, and production environments important?",
+    "options": [
+      "Reduces the cost of hardware",
+      "Prevents untested changes and test data from impacting live systems and users",
+      "Improves developer morale only",
+      "Eliminates the need for backups"
+    ],
+    "answer": 1,
+    "explanation": "Separating environments contains the impact of testing and developer activity, prevents accidental production changes, and reduces risk of test data or credentials leaking to production."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "NIST Identity Assurance Levels (IAL) describe the strength of which process?",
+    "options": [
+      "The cryptographic strength of the password hash",
+      "The identity proofing process used to bind a credential to a real person",
+      "The complexity of the authentication factors",
+      "The encryption strength of the session"
+    ],
+    "answer": 1,
+    "explanation": "IAL describes how confident we can be that a credential belongs to a specific real-world person. AAL describes the authenticator's strength. FAL describes federation assertion protection."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which assurance level under NIST SP 800-63B requires phishing-resistant authentication for the highest assurance?",
+    "options": [
+      "AAL1",
+      "AAL2",
+      "AAL3",
+      "AAL0"
+    ],
+    "answer": 2,
+    "explanation": "AAL3 requires hardware-based authenticators with verifier impersonation resistance (phishing-resistant). AAL2 requires MFA but not necessarily phishing-resistant. AAL1 allows single-factor."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Federation Assurance Levels (FAL) primarily describe the protection of what?",
+    "options": [
+      "The user's biometric template",
+      "The federation assertion passed between identity provider and relying party",
+      "The encryption of stored credentials",
+      "The physical security of token vendors"
+    ],
+    "answer": 1,
+    "explanation": "FAL describes how well the federation assertion (e.g., a SAML response or OIDC ID token) is protected against tampering, replay, and disclosure between IdP and RP."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is a typical step in identity proofing for a higher assurance level?",
+    "options": [
+      "Self-attestation only via web form",
+      "Verification of a government-issued ID and a supplementary identity record",
+      "Email confirmation alone",
+      "Phone number lookup"
+    ],
+    "answer": 1,
+    "explanation": "Higher assurance proofing requires evidence such as a government ID plus a corroborating record (financial, utility, biometric comparison), often in person or via remote video proofing."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is the primary weakness of static knowledge-based authentication (e.g., 'mother's maiden name')?",
+    "options": [
+      "It is computationally expensive",
+      "Answers are often discoverable via public records or social media",
+      "It requires hardware tokens",
+      "It cannot be used over the internet"
+    ],
+    "answer": 1,
+    "explanation": "Static KBA answers are frequently exposed through breaches, public records, or social media, making them weak for recovery or step-up authentication."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which security property of the Bell-LaPadula model prevents a subject from reading data classified above their clearance?",
+    "options": [
+      "Star property (no write down)",
+      "Simple security property (no read up)",
+      "Discretionary security property",
+      "Tranquility property"
+    ],
+    "answer": 1,
+    "explanation": "Bell-LaPadula's simple security property states 'no read up' — a subject cannot read objects at a higher classification. The * property is 'no write down'. Both protect confidentiality."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which model is designed to protect integrity, with rules 'no read down, no write up'?",
+    "options": [
+      "Bell-LaPadula",
+      "Biba",
+      "Clark-Wilson",
+      "Brewer-Nash"
+    ],
+    "answer": 1,
+    "explanation": "Biba protects integrity by preventing low-integrity data from contaminating high-integrity data: no read down (prevents reading lower-integrity data) and no write up (prevents writing to higher-integrity)."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which security model focuses on well-formed transactions and separation of duties to protect data integrity?",
+    "options": [
+      "Bell-LaPadula",
+      "Biba",
+      "Clark-Wilson",
+      "Take-Grant"
+    ],
+    "answer": 2,
+    "explanation": "Clark-Wilson focuses on commercial integrity, defining constrained data items, transformation procedures, and integrity verification procedures, with explicit separation of duties."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which model is specifically designed to prevent conflicts of interest by dynamically restricting access based on what the subject has previously accessed?",
+    "options": [
+      "Bell-LaPadula",
+      "Biba",
+      "Brewer-Nash",
+      "Clark-Wilson"
+    ],
+    "answer": 2,
+    "explanation": "Brewer-Nash (Chinese Wall) restricts access based on previous accesses to prevent conflicts of interest — common in legal, consulting, and financial firms serving competitors."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "The Take-Grant protection model uses which primitive operations to analyze rights propagation?",
+    "options": [
+      "Read, write, execute, delete",
+      "Take, grant, create, remove (revoke)",
+      "Encrypt, sign, hash, verify",
+      "Allow, deny, log, alert"
+    ],
+    "answer": 1,
+    "explanation": "Take-Grant uses take, grant, create, and remove/revoke primitives to model how access rights propagate through a system, supporting formal analysis of safety properties."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Per current NIST SP 800-63B guidance, which password practice is now DISCOURAGED?",
+    "options": [
+      "Allowing long passphrases of 64+ characters",
+      "Routine forced password rotation in the absence of compromise",
+      "Checking new passwords against breach corpora",
+      "Allowing the user to paste passwords"
+    ],
+    "answer": 1,
+    "explanation": "Modern NIST guidance discourages periodic forced rotation (which tends to produce weaker, predictable patterns) and recommends rotation only on suspected compromise."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is the PRIMARY security benefit of using a password manager?",
+    "options": [
+      "Single password is reused across all sites",
+      "Enables unique, high-entropy passwords per site without memorization",
+      "Eliminates the need for MFA",
+      "Makes accounts immune to phishing"
+    ],
+    "answer": 1,
+    "explanation": "Password managers let users adopt unique, long, random passwords per site (eliminating reuse) without memorization overhead. They do not eliminate the need for MFA."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which technology BEST enables passwordless authentication while remaining phishing-resistant?",
+    "options": [
+      "Strong text-based passwords",
+      "FIDO2 / WebAuthn with platform or roaming authenticators",
+      "Knowledge-based answers",
+      "Security questions"
+    ],
+    "answer": 1,
+    "explanation": "FIDO2/WebAuthn supports passwordless flows where the authenticator (built-in or external) proves possession with origin-bound public-key cryptography, resisting phishing by design."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Smart cards using PIV/CAC standards primarily authenticate by:",
+    "options": [
+      "Sharing a long static password",
+      "Proving possession of a private key and a PIN protecting it",
+      "Sending a fingerprint hash",
+      "Echoing a server-issued nonce in plaintext"
+    ],
+    "answer": 1,
+    "explanation": "PIV/CAC smart cards store private keys protected by a PIN. Authentication proves possession of the card AND knowledge of the PIN — two factors."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Mutual TLS (mTLS) is most commonly used in cloud architectures to:",
+    "options": [
+      "Replace HTTPS for browsers",
+      "Authenticate workloads to each other in service-to-service communication",
+      "Eliminate the need for any certificates",
+      "Provide passwordless user login to web apps"
+    ],
+    "answer": 1,
+    "explanation": "mTLS verifies both sides of a TLS connection using certificates and is widely used for service-to-service authentication in service meshes, zero-trust architectures, and API gateways."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which OAuth 2.0 grant type is recommended for confidential web applications acting on behalf of a user?",
+    "options": [
+      "Implicit flow",
+      "Authorization code flow (often with PKCE)",
+      "Resource owner password credentials",
+      "Client credentials"
+    ],
+    "answer": 1,
+    "explanation": "Authorization code flow (with PKCE for public clients) is the recommended modern flow for user-delegated authorization. Implicit is deprecated. ROPC is discouraged."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which OAuth 2.0 grant type is appropriate when a service acts on its own behalf, with no end user involved?",
+    "options": [
+      "Authorization code",
+      "Implicit",
+      "Client credentials",
+      "Device code"
+    ],
+    "answer": 2,
+    "explanation": "Client credentials grant is for machine-to-machine scenarios where the client itself owns the resource access, not delegating from a user."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "What is the PRIMARY purpose of an OAuth refresh token?",
+    "options": [
+      "Authorize a single API call",
+      "Obtain a new access token without requiring the user to re-authenticate",
+      "Encrypt the access token in transit",
+      "Replace the user's password"
+    ],
+    "answer": 1,
+    "explanation": "Refresh tokens allow the client to obtain new short-lived access tokens after expiration without prompting the user, while supporting revocation by the authorization server."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "A JWT (JSON Web Token) consists of which three parts separated by dots?",
+    "options": [
+      "Username, password, signature",
+      "Header, payload, signature",
+      "Issuer, subject, audience",
+      "Algorithm, key, content"
+    ],
+    "answer": 1,
+    "explanation": "A JWT has three base64url-encoded segments separated by '.': header (algorithm/type), payload (claims), and signature. Claims like iss/sub/aud go inside the payload."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "What is the JWT 'alg: none' vulnerability?",
+    "options": [
+      "The token is encrypted twice",
+      "An accepting library treats an unsigned token as valid because alg is 'none'",
+      "The token expires immediately",
+      "The token uses excessive CPU"
+    ],
+    "answer": 1,
+    "explanation": "Some libraries historically accepted tokens whose header specified 'alg: none' as valid without signature verification, allowing trivial forgery. Always reject 'none' or unexpected algorithms."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is the BEST way to handle compromise of a long-lived API token?",
+    "options": [
+      "Wait for natural expiration",
+      "Revoke the token immediately and rotate the secret",
+      "Inform users via blog post",
+      "Reduce the token's permission set in place"
+    ],
+    "answer": 1,
+    "explanation": "Compromised tokens must be revoked promptly and replaced. Waiting for expiration leaves a window of exploitation. Some token systems support immediate invalidation via blocklists or short-lived tokens with revocation lists."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is the GREATEST security advantage of a hardware token over a software-based authenticator app?",
+    "options": [
+      "Cheaper to deploy at scale",
+      "Private key never leaves the tamper-resistant hardware",
+      "Faster authentication time",
+      "Works offline"
+    ],
+    "answer": 1,
+    "explanation": "Hardware tokens keep the private key inside tamper-resistant hardware, so malware on the user's device cannot extract it. Software tokens are more exposed to endpoint compromise."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which attack is SMS-based one-time-passcode MFA MOST susceptible to compared to FIDO2?",
+    "options": [
+      "Buffer overflow",
+      "SIM swap attacks intercepting the SMS",
+      "Side-channel attacks on the cell tower",
+      "Cryptographic key fatigue"
+    ],
+    "answer": 1,
+    "explanation": "SIM-swap (and SS7 routing) attacks can divert SMS to an attacker-controlled device, intercepting OTPs. FIDO2 origin-bound keys are not vulnerable to this."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which attack technique spams a user with MFA push notifications hoping they will accidentally approve one?",
+    "options": [
+      "Brute force",
+      "MFA fatigue (prompt bombing)",
+      "Pass-the-hash",
+      "Golden ticket"
+    ],
+    "answer": 1,
+    "explanation": "MFA fatigue attacks rely on users approving an unexpected push to make the prompts stop. Mitigations: number matching, context display, and rate limiting."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is a BEST practice for handling MFA recovery (backup) codes?",
+    "options": [
+      "Store them in plaintext in email",
+      "Store them securely offline or in a vault, treat as sensitive credentials",
+      "Share with one trusted colleague",
+      "Use the same code for all users"
+    ],
+    "answer": 1,
+    "explanation": "Recovery codes can bypass MFA and must be treated with the same care as the primary credential — stored offline or in an encrypted password manager."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is an example of behavioral biometrics?",
+    "options": [
+      "Iris scan",
+      "Keystroke dynamics and mouse movement patterns",
+      "Fingerprint capture",
+      "Facial structure measurement"
+    ],
+    "answer": 1,
+    "explanation": "Behavioral biometrics measure how a user interacts with a device — keystroke timing, mouse patterns, swipe behavior — to provide continuous identity signals."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Continuous authentication BEST refers to:",
+    "options": [
+      "Authenticating once at login and assuming identity for the session",
+      "Continuously re-evaluating signals during the session to detect identity changes",
+      "Requiring a password every minute",
+      "Disabling MFA after first login"
+    ],
+    "answer": 1,
+    "explanation": "Continuous authentication uses ongoing signals (location, biometric behavior, device posture) to detect identity changes mid-session and trigger re-authentication when risk increases."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Step-up authentication BEST describes:",
+    "options": [
+      "Replacing the user's password",
+      "Requesting a stronger factor when a higher-risk action is attempted",
+      "Disabling MFA after initial login",
+      "Granting permanent elevated access"
+    ],
+    "answer": 1,
+    "explanation": "Step-up auth keeps initial sign-in low-friction but requires a stronger factor (push, FIDO2, biometric) when the user attempts sensitive actions (wire transfer, admin change)."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is a reasonable account lockout policy aligned with current NIST guidance?",
+    "options": [
+      "Permanent lockout after one failed attempt",
+      "Temporary lockout with throttling and exponential backoff after repeated failures",
+      "No lockout at all to avoid disruption",
+      "Lockout requires manual admin reset for all users"
+    ],
+    "answer": 1,
+    "explanation": "Modern guidance favors throttling and temporary lockouts (rather than permanent), often with notification and exponential backoff, balancing brute-force defense and availability."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which type of privileged account is typically used by an automated service to authenticate to other systems?",
+    "options": [
+      "Root account",
+      "Standard user account",
+      "Service account",
+      "Guest account"
+    ],
+    "answer": 2,
+    "explanation": "Service accounts are non-human accounts used by applications/services to authenticate. They typically have specific, scoped privileges and credential lifecycle management requirements."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is a critical hardening step for default accounts on new systems?",
+    "options": [
+      "Leave them as-is for vendor support access",
+      "Rename or disable, and change default credentials immediately",
+      "Add them to admin groups by default",
+      "Document the default credentials publicly"
+    ],
+    "answer": 1,
+    "explanation": "Default accounts and credentials are widely known and a common attack vector. Hardening: rename/disable where possible and rotate credentials before exposure to networks."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is the MAIN security risk associated with guest accounts on a system?",
+    "options": [
+      "High licensing costs",
+      "They are often anonymous and may persist with weak controls",
+      "They cannot be monitored",
+      "They consume excessive CPU"
+    ],
+    "answer": 1,
+    "explanation": "Guest accounts often allow anonymous or weakly authenticated access. They should be disabled by default and only enabled with explicit, monitored purpose."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is the GREATEST security weakness of shared accounts?",
+    "options": [
+      "They cost more to license",
+      "They eliminate individual accountability and traceability",
+      "They are slower at authentication",
+      "They cannot use MFA"
+    ],
+    "answer": 1,
+    "explanation": "Shared accounts break the accountability chain — you cannot tie actions to a specific person. PAM tools that broker access while logging individual users help mitigate this."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which is a BEST practice for service account credentials?",
+    "options": [
+      "Never rotate them to avoid breaking services",
+      "Automate rotation through a secrets manager",
+      "Print and store in a binder",
+      "Use the same credentials across all services"
+    ],
+    "answer": 1,
+    "explanation": "Service account credentials should be rotated automatically through a secrets management platform, ideally with applications fetching credentials at runtime rather than storing them locally."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Identity Governance and Administration (IGA) tools primarily provide which capability?",
+    "options": [
+      "Antivirus protection for endpoints",
+      "Lifecycle management, access reviews, and policy enforcement for identities",
+      "Network packet inspection",
+      "Backup orchestration"
+    ],
+    "answer": 1,
+    "explanation": "IGA platforms manage the identity lifecycle (provisioning, role management, certification), enforce SoD, and produce audit-ready reports across many connected systems."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "A user successfully logs in but cannot access a particular file. This is BEST described as a failure of:",
+    "options": [
+      "Authentication",
+      "Authorization",
+      "Identification",
+      "Encryption"
+    ],
+    "answer": 1,
+    "explanation": "Authentication confirms who you are; authorization decides what you can do. Successful login then denied access is an authorization decision."
+  },
+  {
+    "domain": "2: Access Controls",
+    "question": "Which BEST distinguishes Identity Assurance Level from Authenticator Assurance Level?",
+    "options": [
+      "IAL is about the credential, AAL is about the person",
+      "IAL is about confidence in identity proofing; AAL is about authenticator strength",
+      "IAL and AAL are the same concept",
+      "IAL applies to organizations, AAL to individuals"
+    ],
+    "answer": 1,
+    "explanation": "IAL measures how confident we are the credential belongs to the real-world person it claims to. AAL measures how strongly the authenticator proves possession during sign-in."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "What does CWE catalog?",
+    "options": [
+      "Vulnerability instances in specific products",
+      "Common Weakness Enumeration — types of software weaknesses",
+      "Cloud Workload Events",
+      "Cybersecurity Workforce Education topics"
+    ],
+    "answer": 1,
+    "explanation": "CWE (Common Weakness Enumeration) is a catalog of software and hardware weakness types (e.g., CWE-79 = XSS). CVE catalogs specific vulnerability instances."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Common Configuration Enumeration (CCE) catalogs:",
+    "options": [
+      "Vulnerability instances",
+      "System configuration items used in security assessments",
+      "Cipher suite identifiers",
+      "Cybersecurity certifications"
+    ],
+    "answer": 1,
+    "explanation": "CCE provides unique identifiers for system configuration items, supporting consistent configuration assessment across tools and benchmarks like CIS and DISA STIGs."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which CVSS metric group describes characteristics of a vulnerability that change over time as exploits emerge or patches release?",
+    "options": [
+      "Base metrics",
+      "Temporal metrics",
+      "Environmental metrics",
+      "Behavioral metrics"
+    ],
+    "answer": 1,
+    "explanation": "CVSS Base metrics describe intrinsic characteristics that don't change. Temporal metrics account for changing factors (exploit maturity, remediation). Environmental metrics reflect the user's specific environment."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "A CVSS vector string captures:",
+    "options": [
+      "The user's location",
+      "The metric values used to calculate the score",
+      "The vulnerability scanner's IP address",
+      "The CVE assignment date"
+    ],
+    "answer": 1,
+    "explanation": "CVSS vector strings encode the specific metric values used to derive the score (e.g., AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H), enabling reproducibility and adjustment."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "EPSS (Exploit Prediction Scoring System) provides what?",
+    "options": [
+      "A measure of vulnerability severity",
+      "A probability that a vulnerability will be exploited in the wild in the next 30 days",
+      "A patch release schedule",
+      "A vendor reputation score"
+    ],
+    "answer": 1,
+    "explanation": "EPSS produces a 0-1 probability score predicting exploitation in the wild. Used alongside CVSS, it helps prioritize remediation based on actual exploitation likelihood."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "The CISA KEV (Known Exploited Vulnerabilities) catalog lists vulnerabilities that:",
+    "options": [
+      "Have been publicly disclosed but not patched",
+      "Are confirmed to be actively exploited in the wild",
+      "Have the highest CVSS scores",
+      "Are likely to be discovered next year"
+    ],
+    "answer": 1,
+    "explanation": "CISA's KEV catalog lists vulnerabilities confirmed to be actively exploited. Federal agencies must remediate within specified timeframes; private organizations use it for prioritization."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Responsible (coordinated) vulnerability disclosure typically includes:",
+    "options": [
+      "Immediate public posting of the exploit",
+      "Private notification to the vendor with a reasonable remediation window before public disclosure",
+      "Selling the vulnerability to the highest bidder",
+      "Never disclosing the finding"
+    ],
+    "answer": 1,
+    "explanation": "Coordinated disclosure gives the vendor a reasonable window to patch (often 90 days) before public disclosure. This balances researcher recognition with defender preparation."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which is the PRIMARY purpose of a bug bounty program?",
+    "options": [
+      "Reduce internal engineering staff",
+      "Incentivize external researchers to report vulnerabilities through a defined process",
+      "Eliminate the need for internal testing",
+      "Generate marketing material"
+    ],
+    "answer": 1,
+    "explanation": "Bug bounty programs offer monetary or recognition incentives for vulnerability reports through defined scope and rules, channeling researcher effort into safe, productive disclosure."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "A typical responsible disclosure timeline gives the vendor approximately:",
+    "options": [
+      "24 hours before publication",
+      "90 days (or vendor-agreed extension) before publication",
+      "5 years before publication",
+      "Indefinite delay until vendor approves publication"
+    ],
+    "answer": 1,
+    "explanation": "90 days is a common industry default (popularized by Google Project Zero), balancing time to patch with risk of indefinite delay. Extensions are negotiated for complex fixes."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "A qualitative risk matrix typically plots:",
+    "options": [
+      "Cost vs schedule",
+      "Likelihood vs impact, with severity in the resulting cells",
+      "Number of users vs number of assets",
+      "Vendor name vs product version"
+    ],
+    "answer": 1,
+    "explanation": "Qualitative risk matrices use likelihood (e.g., rare → almost certain) on one axis and impact (insignificant → catastrophic) on the other, producing severity zones (low/medium/high/critical)."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which BEST describes a 'risk owner'?",
+    "options": [
+      "The vendor whose product introduced the risk",
+      "The person accountable for making decisions about and treating a specific risk",
+      "The auditor who identifies the risk",
+      "Every employee equally"
+    ],
+    "answer": 1,
+    "explanation": "Risk owners are accountable for risk-treatment decisions and the residual outcome. Control owners are responsible for designing/operating specific mitigating controls."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which is typically NOT included in a risk register entry?",
+    "options": [
+      "Risk description and category",
+      "Risk owner and treatment status",
+      "Marketing budget allocation",
+      "Likelihood and impact ratings"
+    ],
+    "answer": 2,
+    "explanation": "Risk registers track risk descriptions, ratings, owners, treatments, status, and review dates. Marketing budget is unrelated."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Return on Security Investment (ROSI) helps justify a control by comparing:",
+    "options": [
+      "The control's CapEx versus OpEx",
+      "Expected loss avoidance against the cost of the control",
+      "The control's color scheme to the corporate brand",
+      "Vendor reputation against market share"
+    ],
+    "answer": 1,
+    "explanation": "ROSI compares the expected reduction in loss exposure (avoided ALE) to the cost of implementing the control. Positive ROSI suggests the control is financially justified."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Net Present Value (NPV) of a multi-year security investment helps evaluate:",
+    "options": [
+      "The total nominal cost regardless of timing",
+      "The discounted value of future benefits and costs in today's dollars",
+      "The brand equity of the vendor",
+      "The control's color contrast ratio"
+    ],
+    "answer": 1,
+    "explanation": "NPV discounts future cash flows back to present value, allowing fair comparison of investments with different timing of costs and benefits."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which is NOT one of the original five functions of the NIST Cybersecurity Framework?",
+    "options": [
+      "Identify",
+      "Protect",
+      "Govern",
+      "Defend"
+    ],
+    "answer": 3,
+    "explanation": "The original NIST CSF functions are Identify, Protect, Detect, Respond, Recover. CSF 2.0 adds Govern. 'Defend' is not one of the framework functions."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "MITRE ATT&CK is BEST described as:",
+    "options": [
+      "A vulnerability scanner",
+      "A knowledge base of adversary tactics, techniques, and procedures based on real-world observations",
+      "A penetration testing certification",
+      "An incident reporting form"
+    ],
+    "answer": 1,
+    "explanation": "MITRE ATT&CK catalogs adversary TTPs across the attack lifecycle. Defenders use it for detection coverage analysis, threat modeling, and red/blue team alignment."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "The Lockheed Martin Cyber Kill Chain ends with which phase?",
+    "options": [
+      "Reconnaissance",
+      "Delivery",
+      "Actions on objectives",
+      "Weaponization"
+    ],
+    "answer": 2,
+    "explanation": "The Kill Chain phases: Reconnaissance, Weaponization, Delivery, Exploitation, Installation, Command & Control, Actions on Objectives (the final phase where the adversary achieves their goal)."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "The Diamond Model of Intrusion Analysis describes intrusion events using which four core features?",
+    "options": [
+      "Adversary, Capability, Infrastructure, Victim",
+      "Asset, Threat, Vulnerability, Control",
+      "Identify, Protect, Detect, Respond",
+      "Confidentiality, Integrity, Availability, Authentication"
+    ],
+    "answer": 0,
+    "explanation": "The Diamond Model connects Adversary, Capability, Infrastructure, and Victim as a structured way to analyze and pivot through intrusion events."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "STRIDE is a threat modeling framework that classifies threats into which categories?",
+    "options": [
+      "Strength, Threat, Risk, Impact, Damage, Exploit",
+      "Spoofing, Tampering, Repudiation, Information disclosure, DoS, Elevation of privilege",
+      "Surveillance, Theft, Reconnaissance, Intrusion, Damage, Escape",
+      "Static, Tactical, Risky, Internal, Dynamic, External"
+    ],
+    "answer": 1,
+    "explanation": "STRIDE categorizes threats by what security property they violate: authentication, integrity, non-repudiation, confidentiality, availability, and authorization."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "PASTA is a threat modeling methodology that stands for:",
+    "options": [
+      "Process for Attack Simulation and Threat Analysis",
+      "Predictive Analysis of System Threats and Attackers",
+      "Penetration Assessment for Systems and Applications",
+      "Protocol Analysis for Security Threats and Attacks"
+    ],
+    "answer": 0,
+    "explanation": "PASTA (Process for Attack Simulation and Threat Analysis) is a seven-stage, risk-centric threat modeling methodology aligning business and technical analysis."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "LINDDUN is a threat modeling framework focused on:",
+    "options": [
+      "Cloud-native architectures",
+      "Privacy threats",
+      "Network protocols only",
+      "Mobile applications only"
+    ],
+    "answer": 1,
+    "explanation": "LINDDUN models privacy threats: Linkability, Identifiability, Non-repudiation, Detectability, Disclosure, Unawareness, Non-compliance."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "An attack tree models:",
+    "options": [
+      "The corporate org chart",
+      "Hierarchical decomposition of how an attacker could achieve a specific goal",
+      "Network packet flow",
+      "Audit log retention"
+    ],
+    "answer": 1,
+    "explanation": "Attack trees decompose a high-level attacker goal into sub-goals and steps, supporting analysis of possible paths and prioritization of defenses."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which syslog severity level indicates the MOST critical condition?",
+    "options": [
+      "Notice",
+      "Warning",
+      "Emergency",
+      "Informational"
+    ],
+    "answer": 2,
+    "explanation": "Syslog levels (0-7): Emergency (0, system unusable) is most critical, then Alert, Critical, Error, Warning, Notice, Info, Debug (7, least critical)."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which log retention period is typically required under PCI DSS for security event logs?",
+    "options": [
+      "At least 30 days",
+      "At least one year, with three months immediately available",
+      "Indefinite retention",
+      "No specific requirement"
+    ],
+    "answer": 1,
+    "explanation": "PCI DSS requires audit log retention of at least one year, with the most recent three months immediately available for analysis."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Log normalization in a SIEM refers to:",
+    "options": [
+      "Compressing log files",
+      "Converting logs from different sources into a common schema",
+      "Deleting redundant log entries",
+      "Encrypting logs at rest"
+    ],
+    "answer": 1,
+    "explanation": "Normalization standardizes diverse log formats into a common schema (timestamps, sources, fields), enabling correlation across heterogeneous sources."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "A SIEM correlation rule typically:",
+    "options": [
+      "Encrypts logs before storage",
+      "Triggers an alert when a defined pattern of events occurs across one or more sources",
+      "Rotates log files daily",
+      "Sends logs to backup"
+    ],
+    "answer": 1,
+    "explanation": "Correlation rules look for patterns across log sources (e.g., multiple failed logins followed by a successful one from a different IP) to detect attack patterns that single events miss."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "A SOAR platform PRIMARILY adds which capability beyond a SIEM?",
+    "options": [
+      "More storage for raw logs",
+      "Orchestration and automation of response playbooks across security tools",
+      "Faster network connectivity",
+      "Endpoint antivirus"
+    ],
+    "answer": 1,
+    "explanation": "SOAR (Security Orchestration, Automation and Response) codifies response runbooks and automates actions across the security stack — case management, enrichment, and response — speeding response."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "User and Entity Behavior Analytics (UEBA) primarily detects:",
+    "options": [
+      "Known malware signatures",
+      "Behavioral anomalies relative to a learned baseline",
+      "Network bandwidth utilization",
+      "Patch compliance gaps"
+    ],
+    "answer": 1,
+    "explanation": "UEBA establishes baselines of normal behavior per user/entity and surfaces statistically significant deviations, useful for detecting compromised accounts and insider threats."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which BEST distinguishes hypothesis-driven threat hunting from data-driven hunting?",
+    "options": [
+      "They are the same activity",
+      "Hypothesis-driven starts with a specific theory; data-driven starts from anomalies in data",
+      "Hypothesis-driven uses only automated tools",
+      "Data-driven requires no data at all"
+    ],
+    "answer": 1,
+    "explanation": "Hypothesis-driven hunts begin with an analyst's specific theory (e.g., 'we may have been targeted by APT29'). Data-driven hunts start by exploring unusual patterns in the data."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "In MITRE ATT&CK, a 'tactic' represents:",
+    "options": [
+      "A specific tool used by an adversary",
+      "The adversary's high-level objective during an attack phase",
+      "A type of vulnerability",
+      "A defender's response procedure"
+    ],
+    "answer": 1,
+    "explanation": "Tactics are the why (objectives like Initial Access, Persistence, Exfiltration). Techniques are the how. Procedures are specific implementations of techniques."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which BEST distinguishes NetFlow from full packet capture?",
+    "options": [
+      "NetFlow includes packet payloads; PCAP does not",
+      "NetFlow captures connection metadata; full packet capture records complete packet contents",
+      "They are the same technology",
+      "NetFlow is encrypted; packet capture is not"
+    ],
+    "answer": 1,
+    "explanation": "NetFlow (and IPFIX, sFlow) provides connection-level metadata at lower storage cost. Full packet capture stores complete payloads for deep analysis but requires far more storage."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which is the PRIMARY benefit of full packet capture for incident response?",
+    "options": [
+      "Lowest storage cost",
+      "Ability to reconstruct exactly what was transmitted, including payloads",
+      "Reduced legal liability",
+      "Faster network speeds"
+    ],
+    "answer": 1,
+    "explanation": "Full packet capture allows reconstruction of file transfers, command-and-control traffic, and exfiltration content — invaluable for retrospective investigation."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "STIX and TAXII are standards for:",
+    "options": [
+      "Vulnerability scanning",
+      "Structured threat intelligence representation (STIX) and its exchange (TAXII)",
+      "Network packet inspection",
+      "Identity federation"
+    ],
+    "answer": 1,
+    "explanation": "STIX defines a structured language for cyber threat intelligence; TAXII defines the transport/exchange protocol. Together they enable machine-to-machine threat intel sharing."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which is a typical advantage of commercial (closed) threat intelligence feeds over open-source feeds?",
+    "options": [
+      "They are always free",
+      "More timely, curated, and contextual intelligence with vendor support",
+      "They never have false positives",
+      "They eliminate the need for any internal analysis"
+    ],
+    "answer": 1,
+    "explanation": "Commercial feeds typically offer better timeliness, curation, and context (campaign attribution, victim sectors), at a cost. Open feeds are valuable but require more vetting."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Dwell time in security operations refers to:",
+    "options": [
+      "Time between patches",
+      "Time an attacker remains undetected in the environment",
+      "Time spent on training",
+      "Time logs are retained"
+    ],
+    "answer": 1,
+    "explanation": "Dwell time measures how long an adversary persists before detection. Lower dwell time means earlier detection and typically less damage."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "An Information Sharing and Analysis Center (ISAC) primarily:",
+    "options": [
+      "Sells antivirus subscriptions",
+      "Facilitates sector-specific threat intelligence sharing among member organizations",
+      "Performs penetration tests",
+      "Issues digital certificates"
+    ],
+    "answer": 1,
+    "explanation": "ISACs (e.g., FS-ISAC for finance, H-ISAC for healthcare) enable trusted information sharing about threats and incidents among organizations in the same sector."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "A coordinated vulnerability disclosure (CVD) policy primarily benefits:",
+    "options": [
+      "Only the researcher",
+      "Both the vendor (time to remediate) and customers (timely patches)",
+      "Only competitors of the vendor",
+      "Only government regulators"
+    ],
+    "answer": 1,
+    "explanation": "CVD aligns researcher, vendor, and customer interests: vendors get reasonable patching time, customers receive coordinated patches, and researchers get recognition through ethical channels."
+  },
+  {
+    "domain": "3: Risk Identification, Monitoring, and Analysis",
+    "question": "Which combination of inputs provides the BEST prioritization signal for remediation?",
+    "options": [
+      "CVSS severity alone",
+      "CVSS severity, exploit availability (EPSS/KEV), and asset criticality",
+      "Date the CVE was published",
+      "Number of comments on the CVE record"
+    ],
+    "answer": 1,
+    "explanation": "Multi-factor prioritization (severity, real-world exploitation likelihood, exposure, asset criticality) consistently outperforms single-metric approaches like CVSS alone."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which is a typical purpose of an incident severity classification scheme (e.g., P1/P2/P3)?",
+    "options": [
+      "Replace the need for an IR plan",
+      "Drive consistent response speed, escalation, and resource commitment based on impact",
+      "Eliminate the need for monitoring",
+      "Compress audit logs"
+    ],
+    "answer": 1,
+    "explanation": "Severity tiers (often tied to SLA response times and escalation paths) ensure response intensity matches the actual impact and avoid both under- and over-reaction."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "An incident SLA stating P1 incidents receive response within 15 minutes primarily helps:",
+    "options": [
+      "Define response speed expectations across the organization",
+      "Replace the role of the CSIRT",
+      "Eliminate the need for monitoring",
+      "Set network bandwidth"
+    ],
+    "answer": 0,
+    "explanation": "Documented response time SLAs by severity set clear expectations for first response and escalation, supporting consistent service and accountability."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which BEST distinguishes a CSIRT from a SOC?",
+    "options": [
+      "They are the same team with different names",
+      "A SOC monitors continuously; a CSIRT focuses on coordinating response to confirmed incidents",
+      "A CSIRT only handles physical security",
+      "A SOC reports to legal; a CSIRT reports to HR"
+    ],
+    "answer": 1,
+    "explanation": "SOCs typically provide 24x7 monitoring, triage, and initial response. CSIRTs handle deeper response coordination, often pulling in legal, comms, and external partners."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "An incident 'war room' refers to:",
+    "options": [
+      "A specific cyber weapon",
+      "A dedicated space (physical or virtual) for incident coordination during major events",
+      "A backup data center",
+      "A type of firewall"
+    ],
+    "answer": 1,
+    "explanation": "War rooms (often virtual via video/chat) bring stakeholders together for sustained coordination during major incidents, with shared situational awareness and decision-making."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "The Incident Command System (ICS) is BEST described as:",
+    "options": [
+      "A protocol for industrial control systems",
+      "A standardized command, control, and coordination framework for emergency response",
+      "An ISO standard for cryptography",
+      "A type of malware"
+    ],
+    "answer": 1,
+    "explanation": "ICS (from emergency management) defines roles like Incident Commander, Planning, Operations, Logistics, Finance. It scales for incidents of varying size and integrates with public-sector responders."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which is the PRIMARY role of a tabletop exercise facilitator?",
+    "options": [
+      "Decide outcomes for the participants",
+      "Guide the scenario, inject events, and capture observations",
+      "Approve all future expenses",
+      "Replace the IR team during the exercise"
+    ],
+    "answer": 1,
+    "explanation": "The facilitator drives the scenario forward with injects, keeps discussion productive, and captures gaps and decisions for the after-action report — without dictating outcomes."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which is typically NOT included in an after-action report?",
+    "options": [
+      "Timeline of the event",
+      "Root cause and lessons learned",
+      "Marketing campaign budget",
+      "Recommended improvements"
+    ],
+    "answer": 2,
+    "explanation": "After-action reports cover timeline, root cause, decisions, observations, gaps, and recommendations. Marketing budget is unrelated."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "U.S. state breach notification laws typically require notification:",
+    "options": [
+      "Within seven days of suspicion",
+      "Within a defined timeframe after determining a breach occurred (varies by state)",
+      "Only if the breach affects more than 1 million people",
+      "Only if the company chooses to disclose"
+    ],
+    "answer": 1,
+    "explanation": "All 50 U.S. states have breach notification laws, with specific timelines and definitions varying. Many use 'without unreasonable delay' or specify days (e.g., 30, 60)."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Under GDPR, controllers must notify the supervisory authority of a personal data breach within what timeframe?",
+    "options": [
+      "24 hours",
+      "72 hours of becoming aware",
+      "30 days",
+      "Within a year"
+    ],
+    "answer": 1,
+    "explanation": "GDPR Article 33 sets 72 hours from awareness for supervisory authority notification, with reasonable explanation if delayed beyond that."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "HIPAA generally requires notification of affected individuals within what timeframe after a breach is discovered?",
+    "options": [
+      "72 hours",
+      "60 days",
+      "One year",
+      "10 years"
+    ],
+    "answer": 1,
+    "explanation": "HIPAA's Breach Notification Rule requires notification to affected individuals without unreasonable delay and no later than 60 days after discovery."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Under PCI DSS, an organization experiencing a cardholder data breach typically must:",
+    "options": [
+      "Wait until annual audit to disclose",
+      "Notify the acquirer/card brand and follow the incident response process defined by the standard",
+      "Refund all purchases for the year",
+      "Replace all customer accounts immediately"
+    ],
+    "answer": 1,
+    "explanation": "PCI requires defined incident response that includes notification to relevant acquirers/card brands and supports forensic investigation by approved investigators (PFIs)."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "When coordinating with law enforcement during a confirmed criminal incident, which is a key consideration?",
+    "options": [
+      "Do not preserve evidence",
+      "Preserve evidence per chain of custody and consult counsel before disclosure",
+      "Make the case public immediately",
+      "Disable all logging"
+    ],
+    "answer": 1,
+    "explanation": "Pre-coordination with legal counsel and proper evidence preservation are essential. Disclosure decisions and law enforcement involvement should follow the IR plan and legal guidance."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which type of legal evidence is BEST described as a witness's first-hand testimony of what they personally observed?",
+    "options": [
+      "Documentary",
+      "Testimonial",
+      "Demonstrative",
+      "Real"
+    ],
+    "answer": 1,
+    "explanation": "Testimonial evidence is sworn statements about firsthand knowledge. Documentary (records), real (physical objects), and demonstrative (illustrations) are the other categories."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Spoliation of evidence refers to:",
+    "options": [
+      "Tampering with packet captures only",
+      "Intentional or negligent destruction or alteration of evidence",
+      "Backing up evidence to a vault",
+      "Encrypting evidence at rest"
+    ],
+    "answer": 1,
+    "explanation": "Spoliation can result in legal sanctions including adverse inferences. Organizations under litigation hold must preserve potentially relevant evidence."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "The 'best evidence rule' in digital forensics generally requires:",
+    "options": [
+      "A printout of computer evidence",
+      "The original evidence or a verifiable forensically sound copy",
+      "Only screen recordings",
+      "Witness statements only"
+    ],
+    "answer": 1,
+    "explanation": "Courts typically require the original or a forensically sound, verifiable copy (with intact chain of custody and integrity hashes). Modifications can render evidence inadmissible."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which is a common hearsay exception applicable to many security logs?",
+    "options": [
+      "Personal opinion exception",
+      "Business records exception (records kept in the regular course of business)",
+      "Expert opinion exception",
+      "Public broadcast exception"
+    ],
+    "answer": 1,
+    "explanation": "Security logs, when generated and maintained in the regular course of business, often qualify under the business records exception, supporting admissibility in court."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which BEST distinguishes static from dynamic malware analysis?",
+    "options": [
+      "Static runs the sample; dynamic does not",
+      "Static examines the sample without executing; dynamic observes behavior during execution",
+      "Static is faster on Windows; dynamic on Linux",
+      "They are interchangeable terms"
+    ],
+    "answer": 1,
+    "explanation": "Static analysis (strings, disassembly, packers) doesn't execute the sample. Dynamic analysis runs it in a sandbox to observe behavior, network calls, file modifications, and persistence."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Reverse engineering of malware is typically used to:",
+    "options": [
+      "Recreate the original source code for redistribution",
+      "Understand functionality, indicators, and capabilities for defense",
+      "Improve the malware's stealth",
+      "Patent the malware"
+    ],
+    "answer": 1,
+    "explanation": "Defensive reverse engineering extracts IOCs, behavior patterns, persistence mechanisms, and capabilities, supporting detection, attribution, and remediation guidance."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which type of tool is commonly used for memory forensics analysis?",
+    "options": [
+      "Disk imaging suite only",
+      "A memory analysis framework (e.g., Volatility) that parses RAM captures",
+      "Antivirus signatures only",
+      "Backup orchestration tool"
+    ],
+    "answer": 1,
+    "explanation": "Memory analysis frameworks parse RAM captures to extract process lists, network connections, injected code, and other volatile artifacts crucial for IR."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "When creating a forensic disk image, the integrity of the copy is typically verified using:",
+    "options": [
+      "Compression ratio",
+      "Cryptographic hashes (e.g., SHA-256) of source and image",
+      "File system labels",
+      "Vendor sticker on the drive"
+    ],
+    "answer": 1,
+    "explanation": "Imaging tools compute hashes of source and image; matching hashes prove no bit-level changes during acquisition. Hash logs are kept with the chain of custody."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Network forensics analysis primarily relies on:",
+    "options": [
+      "Filesystem metadata only",
+      "Packet captures (PCAP), flow data, and proxy/firewall logs",
+      "Print job records",
+      "Phone billing records"
+    ],
+    "answer": 1,
+    "explanation": "Network forensics uses PCAP, flow records, DNS logs, proxy/firewall logs, and IDS alerts to reconstruct lateral movement, C2, and exfiltration."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Mobile device forensics often faces which unique challenge compared to traditional computer forensics?",
+    "options": [
+      "Devices use no operating system",
+      "Strong device encryption and frequent OS updates limit access to data",
+      "Mobile devices store no logs",
+      "Mobile data is never relevant"
+    ],
+    "answer": 1,
+    "explanation": "Modern mobile OSes use strong full-device encryption by default and frequently update, limiting traditional acquisition. Specialized tools and vendor cooperation are often needed."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which is a defining challenge of cloud forensics compared to on-premises forensics?",
+    "options": [
+      "Inability to use computers",
+      "Multi-tenancy and limited physical access to underlying infrastructure",
+      "Lack of internet at the provider",
+      "Cloud providers do not log anything"
+    ],
+    "answer": 1,
+    "explanation": "Cloud forensics is constrained by multi-tenancy, limited access to the underlying hypervisor and storage, ephemeral resources, and provider-specific APIs for evidence collection."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "An affidavit in the context of digital evidence is BEST described as:",
+    "options": [
+      "A type of encryption algorithm",
+      "A sworn written statement attesting to facts about the evidence",
+      "A backup of the evidence",
+      "A vendor warranty"
+    ],
+    "answer": 1,
+    "explanation": "Affidavits document who collected, handled, and analyzed evidence, supporting authenticity and chain of custody when introduced in legal proceedings."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which BEST distinguishes an expert witness from a fact witness?",
+    "options": [
+      "Expert witnesses are paid; fact witnesses are not",
+      "Experts may offer opinions based on expertise; fact witnesses testify only to what they observed",
+      "Only expert witnesses are sworn in",
+      "Fact witnesses must hold certifications"
+    ],
+    "answer": 1,
+    "explanation": "Expert witnesses can opine within their expertise (after qualification). Fact witnesses must limit testimony to direct observations without offering opinions."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which is the PRIMARY output of a Business Impact Analysis (BIA)?",
+    "options": [
+      "A vendor list",
+      "Criticality of processes with RTO, RPO, MTD, and dependency mapping",
+      "Marketing strategy",
+      "Office floor plan"
+    ],
+    "answer": 1,
+    "explanation": "A BIA identifies critical processes, their tolerable downtime/data loss, dependencies, and impact of disruption — driving BCP and DRP priorities."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Mapping dependencies as part of BCP planning is important because:",
+    "options": [
+      "It increases hardware costs",
+      "Restoring a service often requires its dependencies (network, identity, databases) to be restored first",
+      "It eliminates the need for documentation",
+      "It replaces vendor contracts"
+    ],
+    "answer": 1,
+    "explanation": "Recovery sequence matters: a CRM cannot start without its database, identity provider, and network. Dependency mapping drives correct restoration order and surfaces hidden risks."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which is the BEST way to address a single point of failure (SPOF) in a critical service?",
+    "options": [
+      "Document it and move on",
+      "Add redundancy or failover, or otherwise reduce the SPOF's impact",
+      "Encrypt the SPOF",
+      "Ignore until it fails"
+    ],
+    "answer": 1,
+    "explanation": "SPOFs are addressed by redundancy, failover, alternate paths, or graceful degradation. Documentation alone doesn't reduce risk."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which RAID level provides striping with distributed parity, tolerating one disk failure?",
+    "options": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 10"
+    ],
+    "answer": 2,
+    "explanation": "RAID 5 stripes data with distributed parity, surviving a single disk failure. RAID 6 tolerates two failures. RAID 0 is striping with no redundancy. RAID 1 is mirroring. RAID 10 is mirrored striping."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which BEST distinguishes a snapshot from a backup?",
+    "options": [
+      "Snapshots are stored offsite; backups are local",
+      "Snapshots are typically point-in-time copies on the same storage; backups are independent copies kept separately",
+      "Snapshots are encrypted; backups are not",
+      "There is no difference"
+    ],
+    "answer": 1,
+    "explanation": "Snapshots are fast point-in-time references on the same array (vulnerable to underlying storage failure or ransomware on that system). True backups are independent, ideally offsite/immutable."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which BEST distinguishes synchronous from asynchronous replication?",
+    "options": [
+      "Synchronous is older; asynchronous is newer",
+      "Synchronous confirms remote write before acknowledging; asynchronous returns immediately and replicates in background",
+      "They are the same",
+      "Asynchronous is always more reliable"
+    ],
+    "answer": 1,
+    "explanation": "Synchronous replication has zero RPO but is sensitive to latency. Asynchronous has lower latency impact but allows some data loss on failover."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Grandfather-Father-Son (GFS) backup rotation typically refers to:",
+    "options": [
+      "Three separate backup vendors",
+      "Daily (son), weekly (father), and monthly (grandfather) backup retention tiers",
+      "Three encryption layers",
+      "Three separate restore tests"
+    ],
+    "answer": 1,
+    "explanation": "GFS rotates daily, weekly, and monthly backups so recent and historical points are available without storing every daily set forever, balancing cost and recoverability."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which is the PRIMARY reason to encrypt backups?",
+    "options": [
+      "Reduce storage size",
+      "Protect confidentiality if the backup media or storage is lost or stolen",
+      "Speed up restoration",
+      "Eliminate the need for retention policies"
+    ],
+    "answer": 1,
+    "explanation": "Encrypted backups protect data confidentiality if media is misplaced or storage is breached. Key management for backups requires careful planning, especially for long retention periods."
+  },
+  {
+    "domain": "4: Incident Response and Recovery",
+    "question": "Which is a critical consideration when recovering from a ransomware attack?",
+    "options": [
+      "Pay the ransom immediately",
+      "Validate that backups are clean before restoring (attackers often pre-position)",
+      "Restore quickly to the same image without changes",
+      "Reuse the same credentials post-incident"
+    ],
+    "answer": 1,
+    "explanation": "Attackers often dwell in environments before triggering encryption, potentially compromising backups too. Validate backup integrity, hunt for backdoors, and rotate credentials before/after restoration."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Which BEST distinguishes a stream cipher from a block cipher?",
+    "options": [
+      "Stream ciphers encrypt one bit/byte at a time; block ciphers encrypt fixed-size blocks",
+      "Block ciphers are always slower",
+      "Stream ciphers cannot use keys",
+      "Block ciphers do not require IVs"
+    ],
+    "answer": 0,
+    "explanation": "Stream ciphers (e.g., ChaCha20) operate on bits/bytes; block ciphers (e.g., AES) operate on fixed-size blocks (typically 128 bits) requiring modes of operation for streams."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Why is Electronic Codebook (ECB) mode generally avoided for encrypting structured data?",
+    "options": [
+      "It is too slow on modern CPUs",
+      "Identical plaintext blocks produce identical ciphertext, revealing patterns",
+      "It requires more keys",
+      "It cannot use AES"
+    ],
+    "answer": 1,
+    "explanation": "ECB encrypts each block independently — identical plaintext blocks yield identical ciphertext, revealing structure in patterned data (the classic 'ECB penguin' image)."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Which is required for Cipher Block Chaining (CBC) mode to encrypt securely?",
+    "options": [
+      "A 24-bit IV at most",
+      "A unique, unpredictable Initialization Vector for each message",
+      "Reuse of the IV across messages",
+      "No IV at all"
+    ],
+    "answer": 1,
+    "explanation": "CBC requires a unique and unpredictable IV per message. Reusing or predicting IVs enables attacks (e.g., chosen-plaintext leakage in TLS BEAST)."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Galois/Counter Mode (GCM) provides which property in addition to confidentiality?",
+    "options": [
+      "Compression",
+      "Authenticated encryption with associated data (AEAD)",
+      "Lossless transmission",
+      "Forward error correction"
+    ],
+    "answer": 1,
+    "explanation": "GCM is an AEAD mode: it provides both confidentiality and authentication (integrity) in a single operation, with optional authenticated-but-not-encrypted associated data."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Counter (CTR) mode converts a block cipher into:",
+    "options": [
+      "A stream cipher",
+      "A hash function",
+      "A compression algorithm",
+      "A public-key cipher"
+    ],
+    "answer": 0,
+    "explanation": "CTR uses the block cipher to encrypt a counter, producing a keystream XORed with plaintext — effectively turning the block cipher into a stream cipher. Requires unique nonces."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "An AEAD cipher (authenticated encryption with associated data) primarily protects:",
+    "options": [
+      "Confidentiality only",
+      "Confidentiality and integrity in a single operation",
+      "Integrity only",
+      "Compression ratio"
+    ],
+    "answer": 1,
+    "explanation": "AEAD modes (GCM, ChaCha20-Poly1305, OCB, CCM) provide both confidentiality and integrity in one operation, reducing the risk of misuse compared to separate encrypt-then-MAC."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Which BEST distinguishes salt, nonce, and IV?",
+    "options": [
+      "They are all the same thing",
+      "Salt: per-input random value for hashing; nonce: number used once; IV: initialization value for ciphers",
+      "All are required to be secret",
+      "All are computed from the key"
+    ],
+    "answer": 1,
+    "explanation": "Salts are used in password hashing to defeat rainbow tables. Nonces are 'number used once' values (e.g., in CTR/GCM). IVs initialize cipher modes (CBC). All three serve to diversify."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Which is the PRIMARY purpose of a key derivation function (KDF) like PBKDF2, scrypt, or Argon2?",
+    "options": [
+      "Encrypt files quickly",
+      "Stretch and salt low-entropy inputs (e.g., passwords) into strong keys resistant to brute force",
+      "Compress data efficiently",
+      "Generate true random numbers"
+    ],
+    "answer": 1,
+    "explanation": "KDFs combine slow iteration (and memory hardness for scrypt/Argon2) with salting to make brute-forcing weak passwords computationally expensive."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "How does HMAC differ from a plain hash like SHA-256 over the same data?",
+    "options": [
+      "HMAC includes a secret key to provide authentication",
+      "HMAC is faster",
+      "HMAC eliminates the need for hash functions",
+      "HMAC produces a shorter digest"
+    ],
+    "answer": 0,
+    "explanation": "HMAC is a keyed hash construction providing message authentication. Without the secret key, an attacker cannot generate or verify a valid HMAC, unlike a plain hash."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Which BEST distinguishes a MAC from a digital signature?",
+    "options": [
+      "MACs use asymmetric keys; signatures use symmetric keys",
+      "MACs use a shared symmetric key (no non-repudiation); signatures use the signer's private key (provides non-repudiation)",
+      "MACs are always shorter",
+      "Signatures cannot be verified"
+    ],
+    "answer": 1,
+    "explanation": "Because MAC verifiers also have the key, the MAC cannot prove which party generated it (no non-repudiation). Digital signatures use the signer's private key, providing non-repudiation."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "What is the minimum RSA key size currently considered acceptable for new deployments?",
+    "options": [
+      "512 bits",
+      "1024 bits",
+      "2048 bits",
+      "128 bits"
+    ],
+    "answer": 2,
+    "explanation": "Current guidance recommends RSA 2048-bit as a minimum, with 3072-bit or larger for long-term protection. 1024-bit RSA is no longer considered safe."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Which is a widely-used elliptic curve for modern cryptographic protocols, valued for performance and security?",
+    "options": [
+      "RC4-curve",
+      "Curve25519",
+      "MD5-curve",
+      "DES-curve"
+    ],
+    "answer": 1,
+    "explanation": "Curve25519 (and its signature counterpart Ed25519) is widely used in modern protocols (TLS 1.3, SSH, Signal) for performance and resistance to common implementation pitfalls."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Which property ensures that compromise of a long-term private key does NOT expose past session keys?",
+    "options": [
+      "Key length",
+      "Perfect Forward Secrecy (PFS)",
+      "Symmetric encryption",
+      "Compression"
+    ],
+    "answer": 1,
+    "explanation": "PFS, achieved through ephemeral key exchanges (DHE/ECDHE), means each session uses unique ephemeral keys. Compromising the long-term key doesn't decrypt past traffic."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Which is a significant improvement of TLS 1.3 over TLS 1.2?",
+    "options": [
+      "Re-introduction of RC4",
+      "Reduced handshake latency and removal of obsolete cipher suites",
+      "Removal of cipher choices entirely",
+      "Use of plaintext"
+    ],
+    "answer": 1,
+    "explanation": "TLS 1.3 reduces handshake to 1-RTT (or 0-RTT with caveats), removes weak/unsafe cipher suites (RC4, 3DES, MD5, SHA-1), and mandates forward secrecy."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Why is certificate chain validation important when accepting a TLS server certificate?",
+    "options": [
+      "To compress the certificate",
+      "To verify the certificate ultimately chains to a trusted root CA",
+      "To encrypt the connection faster",
+      "To rotate the certificate"
+    ],
+    "answer": 1,
+    "explanation": "Clients build the chain from leaf to a trusted root, verifying each signature, validity period, revocation status, and naming constraints. Any failure should reject the certificate."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Why do PKI deployments typically issue end-entity certificates from intermediate CAs rather than directly from the root CA?",
+    "options": [
+      "Roots are slower at signing",
+      "Intermediates can be revoked without compromising the root, limiting blast radius",
+      "Intermediates use different algorithms",
+      "Roots cannot sign"
+    ],
+    "answer": 1,
+    "explanation": "Keeping the root CA offline and signing only intermediates allows compromise of an intermediate to be revoked without disturbing all previously issued roots and their trust anchors."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Which X.509 certificate field lists additional valid hostnames for a server certificate beyond the Common Name?",
+    "options": [
+      "Issuer",
+      "Subject Alternative Name (SAN)",
+      "Validity",
+      "Public Key"
+    ],
+    "answer": 1,
+    "explanation": "Modern certificate validation requires the hostname to match a SAN entry. Common Name is largely deprecated for hostname validation."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Which is a notable risk of using a single wildcard certificate (e.g., *.example.com) across many services?",
+    "options": [
+      "Wildcard certificates do not exist",
+      "Compromise of the certificate's private key exposes every host covered by the wildcard",
+      "Wildcards cannot be revoked",
+      "They cannot be deployed on web servers"
+    ],
+    "answer": 1,
+    "explanation": "A single shared private key behind many hostnames means one compromise affects all. Granular per-service certificates limit blast radius."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Certificate Transparency (CT) logs help mitigate which problem?",
+    "options": [
+      "Slow certificate issuance",
+      "Misissued or unauthorized certificates by CAs going undetected",
+      "Inability to revoke certificates",
+      "Weak random number generation"
+    ],
+    "answer": 1,
+    "explanation": "CT requires CAs to publish issued certificates to public append-only logs, allowing domain owners to detect unauthorized issuance and the community to audit CA behavior."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Why are NIST post-quantum cryptography selections (e.g., ML-KEM/Kyber) important?",
+    "options": [
+      "They are faster than current algorithms",
+      "Quantum computers could eventually break RSA and ECC; PQ algorithms aim to resist quantum attacks",
+      "They eliminate the need for any keys",
+      "They are required for IPv6"
+    ],
+    "answer": 1,
+    "explanation": "Shor's algorithm on sufficiently large quantum computers would break RSA/ECC. NIST's post-quantum standards (ML-KEM for key exchange, ML-DSA for signatures) aim to resist quantum attack."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "A birthday attack against a hash function exploits which property?",
+    "options": [
+      "The hash function's compression ratio",
+      "The probability of collision growing faster than intuition suggests as more inputs are tried",
+      "The hash function being broken",
+      "Use of the wrong key"
+    ],
+    "answer": 1,
+    "explanation": "Due to the birthday paradox, collision probability rises sharply at roughly the square root of the output space, so an n-bit hash provides only ~n/2 bits of collision resistance."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "Rainbow tables are PRIMARILY a threat against:",
+    "options": [
+      "Properly salted password hashes",
+      "Unsalted password hashes",
+      "TLS sessions",
+      "IPsec tunnels"
+    ],
+    "answer": 1,
+    "explanation": "Rainbow tables precompute hashes for common passwords. Salting (per-user random values) makes precomputed tables useless because every salt produces a different hash space."
+  },
+  {
+    "domain": "5: Cryptography",
+    "question": "A padding oracle attack against CBC mode TLS exploits:",
+    "options": [
+      "A flaw in symmetric key length",
+      "Server responses that distinguish padding errors from other errors, allowing decryption",
+      "Excessive entropy in the IV",
+      "Inability to use HTTP"
+    ],
+    "answer": 1,
+    "explanation": "Padding oracle attacks (POODLE, Lucky 13) exploit different error responses or timing between padding errors and other errors, enabling attackers to recover plaintext one byte at a time."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which OSI layer is concerned with electrical signals, cable specifications, and physical connectors?",
+    "options": [
+      "Layer 1 (Physical)",
+      "Layer 2 (Data Link)",
+      "Layer 3 (Network)",
+      "Layer 7 (Application)"
+    ],
+    "answer": 0,
+    "explanation": "Layer 1 handles physical transmission media — voltage, timing, cable, connectors. Hubs, repeaters, and cabling are Layer 1 devices."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which OSI layer establishes, manages, and terminates sessions between applications?",
+    "options": [
+      "Layer 3 (Network)",
+      "Layer 5 (Session)",
+      "Layer 6 (Presentation)",
+      "Layer 7 (Application)"
+    ],
+    "answer": 1,
+    "explanation": "Layer 5 (Session) manages dialog control and synchronization between communicating applications. Examples include RPC and NetBIOS session services."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which OSI layer is responsible for data translation, character encoding, and traditional encryption between application formats?",
+    "options": [
+      "Layer 4 (Transport)",
+      "Layer 6 (Presentation)",
+      "Layer 5 (Session)",
+      "Layer 7 (Application)"
+    ],
+    "answer": 1,
+    "explanation": "Layer 6 (Presentation) handles formatting, encoding, and historically encryption between application data formats. In practice these often live in the application or session layers in modern stacks."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which OSI layer is closest to the end user and provides application services like HTTP, SMTP, and DNS?",
+    "options": [
+      "Layer 4 (Transport)",
+      "Layer 5 (Session)",
+      "Layer 6 (Presentation)",
+      "Layer 7 (Application)"
+    ],
+    "answer": 3,
+    "explanation": "Layer 7 (Application) is where end-user services live: HTTP, FTP, SMTP, DNS, SSH, and others. Most modern protocols span multiple OSI layers."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which layer of the TCP/IP model is responsible for end-to-end transport between hosts?",
+    "options": [
+      "Link",
+      "Internet",
+      "Transport",
+      "Application"
+    ],
+    "answer": 2,
+    "explanation": "The TCP/IP model has four layers: Link, Internet, Transport, Application. The Transport layer (TCP, UDP) provides end-to-end service between hosts."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which is the KEY difference between TCP and UDP?",
+    "options": [
+      "TCP is connectionless; UDP is connection-oriented",
+      "TCP is connection-oriented and reliable; UDP is connectionless and unreliable",
+      "TCP cannot use ports; UDP can",
+      "UDP uses sequence numbers; TCP does not"
+    ],
+    "answer": 1,
+    "explanation": "TCP provides reliable, ordered, connection-oriented delivery. UDP is connectionless with no delivery guarantees, used where speed and low overhead matter (DNS, VoIP, gaming)."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which protocol does the 'ping' command primarily rely on?",
+    "options": [
+      "TCP",
+      "UDP",
+      "ICMP",
+      "ARP"
+    ],
+    "answer": 2,
+    "explanation": "Ping uses ICMP Echo Request and Echo Reply messages. ICMP also carries Time Exceeded (used by traceroute) and Destination Unreachable messages."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which port does SMTP use for unencrypted mail submission between mail servers?",
+    "options": [
+      "25",
+      "143",
+      "465",
+      "993"
+    ],
+    "answer": 0,
+    "explanation": "TCP 25 is SMTP's classic port for server-to-server mail. Port 587 is for authenticated submission; 465 is legacy SMTP-over-TLS; 143 is IMAP."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which port does DNS primarily use for standard queries?",
+    "options": [
+      "53",
+      "80",
+      "443",
+      "8080"
+    ],
+    "answer": 0,
+    "explanation": "DNS uses port 53 (UDP for small queries; TCP for zone transfers and large responses). DNS over TLS uses 853, DNS over HTTPS uses 443."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which port does SNMP traditionally use for queries?",
+    "options": [
+      "161",
+      "162",
+      "443",
+      "22"
+    ],
+    "answer": 0,
+    "explanation": "SNMP uses UDP 161 for queries from manager to agent. UDP 162 is for trap notifications from agents to managers."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which port does Remote Desktop Protocol (RDP) traditionally use?",
+    "options": [
+      "22",
+      "23",
+      "443",
+      "3389"
+    ],
+    "answer": 3,
+    "explanation": "RDP uses TCP 3389. Exposing 3389 to the internet is a common attack target — restrict via VPN, jump hosts, or geographic ACLs."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which port pair is associated with LDAP and LDAPS?",
+    "options": [
+      "389 and 636",
+      "21 and 22",
+      "80 and 443",
+      "143 and 993"
+    ],
+    "answer": 0,
+    "explanation": "LDAP uses TCP 389 (unencrypted) and LDAPS uses TCP 636 (TLS-wrapped). StartTLS over 389 is another encrypted option."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "What does the CIDR notation /24 represent?",
+    "options": [
+      "A network with 256 IP addresses (subnet mask 255.255.255.0)",
+      "A network with 16 IP addresses",
+      "A single host",
+      "A class A network"
+    ],
+    "answer": 0,
+    "explanation": "/24 means 24 mask bits, leaving 8 host bits = 256 addresses (254 usable for hosts in IPv4 after subtracting network and broadcast)."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which of the following is a private IPv4 address range per RFC 1918?",
+    "options": [
+      "8.0.0.0/8",
+      "10.0.0.0/8",
+      "100.0.0.0/8",
+      "200.0.0.0/8"
+    ],
+    "answer": 1,
+    "explanation": "RFC 1918 private ranges: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16. These are not routable on the public internet."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which is a fundamental difference between IPv4 and IPv6?",
+    "options": [
+      "IPv6 uses 32-bit addresses",
+      "IPv6 uses 128-bit addresses and removes the practical need for NAT in many deployments",
+      "IPv4 has no broadcast address",
+      "IPv6 has no addressing scheme"
+    ],
+    "answer": 1,
+    "explanation": "IPv6's 128-bit address space dramatically expands available addresses and changes architectural patterns (autoconfiguration, no NAT typically), but introduces new security considerations."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "How many bits are in a standard IEEE 802 MAC address?",
+    "options": [
+      "32 bits",
+      "48 bits",
+      "64 bits",
+      "128 bits"
+    ],
+    "answer": 1,
+    "explanation": "MAC addresses are 48 bits (6 bytes), typically displayed as 12 hex digits. The first 24 bits identify the manufacturer (OUI); the remaining 24 identify the device."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which VLAN attack technique exploits trunk-port configurations to send traffic to other VLANs?",
+    "options": [
+      "DNS poisoning",
+      "VLAN hopping (e.g., double tagging or switch spoofing)",
+      "MAC flooding",
+      "DHCP starvation"
+    ],
+    "answer": 1,
+    "explanation": "VLAN hopping uses double tagging (sending frames with two 802.1Q tags) or switch spoofing (impersonating a switch to negotiate trunking) to access other VLANs."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which protocol tags Ethernet frames with VLAN information for trunk links?",
+    "options": [
+      "802.11",
+      "802.1Q",
+      "802.3",
+      "802.1X"
+    ],
+    "answer": 1,
+    "explanation": "IEEE 802.1Q inserts a 4-byte tag (including the VLAN ID) into Ethernet frames so trunk ports can carry traffic for multiple VLANs."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "What is the PRIMARY purpose of Spanning Tree Protocol (STP)?",
+    "options": [
+      "Authenticate users on switches",
+      "Prevent Layer 2 loops in switched networks by blocking redundant paths",
+      "Encrypt traffic between switches",
+      "Assign IP addresses"
+    ],
+    "answer": 1,
+    "explanation": "STP detects loops and blocks redundant links, electing a root bridge and computing a loop-free topology. Variants include RSTP and MSTP for faster convergence."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which routing protocol is primarily used between autonomous systems on the internet?",
+    "options": [
+      "OSPF (interior gateway protocol)",
+      "BGP (exterior gateway protocol)",
+      "RIP (interior gateway protocol)",
+      "EIGRP (interior gateway protocol)"
+    ],
+    "answer": 1,
+    "explanation": "BGP is the internet's exterior gateway protocol, exchanging routing information between autonomous systems. OSPF, EIGRP, and RIP are interior gateway protocols within an AS."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "BGP hijacking attacks rely on:",
+    "options": [
+      "Compromising end-user DNS settings",
+      "Announcing routes for IP prefixes the attacker doesn't own, redirecting traffic",
+      "Brute-forcing user passwords",
+      "Exploiting Bluetooth weaknesses"
+    ],
+    "answer": 1,
+    "explanation": "BGP lacks built-in authentication of announcements. RPKI and route-origin validation help mitigate accidental or malicious route hijacks."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "DNS over TLS (DoT) and DNS over HTTPS (DoH) primarily address which concern?",
+    "options": [
+      "DNS query speed only",
+      "Confidentiality and integrity of DNS queries against passive observers and tampering",
+      "DNS server costs",
+      "IPv6 transition"
+    ],
+    "answer": 1,
+    "explanation": "DoT (port 853) and DoH (port 443) encrypt DNS queries, preventing on-path observers from seeing queried hostnames and protecting against tampering. They introduce centralization concerns."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which BEST distinguishes a recursive DNS resolver from an authoritative DNS server?",
+    "options": [
+      "Recursive servers answer for specific zones; authoritative servers query others",
+      "Recursive resolvers query others on behalf of clients; authoritative servers hold the actual records for specific zones",
+      "They are the same",
+      "Authoritative servers cannot cache"
+    ],
+    "answer": 1,
+    "explanation": "Recursive resolvers (e.g., a corporate or ISP resolver) query the DNS hierarchy on behalf of clients. Authoritative servers hold the canonical records for the zones they serve."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which BEST distinguishes NetFlow from sFlow?",
+    "options": [
+      "NetFlow samples packets; sFlow records every flow exhaustively",
+      "NetFlow records exhaustively (typically); sFlow uses statistical sampling for scalability",
+      "They are identical protocols",
+      "Both are obsolete"
+    ],
+    "answer": 1,
+    "explanation": "NetFlow typically aggregates per-flow records. sFlow uses statistical packet sampling, providing good visibility at high throughput with lower overhead but less precision per-flow."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which BEST distinguishes a SPAN/mirror port from a network tap for capturing traffic?",
+    "options": [
+      "Taps are software; SPAN ports are hardware",
+      "SPAN mirrors traffic via switch software (may drop under load); taps are passive hardware that copy every packet",
+      "Taps cannot capture encrypted traffic",
+      "They are interchangeable"
+    ],
+    "answer": 1,
+    "explanation": "SPAN ports rely on switch resources and may drop frames under heavy load. Network taps physically split signals and capture all traffic without affecting the live path."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Wireshark and tcpdump are PRIMARILY used for:",
+    "options": [
+      "Encrypting traffic",
+      "Capturing and analyzing network packets for troubleshooting and forensics",
+      "Patching operating systems",
+      "Authenticating users"
+    ],
+    "answer": 1,
+    "explanation": "Both tools capture packets via pcap libraries. Wireshark provides a graphical analyzer with protocol decoders. tcpdump is a command-line capture tool, commonly used on servers."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which proxy sits between internal clients and the internet, often used for filtering and caching outbound traffic?",
+    "options": [
+      "Reverse proxy",
+      "Forward proxy",
+      "Transparent proxy without forwarding",
+      "Round-robin DNS"
+    ],
+    "answer": 1,
+    "explanation": "Forward proxies front internal clients reaching external services. Reverse proxies front external clients reaching internal services. Transparent proxies act without explicit client config."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which security benefit do Content Delivery Networks (CDNs) typically provide beyond performance?",
+    "options": [
+      "Replacing internal firewalls",
+      "DDoS absorption at the edge and WAF capabilities for protected origins",
+      "Stronger encryption keys",
+      "Replacement of identity providers"
+    ],
+    "answer": 1,
+    "explanation": "CDNs absorb DDoS at distributed edge nodes and commonly offer WAF features, bot management, and TLS termination, shielding origin infrastructure."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which rule should appear at the END of a properly designed firewall rule set?",
+    "options": [
+      "Allow all traffic",
+      "Deny all traffic (default deny)",
+      "Log everything and continue",
+      "Allow ICMP from any to any"
+    ],
+    "answer": 1,
+    "explanation": "Defense-in-depth firewalls implement default deny: anything not explicitly allowed by earlier rules is blocked by the final deny-all. Explicit permits come above the deny."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which BEST distinguishes a site-to-site VPN from a remote-access VPN?",
+    "options": [
+      "Site-to-site is always faster",
+      "Site-to-site connects networks; remote-access connects individual user devices to a network",
+      "They are the same technology",
+      "Remote-access uses UDP only"
+    ],
+    "answer": 1,
+    "explanation": "Site-to-site VPNs (often IPsec) tunnel between gateways at two sites. Remote-access VPNs (IPsec, SSL/TLS, WireGuard) connect individual user devices to a corporate network."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which is a security concern with split-tunnel VPN configurations?",
+    "options": [
+      "VPN traffic is always intercepted",
+      "Traffic outside the tunnel bypasses corporate security controls, reducing visibility",
+      "VPN performance is always degraded",
+      "Split tunneling is illegal"
+    ],
+    "answer": 1,
+    "explanation": "Split tunneling routes only corporate-bound traffic through the VPN; everything else goes directly. This reduces VPN load but exposes the endpoint to threats and bypasses corporate filtering."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which BEST distinguishes WPA2-Enterprise from WPA2-PSK?",
+    "options": [
+      "Enterprise uses no encryption",
+      "Enterprise uses 802.1X with per-user authentication; PSK uses a single shared key",
+      "They are identical",
+      "PSK is more secure for enterprises"
+    ],
+    "answer": 1,
+    "explanation": "WPA2-Enterprise authenticates each user via 802.1X (often RADIUS-backed) with per-user keys, supporting deprovisioning. PSK shares one key across all users with weaker accountability."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which EAP method uses certificates on both client and server for the strongest mutual authentication?",
+    "options": [
+      "EAP-PEAP",
+      "EAP-TLS",
+      "EAP-MD5",
+      "EAP-MSCHAPv2"
+    ],
+    "answer": 1,
+    "explanation": "EAP-TLS requires certificates on both sides, providing strong mutual authentication. PEAP and EAP-TTLS typically use a server certificate and inner credential-based authentication."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "Which is the PRIMARY purpose of a wireless site survey?",
+    "options": [
+      "Replace physical security guards",
+      "Plan AP placement, channels, and power levels for adequate coverage and acceptable interference",
+      "Generate compliance reports",
+      "Select Wi-Fi product vendor"
+    ],
+    "answer": 1,
+    "explanation": "Site surveys (predictive or passive) inform AP placement, channel plans, and power levels to balance coverage, capacity, and interference, including rogue-AP detection scoping."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "An 'evil twin' wireless attack involves:",
+    "options": [
+      "A malicious VLAN",
+      "A rogue access point impersonating a legitimate SSID to lure clients",
+      "A DNS poisoning attack",
+      "A SYN flood against the AP"
+    ],
+    "answer": 1,
+    "explanation": "Evil twin APs broadcast the SSID of a legitimate network, sometimes with stronger signal, to lure clients into connecting and capturing credentials or man-in-the-middling traffic."
+  },
+  {
+    "domain": "6: Network and Communications Security",
+    "question": "The KRACK attack against WPA2 exploited:",
+    "options": [
+      "A weakness in the WEP cipher",
+      "A flaw in the WPA2 four-way handshake allowing key reinstallation",
+      "A buffer overflow in the AP firmware",
+      "A poor random number generator in the kernel"
+    ],
+    "answer": 1,
+    "explanation": "KRACK (Key Reinstallation Attack) abused the WPA2 four-way handshake's message replay to force nonce reuse, breaking confidentiality. Patches addressed the issue in supplicant code."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "A drive-by download attack typically delivers malware via:",
+    "options": [
+      "A USB drive left in a parking lot",
+      "A compromised or malicious website that exploits the browser on visit",
+      "An email phishing message only",
+      "A man-in-the-middle on Wi-Fi"
+    ],
+    "answer": 1,
+    "explanation": "Drive-by downloads exploit browser or plugin vulnerabilities to deliver malware when a user visits a compromised or malicious site, often without user interaction beyond the visit."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "A watering hole attack involves:",
+    "options": [
+      "Sending personalized spear-phishing emails",
+      "Compromising a website frequented by the target audience to deliver payloads",
+      "Calling targets and impersonating IT",
+      "Leaving USB drives in parking lots"
+    ],
+    "answer": 1,
+    "explanation": "Watering hole attacks compromise sites the targets are likely to visit (industry forums, vendor sites), often with payloads that only execute against specific victims."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "A USB drop attack typically relies on:",
+    "options": [
+      "Drive-by browser exploits",
+      "Victims plugging found USB drives into their workstations, executing the payload",
+      "Sending phishing emails",
+      "Brute-forcing the AP password"
+    ],
+    "answer": 1,
+    "explanation": "Attackers seed USB drives in target areas. Curious finders plug them in, sometimes auto-running payloads via shortcut tricks, HID emulation (BadUSB), or social engineering content."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "A supply chain attack compromises:",
+    "options": [
+      "The end-user directly via phishing",
+      "A trusted upstream vendor, library, or update mechanism to reach downstream targets",
+      "Only physical shipping logistics",
+      "Only one organization at a time"
+    ],
+    "answer": 1,
+    "explanation": "Supply chain attacks (SolarWinds, dependency confusion, malicious npm packages) compromise upstream trusted components so downstream consumers receive the malicious version through normal update channels."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Which BEST distinguishes polymorphic from metamorphic malware?",
+    "options": [
+      "Polymorphic encrypts itself differently each time; metamorphic rewrites its own code",
+      "Polymorphic deletes files; metamorphic does not",
+      "Polymorphic is older; metamorphic is newer",
+      "Polymorphic is benign; metamorphic is malicious"
+    ],
+    "answer": 0,
+    "explanation": "Polymorphic malware encrypts/obfuscates its payload with different keys each infection but the underlying code is similar. Metamorphic malware rewrites its own code each generation, evading signature detection more aggressively."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Fileless malware (Living off the Land) primarily evades detection by:",
+    "options": [
+      "Running entirely from disk-based executables",
+      "Operating in memory or via legitimate system tools (PowerShell, WMI) without dropping files",
+      "Encrypting all files on disk",
+      "Requiring administrator install"
+    ],
+    "answer": 1,
+    "explanation": "Fileless techniques avoid traditional file-based detection by living in memory and abusing legitimate tools. EDR with behavioral monitoring is more effective than file-scanning AV here."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Which BEST distinguishes heuristic from signature-based antivirus detection?",
+    "options": [
+      "Heuristics use pattern matching on known samples; signatures use behavioral inference",
+      "Heuristics use behavior or generic patterns to detect unknown samples; signatures match known-bad byte patterns",
+      "They are identical",
+      "Heuristics never produce false positives"
+    ],
+    "answer": 1,
+    "explanation": "Signature detection requires a pre-existing signature for known threats. Heuristics infer maliciousness from behavior or generic patterns, catching variants and novel samples (at the cost of more false positives)."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Behavioral analysis on endpoints can detect attacks that signature-based tools miss because:",
+    "options": [
+      "It looks only at file hashes",
+      "It watches actions (process trees, registry, network) rather than relying on known-bad files",
+      "It blocks all unknown software",
+      "It requires sandboxing every file"
+    ],
+    "answer": 1,
+    "explanation": "Behavioral analysis flags suspicious sequences (unusual parent/child processes, lateral movement, credential dumping) regardless of file signature, catching novel and fileless attacks."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Data Execution Prevention (DEP) and the NX bit primarily mitigate:",
+    "options": [
+      "SQL injection",
+      "Code execution from data pages (e.g., stack buffer overflows running attacker payloads)",
+      "Brute-force password attacks",
+      "DNS poisoning"
+    ],
+    "answer": 1,
+    "explanation": "DEP/NX marks memory pages as non-executable, preventing CPU execution of injected payloads in data pages. Combined with ASLR, this raises the bar for memory corruption exploits."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Address Space Layout Randomization (ASLR) primarily defeats exploits that depend on:",
+    "options": [
+      "Knowing memory addresses of code or data",
+      "Weak password complexity",
+      "Plaintext network protocols",
+      "Lack of patching"
+    ],
+    "answer": 0,
+    "explanation": "ASLR randomizes the base addresses of executables, libraries, stack, and heap each run. Exploits relying on fixed addresses (return-to-libc, ROP gadget chains) fail without an info leak."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Stack canaries primarily detect:",
+    "options": [
+      "Heap corruption",
+      "Stack buffer overflows by placing a known value between local data and the return address",
+      "Heap spray attacks",
+      "SQL injection"
+    ],
+    "answer": 1,
+    "explanation": "Stack canaries are random values placed before the return address. The compiler verifies the canary before function return; mismatch indicates corruption and the program aborts."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Return-Oriented Programming (ROP) defeats DEP by:",
+    "options": [
+      "Re-enabling executable stack pages",
+      "Chaining together existing executable code snippets ('gadgets') in the program to perform arbitrary operations",
+      "Replacing the kernel",
+      "Disabling ASLR"
+    ],
+    "answer": 1,
+    "explanation": "ROP chains short instruction sequences (gadgets) ending in returns from existing executable memory to execute attacker-chosen operations without needing to inject new executable code."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "A format string vulnerability arises when:",
+    "options": [
+      "User input is used as the format string in functions like printf()",
+      "Strings are too long",
+      "Memory is properly bounded",
+      "Encryption keys are reused"
+    ],
+    "answer": 0,
+    "explanation": "When user input controls the format string (e.g., printf(user_input)), attackers can use format specifiers (%x, %n) to read or write arbitrary memory."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "An integer overflow vulnerability arises when:",
+    "options": [
+      "Two strings are concatenated",
+      "An arithmetic operation produces a value outside the variable's representable range, often leading to memory corruption",
+      "A file is deleted",
+      "Encryption is too strong"
+    ],
+    "answer": 1,
+    "explanation": "Integer overflows can cause smaller-than-expected allocations, bypassed bounds checks, or unexpected program behavior. Often precedes a buffer overflow or other memory safety bug."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "A Time-of-Check to Time-of-Use (TOCTOU) race condition exploits:",
+    "options": [
+      "A delay between security check and use of a resource, where the resource is modified in between",
+      "Slow encryption performance",
+      "Weak password reuse",
+      "Insufficient backup frequency"
+    ],
+    "answer": 0,
+    "explanation": "TOCTOU bugs allow attackers to change a resource (file, symlink, permission) between the validation step and the operation that uses it, bypassing security checks."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Command injection vulnerabilities arise when:",
+    "options": [
+      "A user changes their password",
+      "User input is concatenated into a shell command without proper sanitization",
+      "A backup is encrypted",
+      "A network is segmented"
+    ],
+    "answer": 1,
+    "explanation": "Command injection happens when untrusted input is incorporated into a system shell call (e.g., system(\"ping \" + user_input)). Defenses: avoid shell calls, use parameterized exec APIs, validate input."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "LDAP injection vulnerabilities arise when:",
+    "options": [
+      "LDAP servers are not encrypted",
+      "User input is incorporated into LDAP queries without proper escaping",
+      "LDAP is used over UDP",
+      "LDAP servers run on Windows"
+    ],
+    "answer": 1,
+    "explanation": "LDAP injection lets attackers manipulate the search filter to bypass authentication or extract data. Defenses include parameterized APIs and strict input validation/escaping."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "XML External Entity (XXE) attacks exploit:",
+    "options": [
+      "Weak XML compression",
+      "XML parsers that resolve external entity references, allowing file disclosure or SSRF",
+      "Broken XML formatting",
+      "Insecure cookies"
+    ],
+    "answer": 1,
+    "explanation": "XXE abuses XML parsers configured to resolve external entities, enabling reading of server files, internal network probing, or DoS. Mitigation: disable external entity resolution."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Server-Side Request Forgery (SSRF) allows an attacker to:",
+    "options": [
+      "Steal user passwords directly from the browser",
+      "Coerce the server into making requests to internal or unintended destinations",
+      "Brute-force the AP password",
+      "Decrypt TLS traffic"
+    ],
+    "answer": 1,
+    "explanation": "SSRF lets attackers reach internal services, cloud metadata endpoints, or external systems via the vulnerable server. Mitigation: validate URLs, deny private ranges, use allowlists."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "An open redirect vulnerability allows an attacker to:",
+    "options": [
+      "Encrypt server traffic",
+      "Trick users into visiting attacker-controlled URLs via the trusted application's redirect functionality",
+      "Decrypt session tokens",
+      "Execute code on the server"
+    ],
+    "answer": 1,
+    "explanation": "Open redirects accept untrusted URL parameters and forward users to them, enabling phishing because the initial URL appears to be on a trusted domain. Mitigation: allowlist redirect targets."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Insecure Direct Object Reference (IDOR) vulnerabilities arise when:",
+    "options": [
+      "URLs are too long",
+      "Object identifiers (e.g., user IDs) are exposed and the server fails to enforce authorization checks",
+      "Servers use HTTPS",
+      "Cookies are too short"
+    ],
+    "answer": 1,
+    "explanation": "IDOR allows attackers to change an identifier (?id=123 to ?id=124) and access another user's data because the application trusts the client-supplied ID without verifying ownership."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Insecure deserialization can lead to:",
+    "options": [
+      "Improved network performance",
+      "Remote code execution by feeding crafted serialized objects to the parser",
+      "Better encryption",
+      "Reduced storage usage"
+    ],
+    "answer": 1,
+    "explanation": "Deserializing untrusted data can instantiate dangerous gadget chains that execute attacker-chosen code. Mitigations: avoid deserialization of untrusted data, use signed/encrypted formats, or use restrictive parsers."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "A Cross-Origin Resource Sharing (CORS) misconfiguration can lead to:",
+    "options": [
+      "Improved web performance",
+      "Attacker origins being able to read responses from the protected application",
+      "Stronger TLS",
+      "Faster DNS lookups"
+    ],
+    "answer": 1,
+    "explanation": "Overly permissive CORS (e.g., Access-Control-Allow-Origin reflecting any origin + Allow-Credentials true) lets malicious sites issue authenticated requests and read responses, enabling data theft."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Accepting JWT tokens with 'alg: none' enables:",
+    "options": [
+      "Better performance",
+      "Trivial forgery of tokens because no signature verification occurs",
+      "Quantum resistance",
+      "Faster authentication"
+    ],
+    "answer": 1,
+    "explanation": "When a parser accepts 'alg: none', attackers can forge tokens with any claims because the signature is empty. Always whitelist expected algorithms server-side."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "A session fixation attack works by:",
+    "options": [
+      "Brute-forcing session tokens",
+      "Forcing a victim to use a session ID the attacker already knows, then hijacking the authenticated session",
+      "Encrypting all sessions",
+      "Logging out users prematurely"
+    ],
+    "answer": 1,
+    "explanation": "If the application doesn't issue a new session ID after authentication, an attacker who plants a known session ID on the victim can take over the session once the victim logs in."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Clickjacking attacks trick users into clicking on:",
+    "options": [
+      "A spam email link",
+      "Invisible or disguised UI elements rendered over a target application via iframe overlay",
+      "Their own desktop wallpaper",
+      "A blank page"
+    ],
+    "answer": 1,
+    "explanation": "Clickjacking overlays a target app in an invisible iframe under attacker-controlled UI, so user clicks are routed to the underlying app. Mitigations: X-Frame-Options or CSP frame-ancestors."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "HTTP Strict Transport Security (HSTS) tells browsers to:",
+    "options": [
+      "Always use HTTP for the site",
+      "Only access the site over HTTPS for a specified duration",
+      "Disable cookies",
+      "Block JavaScript"
+    ],
+    "answer": 1,
+    "explanation": "HSTS instructs browsers to refuse HTTP connections to the site for the declared max-age, preventing downgrade attacks and SSL stripping after first visit."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Subresource Integrity (SRI) protects against:",
+    "options": [
+      "DNS poisoning of internal hosts",
+      "Tampering with third-party scripts or stylesheets loaded via CDN by verifying their cryptographic hash",
+      "Brute-force of admin passwords",
+      "Buffer overflows in the OS"
+    ],
+    "answer": 1,
+    "explanation": "SRI attaches a hash to <script> and <link> tags loaded from third parties; the browser refuses to load the resource if the content doesn't match the expected hash."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Mobile applications often check for jailbreak/root status because:",
+    "options": [
+      "Jailbroken/rooted devices may have weakened sandboxing and tampered runtime",
+      "Jailbreak detection improves battery life",
+      "It speeds up the app",
+      "It is required by every app store"
+    ],
+    "answer": 0,
+    "explanation": "Jailbreaking/rooting removes OS protections an app may rely on for secure data storage and tamper resistance. Sensitive apps (banking, healthcare) often refuse to run on such devices."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Mobile OS app sandboxing primarily ensures that:",
+    "options": [
+      "Apps cannot use the network",
+      "Apps cannot directly access another app's data without explicit OS-mediated permission",
+      "Apps cannot use the camera",
+      "Apps must use a specific language"
+    ],
+    "answer": 1,
+    "explanation": "Both iOS and Android isolate apps with per-app storage and OS-mediated permissions. Apps cannot read another app's private data without going through declared IPC or permissions."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Which is a BEST practice for handling mobile app permission requests?",
+    "options": [
+      "Request all possible permissions on install",
+      "Request only the minimum required permissions, just-in-time when needed",
+      "Hide permission requests from the user",
+      "Use undocumented APIs"
+    ],
+    "answer": 1,
+    "explanation": "Least-privilege permission requests, with just-in-time prompts at the point of need, build user trust and reduce attack surface if the app is compromised."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Which BEST distinguishes COPE from BYOD?",
+    "options": [
+      "They are identical",
+      "COPE is corporate-owned, personally-enabled (org owns, allows personal use); BYOD is employee-owned",
+      "BYOD eliminates security needs",
+      "COPE prohibits any personal use"
+    ],
+    "answer": 1,
+    "explanation": "COPE devices are owned by the organization with allowed personal use, simplifying control. BYOD shifts ownership to the employee, reducing capital cost but complicating security. COBO is corporate-owned, business-only."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "A container escape vulnerability allows:",
+    "options": [
+      "Containers to run faster",
+      "Code in a container to break out and execute on the host or other containers",
+      "Better container compression",
+      "Stronger encryption"
+    ],
+    "answer": 1,
+    "explanation": "Container escapes (kernel vulnerabilities, misconfigured capabilities, privileged containers, host mount abuse) break the isolation boundary, threatening the host and all colocated containers."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Kubernetes RBAC primarily controls:",
+    "options": [
+      "Container CPU usage",
+      "Which subjects (users, service accounts) can perform which actions on which Kubernetes resources",
+      "Network bandwidth",
+      "Storage encryption"
+    ],
+    "answer": 1,
+    "explanation": "Kubernetes RBAC defines roles (permissions) and bindings (who has them), scoped to namespaces or cluster-wide. Misconfiguration is a leading cause of cluster compromise."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Which is the BEST practice for handling secrets used by containerized applications?",
+    "options": [
+      "Bake secrets into the container image",
+      "Inject secrets at runtime from a managed secrets store, not into images",
+      "Print secrets to container logs",
+      "Use the same secret across all environments"
+    ],
+    "answer": 1,
+    "explanation": "Secrets in images leak via image registries, layer history, and CI logs. Runtime injection from a secrets manager (with rotation and audit) is the standard pattern."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Which is a defining priority of Industrial Control System (ICS / SCADA) security compared to typical IT?",
+    "options": [
+      "Confidentiality is always paramount",
+      "Availability and safety are often the highest priorities; downtime can have physical consequences",
+      "Patches can be applied at any time",
+      "Vendors only support modern protocols"
+    ],
+    "answer": 1,
+    "explanation": "OT environments prioritize availability and physical safety. Patches often require scheduled maintenance windows, and changes can have life-safety implications, inverting common IT trade-offs."
+  },
+  {
+    "domain": "7: Systems and Application Security",
+    "question": "Which is a common challenge with patching embedded IoT or OT devices?",
+    "options": [
+      "Patches are too frequent to apply",
+      "Devices may have limited update mechanisms, no remote management, or lack vendor support for the device's lifetime",
+      "Patches are always reversible",
+      "Patches improve performance"
+    ],
+    "answer": 1,
+    "explanation": "Many embedded devices lack robust update mechanisms or are abandoned by vendors before reaching end of service life. Network isolation and compensating controls are often required."
   }
 ];

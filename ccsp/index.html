@@ -38,6 +38,18 @@
           <option value="sequential">Sequential</option>
         </select>
       </label>
+      <label>Time limit
+        <select id="time-limit">
+          <option value="0" selected>Off</option>
+          <option value="900">15 min</option>
+          <option value="1800">30 min</option>
+          <option value="2700">45 min</option>
+          <option value="3600">60 min</option>
+          <option value="5400">90 min</option>
+          <option value="7200">120 min</option>
+          <option value="10800">180 min</option>
+        </select>
+      </label>
     </div>
     <button id="start" class="primary">Start quiz</button>
   </section>
@@ -79,6 +91,7 @@
   <section class="card">
     <div class="quizbar">
       <span id="progress"></span>
+      <span id="timer" class="timer hidden"></span>
       <span id="domain-tag" class="tag"></span>
     </div>
     <h2 id="qtext"></h2>
@@ -95,6 +108,7 @@
   <section class="card">
     <h2>Session results</h2>
     <p id="score" class="score"></p>
+    <p id="results-meta" class="sub" style="margin-top:-8px"></p>
     <h3>By domain</h3>
     <table id="bydomain"><thead><tr><th>Domain</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody></tbody></table>
     <h3>Review</h3>
