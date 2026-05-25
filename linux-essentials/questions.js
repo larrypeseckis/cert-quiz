@@ -1,0 +1,3002 @@
+window.QUESTIONS = [
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Who initially created the Linux kernel in 1991?",
+    "options": [
+      "Richard Stallman",
+      "Linus Torvalds",
+      "Ken Thompson",
+      "Bill Joy"
+    ],
+    "answer": 1,
+    "explanation": "Linus Torvalds released the first Linux kernel in 1991 while a student at the University of Helsinki. Stallman started the GNU project that provides most of the surrounding userspace."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Strictly speaking, 'Linux' refers to which component?",
+    "options": [
+      "The entire operating system",
+      "Only the kernel",
+      "Only the desktop environment",
+      "Only the package manager"
+    ],
+    "answer": 1,
+    "explanation": "Linux is technically just the kernel. A full distribution combines the kernel with the GNU toolchain, libraries, init system, and applications. FSF advocates the term 'GNU/Linux' for this reason."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Under what license is the Linux kernel distributed?",
+    "options": [
+      "MIT License",
+      "GNU GPL version 2",
+      "Apache License 2.0",
+      "BSD 3-Clause"
+    ],
+    "answer": 1,
+    "explanation": "The Linux kernel is licensed under the GNU General Public License (GPL) version 2, a copyleft license requiring derivative works to also be distributed under GPL terms."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which of the following is a Debian-based Linux distribution?",
+    "options": [
+      "Fedora",
+      "Ubuntu",
+      "openSUSE",
+      "Arch Linux"
+    ],
+    "answer": 1,
+    "explanation": "Ubuntu is built on Debian and uses the same APT package manager. Fedora is from Red Hat's family, openSUSE is from SUSE, and Arch is independent."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which distribution is commonly used in enterprise server environments with paid commercial support?",
+    "options": [
+      "Linux Mint",
+      "Red Hat Enterprise Linux",
+      "Slackware",
+      "Puppy Linux"
+    ],
+    "answer": 1,
+    "explanation": "RHEL is a major enterprise distribution with commercial subscription and support. SUSE Linux Enterprise is a comparable enterprise option. Mint, Slackware, and Puppy are community distros."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which distribution follows a rolling release model where packages are continuously updated rather than in versioned releases?",
+    "options": [
+      "Ubuntu LTS",
+      "Arch Linux",
+      "RHEL",
+      "Debian Stable"
+    ],
+    "answer": 1,
+    "explanation": "Arch Linux is a rolling-release distribution. Ubuntu LTS, RHEL, and Debian Stable use scheduled major releases with backported security updates."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "What does 'LTS' mean in the context of Ubuntu releases?",
+    "options": [
+      "Linux Time Standard",
+      "Long Term Support",
+      "Latest Tested Software",
+      "Local Tier Setup"
+    ],
+    "answer": 1,
+    "explanation": "LTS = Long Term Support. Ubuntu LTS releases receive maintenance updates for five years (extended further with paid options), targeting servers and production use."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which is the PRIMARY role of the Linux kernel?",
+    "options": [
+      "Manage user accounts and passwords",
+      "Manage hardware resources and provide system calls to user programs",
+      "Render the graphical desktop",
+      "Install software packages"
+    ],
+    "answer": 1,
+    "explanation": "The kernel mediates between hardware and user-space programs: process scheduling, memory management, device drivers, filesystems, and the system call interface."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which is a major Linux desktop environment commonly bundled with distributions?",
+    "options": [
+      "Trident",
+      "GNOME",
+      "Bootstrap",
+      "Webpack"
+    ],
+    "answer": 1,
+    "explanation": "GNOME, KDE Plasma, XFCE, and Cinnamon are common desktop environments. Trident is a font-rendering engine, Bootstrap and Webpack are web tools."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which open-source web browser is commonly installed by default on many Linux distributions?",
+    "options": [
+      "Internet Explorer",
+      "Mozilla Firefox",
+      "Microsoft Edge",
+      "Safari"
+    ],
+    "answer": 1,
+    "explanation": "Firefox is widely bundled with Linux distros. Chromium is also common. Edge has a Linux build but isn't typically default."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which open-source office productivity suite is commonly included with Linux distributions?",
+    "options": [
+      "Microsoft Office",
+      "LibreOffice",
+      "iWork",
+      "WordPerfect"
+    ],
+    "answer": 1,
+    "explanation": "LibreOffice is the dominant open-source office suite on Linux, forked from OpenOffice. It includes Writer, Calc, Impress, Draw, Base, and Math."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which web server is widely used on Linux for hosting websites?",
+    "options": [
+      "IIS",
+      "Apache HTTP Server",
+      "Active Directory",
+      "PowerShell"
+    ],
+    "answer": 1,
+    "explanation": "Apache and Nginx are the two dominant web servers on Linux. IIS runs on Windows. Active Directory and PowerShell are Microsoft tools."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which open-source relational database is commonly used on Linux?",
+    "options": [
+      "Microsoft SQL Server",
+      "PostgreSQL",
+      "Oracle Database (Enterprise)",
+      "DB2"
+    ],
+    "answer": 1,
+    "explanation": "PostgreSQL and MySQL/MariaDB are the leading open-source relational databases on Linux. SQL Server, Oracle EE, and DB2 are proprietary commercial DBs."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which distributed version control system is widely used in Linux and broader open-source development?",
+    "options": [
+      "Subversion (SVN)",
+      "Git",
+      "CVS",
+      "Perforce"
+    ],
+    "answer": 1,
+    "explanation": "Git is the dominant distributed version control system, originally created by Linus Torvalds in 2005 to manage Linux kernel development."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which BEST distinguishes the 'free software' philosophy (FSF) from 'open source' (OSI)?",
+    "options": [
+      "They are exactly the same with no differences",
+      "Free software emphasizes user freedom; open source emphasizes practical development benefits",
+      "Free software costs nothing; open source costs money",
+      "Free software is illegal; open source is legal"
+    ],
+    "answer": 1,
+    "explanation": "FSF emphasizes user freedom (run, study, modify, share). OSI emphasizes practical benefits (better code through collaboration). The same software often qualifies under both definitions."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which is the defining characteristic of a copyleft license like the GPL?",
+    "options": [
+      "No restrictions on redistribution",
+      "Derivative works must also be distributed under the same license terms",
+      "All users must pay a fee",
+      "Source code must remain hidden"
+    ],
+    "answer": 1,
+    "explanation": "Copyleft licenses (GPL family) require derivative or modified works to be distributed under the same license, preserving the freedoms downstream. Permissive licenses do not impose this."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which is a characteristic of permissive open-source licenses such as MIT or BSD?",
+    "options": [
+      "They forbid commercial use",
+      "They allow inclusion in proprietary software without requiring source disclosure",
+      "They require all users to pay royalties",
+      "They prohibit modification"
+    ],
+    "answer": 1,
+    "explanation": "Permissive licenses (MIT, BSD, ISC) allow use, modification, and inclusion in proprietary software with minimal obligations — typically just attribution."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which feature distinguishes the Apache License 2.0 from MIT and BSD?",
+    "options": [
+      "Stronger copyleft requirements",
+      "Explicit patent grant from contributors to users",
+      "It is shorter than MIT",
+      "It prohibits commercial use"
+    ],
+    "answer": 1,
+    "explanation": "Apache 2.0 includes an explicit patent license from contributors, protecting users from patent claims by contributors. MIT and BSD do not address patents directly."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Dual licensing typically means:",
+    "options": [
+      "The software has two competing forks",
+      "The same software is offered under two different licenses, often one open and one commercial",
+      "Two different vendors sell the same software",
+      "The license expires after a set time"
+    ],
+    "answer": 1,
+    "explanation": "Dual licensing offers the same code under multiple licenses (e.g., GPL plus a commercial license), letting users pick based on their needs. MySQL historically used this model."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which mobile operating system is built on the Linux kernel?",
+    "options": [
+      "iOS",
+      "Android",
+      "BlackBerry OS",
+      "Windows Phone"
+    ],
+    "answer": 1,
+    "explanation": "Android uses a Linux kernel with Google's own userspace stack (Bionic libc, ART runtime). iOS uses Apple's Darwin (BSD-derived) base."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Linux dominates which computing market?",
+    "options": [
+      "Desktop PCs",
+      "TOP500 supercomputers",
+      "Game consoles in retail stores",
+      "Office workstations"
+    ],
+    "answer": 1,
+    "explanation": "Linux runs essentially 100% of TOP500 supercomputers. It also dominates servers and cloud workloads, while having minority share on desktop."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which is the default user shell on most modern Linux distributions?",
+    "options": [
+      "zsh",
+      "bash",
+      "fish",
+      "csh"
+    ],
+    "answer": 1,
+    "explanation": "Bash (Bourne Again Shell) is the default on most Linux distributions. macOS switched its default to zsh in 2019. Fish and csh are alternatives."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which is a popular open-source raster image editor often described as a free alternative to Photoshop?",
+    "options": [
+      "GIMP",
+      "Microsoft Paint",
+      "Photoshop CC",
+      "Pixelmator"
+    ],
+    "answer": 0,
+    "explanation": "GIMP (GNU Image Manipulation Program) is the leading open-source raster editor on Linux. Inkscape is its vector counterpart."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which open-source media player is widely available across operating systems including Linux?",
+    "options": [
+      "iTunes",
+      "VLC",
+      "Windows Media Player",
+      "QuickTime"
+    ],
+    "answer": 1,
+    "explanation": "VLC media player plays nearly any audio or video format and runs on Linux, Windows, macOS, iOS, and Android."
+  },
+  {
+    "domain": "1: The Linux Community and a Career in Open Source",
+    "question": "Which set of editors are commonly available from the Linux command line?",
+    "options": [
+      "Notepad and WordPad",
+      "vi, nano, and emacs",
+      "Visio and Project",
+      "Excel and Word"
+    ],
+    "answer": 1,
+    "explanation": "vi (or vim), nano, and emacs are the standard text editors available in nearly every Linux installation. Nano is the most beginner-friendly; vi is universally present."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What is a shell in the Linux context?",
+    "options": [
+      "The graphical desktop environment",
+      "A program that interprets user commands and runs them",
+      "The kernel itself",
+      "A type of filesystem"
+    ],
+    "answer": 1,
+    "explanation": "A shell is a command interpreter — it reads input (interactive or scripted), parses commands, and executes them. Bash, zsh, dash, and fish are common shells."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the PATH environment variable specify?",
+    "options": [
+      "The home directory of the current user",
+      "A colon-separated list of directories searched for executable commands",
+      "The current working directory",
+      "The location of log files"
+    ],
+    "answer": 1,
+    "explanation": "PATH lists directories the shell searches when you type a command name without a full path. Order matters: the first match wins."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command would display the value of the HOME environment variable?",
+    "options": [
+      "print HOME",
+      "echo $HOME",
+      "show HOME",
+      "cat HOME"
+    ],
+    "answer": 1,
+    "explanation": "`echo $HOME` prints the value of HOME. The $ prefix expands the variable to its value before passing it to echo."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which BEST describes the difference between single and double quotes in bash?",
+    "options": [
+      "They are identical",
+      "Single quotes prevent all expansion; double quotes allow variable and command substitution",
+      "Single quotes allow expansion; double quotes do not",
+      "Only single quotes can contain spaces"
+    ],
+    "answer": 1,
+    "explanation": "Single quotes are literal — no expansion happens. Double quotes allow variable expansion ($var), command substitution $(cmd), and history expansion."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which is the modern, preferred syntax for command substitution in bash?",
+    "options": [
+      "`cmd`",
+      "$(cmd)",
+      "${cmd}",
+      "@(cmd)"
+    ],
+    "answer": 1,
+    "explanation": "$(cmd) is preferred over backticks because it nests cleanly and is easier to read. Both are functionally equivalent in simple cases."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the env command (with no arguments) do?",
+    "options": [
+      "Print the current working directory",
+      "Display all environment variables in the current shell",
+      "Clear the screen",
+      "Show recent commands"
+    ],
+    "answer": 1,
+    "explanation": "`env` with no arguments prints the environment variables. `env CMD=value program` runs a program with modified environment without changing the caller's."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command creates an alias so that `ll` runs `ls -l`?",
+    "options": [
+      "alias ll='ls -l'",
+      "make ll=ls -l",
+      "set ll = ls -l",
+      "create alias ll ls -l"
+    ],
+    "answer": 0,
+    "explanation": "`alias name='command'` defines a shell alias. To make persistent, place in ~/.bashrc."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which file is commonly used to set personal aliases, functions, and environment for interactive bash shells?",
+    "options": [
+      "~/.bashrc",
+      "/etc/passwd",
+      "/etc/profile.global",
+      "~/.shellconfig"
+    ],
+    "answer": 0,
+    "explanation": "~/.bashrc is sourced for interactive non-login shells (often also from ~/.bash_profile for login shells). System-wide settings live in /etc/profile and /etc/bash.bashrc."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does pressing Tab at the bash prompt typically do?",
+    "options": [
+      "Insert four spaces",
+      "Attempt to complete the current command or filename",
+      "Exit the shell",
+      "Send the running process to background"
+    ],
+    "answer": 1,
+    "explanation": "Tab completion fills in commands, file paths, and even arguments (with bash-completion enabled). Double-tap Tab lists possibilities if ambiguous."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which key combination searches your command history interactively?",
+    "options": [
+      "Ctrl-A",
+      "Ctrl-R",
+      "Ctrl-Z",
+      "Ctrl-K"
+    ],
+    "answer": 1,
+    "explanation": "Ctrl-R initiates a reverse incremental search through history. Type characters to narrow; Ctrl-R again to find earlier matches; Enter to execute."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does !! do at the bash prompt?",
+    "options": [
+      "Cancel the current command",
+      "Repeat the previous command",
+      "Show command help",
+      "Exit the shell"
+    ],
+    "answer": 1,
+    "explanation": "!! repeats the previous command. Useful with sudo: `sudo !!` re-runs the last command with sudo. !$ is the last argument; !N is history entry N."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does pressing Ctrl-C in a terminal typically do to a running foreground process?",
+    "options": [
+      "Pauses it (SIGSTOP)",
+      "Sends SIGINT to interrupt and terminate it",
+      "Sends SIGKILL",
+      "Backgrounds it"
+    ],
+    "answer": 1,
+    "explanation": "Ctrl-C sends SIGINT to the foreground process group, requesting interruption. Programs may catch and clean up before exiting."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does Ctrl-D do at an empty bash prompt?",
+    "options": [
+      "Sends SIGKILL",
+      "Sends end-of-file, often causing the shell to exit",
+      "Clears the screen",
+      "Cancels the current line"
+    ],
+    "answer": 1,
+    "explanation": "Ctrl-D sends EOF. In an empty interactive shell it exits the shell. In programs reading stdin, it signals end of input."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "How would you set an environment variable PROJ to the value 'demo' for the current shell and exported to child processes?",
+    "options": [
+      "set PROJ=demo",
+      "export PROJ=demo",
+      "PROJ:=demo",
+      "var PROJ demo"
+    ],
+    "answer": 1,
+    "explanation": "`export PROJ=demo` sets and exports the variable so child processes inherit it. Without export, it's a shell-local variable."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command clears the terminal screen?",
+    "options": [
+      "wipe",
+      "clear",
+      "erase",
+      "blank"
+    ],
+    "answer": 1,
+    "explanation": "`clear` clears the terminal screen. Ctrl-L is the keyboard shortcut. `reset` does a deeper terminal reset, useful if the terminal is corrupted."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command displays the manual page for the cp command?",
+    "options": [
+      "help cp",
+      "man cp",
+      "info cp",
+      "doc cp"
+    ],
+    "answer": 1,
+    "explanation": "`man cp` displays the manual page. `info cp` may also work for GNU coreutils. `help` is for shell built-ins. `--help` works on most commands."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "In which manual section are system calls documented?",
+    "options": [
+      "Section 1",
+      "Section 2",
+      "Section 5",
+      "Section 8"
+    ],
+    "answer": 1,
+    "explanation": "Section 2 = system calls (e.g., open(2), read(2)). Section 1 = user commands, 5 = file formats, 8 = admin commands. Use `man N name` to disambiguate."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which manual section contains user-level commands like ls and cp?",
+    "options": [
+      "Section 1",
+      "Section 2",
+      "Section 3",
+      "Section 8"
+    ],
+    "answer": 0,
+    "explanation": "Section 1 contains general user commands. Section 8 is for system administration commands (mount, fdisk, etc.)."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command searches the names and descriptions of manual pages for a keyword?",
+    "options": [
+      "where",
+      "apropos",
+      "find",
+      "grep"
+    ],
+    "answer": 1,
+    "explanation": "`apropos keyword` (equivalent to `man -k`) searches names and short descriptions of manual pages. Useful when you can't recall the exact command name."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the whatis command do?",
+    "options": [
+      "Identifies the type of a file",
+      "Displays a one-line description of a command from manual pages",
+      "Shows the current user",
+      "Lists running processes"
+    ],
+    "answer": 1,
+    "explanation": "`whatis cmd` shows the short description from cmd's manual page (equivalent to `man -f`). Database is built by mandb."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which flag is a widely-supported convention to display brief usage information for a GNU command?",
+    "options": [
+      "--explain",
+      "--help",
+      "--info",
+      "--describe"
+    ],
+    "answer": 1,
+    "explanation": "Most GNU commands accept --help for a brief usage summary. -h is often a short form, though some commands use -h for other purposes."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which documentation format, primarily used by GNU projects, provides hyperlinked navigation?",
+    "options": [
+      "man pages",
+      "info pages",
+      "POD",
+      "TexInfo PDFs only"
+    ],
+    "answer": 1,
+    "explanation": "info pages (created with Texinfo) offer hyperlinked, hierarchical documentation. GNU often considers them more complete than man pages for GNU tools."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does `which python3` typically return?",
+    "options": [
+      "The version of python3",
+      "The full path to the python3 executable found in PATH",
+      "All installed Python versions",
+      "An error if python3 is missing from PATH"
+    ],
+    "answer": 1,
+    "explanation": "`which` finds executables in PATH. It returns the first match. Note: `which` doesn't know about shell built-ins or aliases; `type` does."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the whereis command report for a given command?",
+    "options": [
+      "Only the executable path",
+      "Locations of the executable, source code, and manual pages",
+      "Only manual pages",
+      "The process ID of running instances"
+    ],
+    "answer": 1,
+    "explanation": "`whereis name` reports executable, source, and manual page paths in standard locations. More comprehensive than `which` but limited to standard system paths."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command reports whether a name is an alias, function, built-in, or external command?",
+    "options": [
+      "which",
+      "type",
+      "where",
+      "kind"
+    ],
+    "answer": 1,
+    "explanation": "`type name` (a bash built-in) tells you exactly how the shell will interpret a name — alias, function, built-in, or external — and the path if external."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command provides help text for bash built-in commands like cd or pwd?",
+    "options": [
+      "man",
+      "help",
+      "info",
+      "--explain"
+    ],
+    "answer": 1,
+    "explanation": "`help cmd` displays inline documentation for bash built-ins. man pages may exist but often don't cover built-ins specifically."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Where does software typically install additional documentation files like READMEs and changelogs on a Linux system?",
+    "options": [
+      "/etc/doc",
+      "/usr/share/doc",
+      "/opt/help",
+      "/home/docs"
+    ],
+    "answer": 1,
+    "explanation": "/usr/share/doc/PACKAGE/ holds extended documentation, READMEs, license texts, and changelogs for installed packages."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which two commands produce equivalent output: searching man page descriptions for a keyword?",
+    "options": [
+      "man -k and apropos",
+      "man -f and whatis",
+      "man -i and locate",
+      "man -l and which"
+    ],
+    "answer": 0,
+    "explanation": "`man -k keyword` is equivalent to `apropos keyword`. `man -f cmd` is equivalent to `whatis cmd`."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "In a man page SYNOPSIS, what do square brackets [ ] around an option indicate?",
+    "options": [
+      "The option is required",
+      "The option is optional",
+      "The option is deprecated",
+      "The option must be quoted"
+    ],
+    "answer": 1,
+    "explanation": "Square brackets indicate optional arguments. Pipes (|) indicate mutually exclusive alternatives. Ellipsis (...) indicates the argument can repeat."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "How would you specifically request the section 5 man page for 'passwd' (the file format) rather than the command?",
+    "options": [
+      "man -section=5 passwd",
+      "man 5 passwd",
+      "man --file passwd",
+      "man passwd-5"
+    ],
+    "answer": 1,
+    "explanation": "`man 5 passwd` shows the file format reference for /etc/passwd. `man 1 passwd` shows the command. Use sections to disambiguate when names collide."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command displays the current working directory's absolute path?",
+    "options": [
+      "cd",
+      "pwd",
+      "ls",
+      "where"
+    ],
+    "answer": 1,
+    "explanation": "`pwd` (print working directory) shows the absolute path of the current directory. Useful in scripts and when navigating deep hierarchies."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does `cd` with no arguments do?",
+    "options": [
+      "Changes to the root directory",
+      "Changes to the user's home directory",
+      "Does nothing",
+      "Lists current directory contents"
+    ],
+    "answer": 1,
+    "explanation": "`cd` with no arguments takes you to your home directory ($HOME). `cd ~` is equivalent."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does `cd -` do?",
+    "options": [
+      "Moves up one directory level",
+      "Returns to the previous working directory",
+      "Removes the current directory",
+      "Changes to the user's home"
+    ],
+    "answer": 1,
+    "explanation": "`cd -` switches to the previous working directory and prints its path. Useful for toggling between two directories."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which option to ls shows detailed listing with permissions, owner, size, and timestamp?",
+    "options": [
+      "-a",
+      "-l",
+      "-h",
+      "-r"
+    ],
+    "answer": 1,
+    "explanation": "`ls -l` shows the long-format listing. Combine: `ls -lh` for human-readable sizes, `ls -la` to include hidden files."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which option causes ls to show files whose names begin with a dot (hidden)?",
+    "options": [
+      "-l",
+      "-a",
+      "-h",
+      "-S"
+    ],
+    "answer": 1,
+    "explanation": "`ls -a` shows all entries including hidden ones (starting with .) and the . and .. directory entries. `ls -A` shows hidden but omits . and .."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which option makes ls display file sizes in human-readable units (e.g., 4.0K, 2.3M)?",
+    "options": [
+      "-S",
+      "-h",
+      "-i",
+      "-c"
+    ],
+    "answer": 1,
+    "explanation": "`-h` formats sizes with K/M/G suffixes when combined with `-l` or `-s`. Typical use: `ls -lh`."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which ls option recursively lists subdirectories?",
+    "options": [
+      "-R",
+      "-r",
+      "-x",
+      "-d"
+    ],
+    "answer": 0,
+    "explanation": "`-R` (uppercase) recursively lists subdirectories. Lowercase `-r` reverses sort order."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which ls option sorts files by modification time, newest first?",
+    "options": [
+      "-S",
+      "-t",
+      "-u",
+      "-i"
+    ],
+    "answer": 1,
+    "explanation": "`-t` sorts by modification time (newest first). Add `-r` to reverse (oldest first). `-u` uses access time; `-c` uses ctime."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which path is absolute?",
+    "options": [
+      "./projects/x",
+      "../etc/passwd",
+      "/var/log/messages",
+      "projects/x"
+    ],
+    "answer": 2,
+    "explanation": "Absolute paths begin with /, naming the location from the filesystem root. The others are relative to the current working directory."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the tilde (~) in a path refer to?",
+    "options": [
+      "Network share",
+      "User's home directory",
+      "Temporary directory",
+      "Root directory"
+    ],
+    "answer": 1,
+    "explanation": "~ expands to the current user's home directory. ~username expands to that user's home. ~+ is PWD; ~- is OLDPWD."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the /etc directory traditionally contain?",
+    "options": [
+      "User home data",
+      "System-wide configuration files",
+      "Temporary swap files",
+      "Compiled program binaries"
+    ],
+    "answer": 1,
+    "explanation": "/etc holds system-wide configuration files (passwd, shadow, fstab, ssh/, network configs). Per-user config typically lives under ~/.config or dotfiles in $HOME."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What is typically stored under /home?",
+    "options": [
+      "Kernel images",
+      "User home directories (one subdirectory per user)",
+      "Mount points for removable media",
+      "System logs"
+    ],
+    "answer": 1,
+    "explanation": "/home/<username> is the standard location for each non-root user's home directory. The root user's home is /root."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What is /var primarily used for?",
+    "options": [
+      "Variable data such as logs, mail, and spool files",
+      "Vendor-supplied configurations",
+      "User home directories",
+      "Boot-time kernel modules"
+    ],
+    "answer": 0,
+    "explanation": "/var contains variable-content data: /var/log (logs), /var/spool (queues), /var/cache (caches), /var/mail, and more — data that changes during normal operation."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What is the typical purpose of /tmp?",
+    "options": [
+      "Storing user home files permanently",
+      "Temporary files for any user; often cleared on reboot",
+      "Compiled kernel modules",
+      "System configuration backups"
+    ],
+    "answer": 1,
+    "explanation": "/tmp is world-writable for transient files. Many distros use tmpfs (RAM-backed) for /tmp and clear it on boot. Don't store anything you want to keep there."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does /usr/bin typically contain?",
+    "options": [
+      "Most non-essential user commands installed by the system or packages",
+      "Configuration files for the kernel",
+      "Personal user files",
+      "Log files"
+    ],
+    "answer": 0,
+    "explanation": "/usr/bin holds the bulk of executable commands available to users. /bin historically held essential commands needed for boot/recovery; on many modern systems /bin is symlinked to /usr/bin."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does '..' represent in a Linux file path?",
+    "options": [
+      "The current directory",
+      "The parent of the current directory",
+      "The root directory",
+      "The user's home directory"
+    ],
+    "answer": 1,
+    "explanation": ".. refers to the parent directory. '.' refers to the current directory. Both are usable in paths: `cd ..`, `ls ./script.sh`."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command copies a file from source to destination?",
+    "options": [
+      "mv source dest",
+      "cp source dest",
+      "ln source dest",
+      "rm source dest"
+    ],
+    "answer": 1,
+    "explanation": "`cp` copies. `mv` moves/renames. `ln` creates links. `rm` deletes."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command renames a file from old to new without copying?",
+    "options": [
+      "cp old new",
+      "mv old new",
+      "ln old new",
+      "touch old new"
+    ],
+    "answer": 1,
+    "explanation": "`mv` renames (or moves) files. Within a single filesystem it just updates the directory entry — no data copy."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command deletes a file?",
+    "options": [
+      "del",
+      "rm",
+      "erase",
+      "remove"
+    ],
+    "answer": 1,
+    "explanation": "`rm filename` deletes the file. Use `rm -i` to confirm each deletion interactively, or `rm -f` to force without prompting."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which option recursively deletes a directory and its contents?",
+    "options": [
+      "-d",
+      "-r (or -R)",
+      "-f",
+      "-a"
+    ],
+    "answer": 1,
+    "explanation": "`rm -r dir` deletes a directory and everything inside. Combine with -f (force, no prompt) carefully — `rm -rf` is destructive and irrecoverable."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the -f option to rm do?",
+    "options": [
+      "Forces a kernel-level delete bypassing permissions",
+      "Skips confirmation prompts and ignores nonexistent files without error",
+      "Recursively removes directories",
+      "Deletes only files matching specific patterns"
+    ],
+    "answer": 1,
+    "explanation": "`-f` forces removal: no prompts, no error for nonexistent files, and overrides interactive aliases. It does NOT bypass actual file permissions."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command creates a new directory?",
+    "options": [
+      "newdir",
+      "mkdir",
+      "makedir",
+      "create"
+    ],
+    "answer": 1,
+    "explanation": "`mkdir name` creates a directory. Errors if the parent doesn't exist or the directory already exists."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which option to mkdir creates parent directories as needed without errors?",
+    "options": [
+      "-p",
+      "-r",
+      "-m",
+      "-v"
+    ],
+    "answer": 0,
+    "explanation": "`mkdir -p path/to/dir` creates intermediate directories as needed and exits silently if the target already exists. Useful in scripts."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which is a limitation of rmdir compared to `rm -r`?",
+    "options": [
+      "rmdir works only as root",
+      "rmdir only removes empty directories",
+      "rmdir is slower than rm",
+      "rmdir cannot accept arguments"
+    ],
+    "answer": 1,
+    "explanation": "`rmdir` only removes empty directories — it's safer because it won't accidentally delete contents. Use `rm -r` to delete a directory and its contents."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the touch command do when run on a nonexistent filename?",
+    "options": [
+      "Prints an error and exits",
+      "Creates an empty file with that name",
+      "Searches the filesystem for the name",
+      "Renames the closest match"
+    ],
+    "answer": 1,
+    "explanation": "`touch file` creates an empty file if it doesn't exist; if it does, it updates the access/modification timestamps without changing contents."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which BEST describes a hard link?",
+    "options": [
+      "A pointer file that breaks if the target moves",
+      "An additional directory entry pointing to the same inode as the original file",
+      "A network mount point",
+      "A special device file"
+    ],
+    "answer": 1,
+    "explanation": "Hard links share the same inode as the original — they ARE the file with multiple names. Removing one name doesn't remove the data until all names are gone. Hard links cannot cross filesystems."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which BEST describes a symbolic (soft) link?",
+    "options": [
+      "Shares an inode with the original file",
+      "A special file containing a path that points to another file or directory",
+      "An encrypted copy of the original",
+      "A directory entry pointing to a kernel module"
+    ],
+    "answer": 1,
+    "explanation": "Symbolic links are tiny files containing the path to a target. They can cross filesystems and point to directories, but break if the target moves or is deleted."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which command creates a symbolic link named 'link' pointing to 'target'?",
+    "options": [
+      "ln target link",
+      "ln -s target link",
+      "ln -h target link",
+      "link --to target link"
+    ],
+    "answer": 1,
+    "explanation": "`ln -s target link_name` creates a symlink. Without -s, `ln` creates a hard link. The order is always source then destination."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the * wildcard match in a shell file glob?",
+    "options": [
+      "Exactly one character",
+      "Zero or more characters (excluding leading dot)",
+      "Any single digit",
+      "Only word characters"
+    ],
+    "answer": 1,
+    "explanation": "* matches zero or more characters in filenames, excluding leading dots by default. `*.txt` matches all .txt files in the current directory."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the ? wildcard match in a shell file glob?",
+    "options": [
+      "Zero or more characters",
+      "Exactly one character",
+      "Any letter only",
+      "Only digits"
+    ],
+    "answer": 1,
+    "explanation": "? matches exactly one character. `file?.txt` matches file1.txt, fileA.txt, etc., but not file10.txt."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "What does the pattern [abc].txt match?",
+    "options": [
+      "Files named a.txt, b.txt, and c.txt only",
+      "Files named exactly abc.txt",
+      "Any file starting with abc",
+      "Files named a, b, or c with any extension"
+    ],
+    "answer": 0,
+    "explanation": "[abc] matches one character from the set: a, b, or c. So [abc].txt matches a.txt, b.txt, or c.txt only."
+  },
+  {
+    "domain": "2: Finding Your Way on a Linux System",
+    "question": "Which option must be used with cp to copy a directory and its contents?",
+    "options": [
+      "-d",
+      "-r (or -R)",
+      "-f",
+      "-i"
+    ],
+    "answer": 1,
+    "explanation": "`cp -r src dst` recursively copies a directory tree. Without it, cp errors out when source is a directory."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command creates a tar archive of a directory called 'project' into 'project.tar'?",
+    "options": [
+      "tar -xvf project.tar project",
+      "tar -cvf project.tar project",
+      "tar -tvf project.tar project",
+      "tar -uvf project.tar project"
+    ],
+    "answer": 1,
+    "explanation": "-c creates, -v is verbose, -f specifies file. `tar -cvf project.tar project` packages project/ into project.tar without compression."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command extracts the contents of an archive 'data.tar'?",
+    "options": [
+      "tar -cvf data.tar",
+      "tar -xvf data.tar",
+      "tar -tvf data.tar",
+      "tar -rvf data.tar"
+    ],
+    "answer": 1,
+    "explanation": "-x extracts. The standard quick mnemonic: -xvf for extract verbose file."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which option lists the contents of a tar archive without extracting?",
+    "options": [
+      "-c",
+      "-x",
+      "-t",
+      "-r"
+    ],
+    "answer": 2,
+    "explanation": "-t lists contents. `tar -tvf archive.tar` shows the file list with details. Useful to inspect before extraction."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command creates a gzip-compressed tar archive named 'site.tar.gz' from directory 'site'?",
+    "options": [
+      "tar -cvf site.tar.gz site",
+      "tar -czvf site.tar.gz site",
+      "tar -xzvf site.tar.gz site",
+      "gzip site"
+    ],
+    "answer": 1,
+    "explanation": "-z adds gzip compression. So `tar -czvf out.tar.gz src` is the standard create-and-compress incantation."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command extracts a gzip-compressed tar archive 'backup.tar.gz'?",
+    "options": [
+      "tar -cvf backup.tar.gz",
+      "tar -xzvf backup.tar.gz",
+      "tar -tzvf backup.tar.gz",
+      "gunzip backup.tar.gz"
+    ],
+    "answer": 1,
+    "explanation": "-x extract, -z gzip, -v verbose, -f file. Modern tar can also auto-detect compression with -a."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which tar option enables bzip2 compression?",
+    "options": [
+      "-z",
+      "-j",
+      "-J",
+      "-Z"
+    ],
+    "answer": 1,
+    "explanation": "-j is bzip2. -z is gzip. -J (uppercase) is xz. -Z (uppercase) is compress."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which tar option enables xz compression?",
+    "options": [
+      "-z",
+      "-j",
+      "-J",
+      "-x"
+    ],
+    "answer": 2,
+    "explanation": "-J is xz compression (LZMA2). -z is gzip, -j is bzip2. xz typically yields the smallest archives but is slower."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "What does `gzip file.txt` do?",
+    "options": [
+      "Encrypts file.txt",
+      "Compresses file.txt in place, replacing it with file.txt.gz",
+      "Creates a tar archive",
+      "Decompresses an existing .gz file"
+    ],
+    "answer": 1,
+    "explanation": "gzip replaces the original file with the compressed version (.gz extension). Use -k to keep the original or -d to decompress."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command decompresses a file named 'log.gz'?",
+    "options": [
+      "gunzip log.gz",
+      "ungzip log.gz",
+      "tar -xvf log.gz",
+      "decompress log.gz"
+    ],
+    "answer": 0,
+    "explanation": "`gunzip` (equivalent to `gzip -d`) decompresses .gz files, replacing log.gz with log."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which compression utility typically produces smaller files than gzip but slower than gzip?",
+    "options": [
+      "zip",
+      "bzip2",
+      "compress",
+      "lha"
+    ],
+    "answer": 1,
+    "explanation": "bzip2 typically achieves better compression ratios than gzip at the cost of CPU time. xz is even slower with better ratios still."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which compression utility uses the LZMA2 algorithm and produces highly compressed archives?",
+    "options": [
+      "xz",
+      "rar",
+      "ace",
+      "arj"
+    ],
+    "answer": 0,
+    "explanation": "xz uses LZMA2 and is widely used for kernel and large package archives where compression ratio matters more than CPU time."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command creates a ZIP archive 'docs.zip' from a directory 'docs'?",
+    "options": [
+      "tar -zip docs",
+      "zip -r docs.zip docs",
+      "compress docs.zip docs",
+      "archive docs docs.zip"
+    ],
+    "answer": 1,
+    "explanation": "`zip -r docs.zip docs` creates a ZIP archive recursively. ZIP is widely used for cross-platform sharing."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command extracts the contents of 'project.zip' into the current directory?",
+    "options": [
+      "tar -xvf project.zip",
+      "unzip project.zip",
+      "zip -d project.zip",
+      "rar x project.zip"
+    ],
+    "answer": 1,
+    "explanation": "`unzip project.zip` extracts files. Use `-d /path` to extract to a different directory."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which two file extensions both indicate a gzip-compressed tar archive?",
+    "options": [
+      ".tar and .gz",
+      ".tar.gz and .tgz",
+      ".tz and .gtz",
+      ".gzip and .tarball"
+    ],
+    "answer": 1,
+    "explanation": ".tar.gz and .tgz are equivalent — both indicate gzip-compressed tar archives."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "What is a common use of the dd command?",
+    "options": [
+      "Compress files efficiently",
+      "Copy and convert raw data between block devices or files (e.g., disk imaging)",
+      "Decode encrypted archives",
+      "Generate random text files"
+    ],
+    "answer": 1,
+    "explanation": "dd performs low-level byte copying. Common uses: imaging disks/USBs, creating bootable media, generating files of specific size. Care needed — misuse can wipe disks."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command concatenates files to stdout, often used to view small files?",
+    "options": [
+      "less",
+      "cat",
+      "show",
+      "echo"
+    ],
+    "answer": 1,
+    "explanation": "cat prints file contents to stdout. For large files, use less or more. cat can combine multiple files: `cat a.txt b.txt > combined.txt`."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command shows the first 10 lines of a file by default?",
+    "options": [
+      "top",
+      "head",
+      "first",
+      "more"
+    ],
+    "answer": 1,
+    "explanation": "`head file` shows the first 10 lines. Use `-n N` (or `-N`) for a different count. `head -n 5 file` shows the first five lines."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command shows the last 10 lines of a file by default?",
+    "options": [
+      "bottom",
+      "tail",
+      "last",
+      "end"
+    ],
+    "answer": 1,
+    "explanation": "`tail file` shows the last 10 lines. `tail -n N` adjusts the count. `tail -n +N` starts from line N."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command continuously displays new lines appended to a log file?",
+    "options": [
+      "watch logfile",
+      "tail -f logfile",
+      "tail -r logfile",
+      "more logfile"
+    ],
+    "answer": 1,
+    "explanation": "`tail -f file` follows the file: shows existing tail and prints new appended lines as they arrive. Useful for live log monitoring."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command displays a file one screen at a time with navigation?",
+    "options": [
+      "cat",
+      "less",
+      "head",
+      "echo"
+    ],
+    "answer": 1,
+    "explanation": "less pages through a file, supports forward/backward navigation, searching with /, and is the modern replacement for more. Quit with q."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command prints lines from a file containing the text 'error'?",
+    "options": [
+      "search error file.log",
+      "grep error file.log",
+      "find error file.log",
+      "match error file.log"
+    ],
+    "answer": 1,
+    "explanation": "`grep PATTERN FILE` prints matching lines. Patterns are basic regular expressions by default; use -E for extended regex, -F for fixed strings."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which grep option makes the search case-insensitive?",
+    "options": [
+      "-c",
+      "-i",
+      "-v",
+      "-n"
+    ],
+    "answer": 1,
+    "explanation": "-i ignores case. So `grep -i error log` matches Error, ERROR, error, etc."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which grep option prints lines that do NOT match the pattern?",
+    "options": [
+      "-x",
+      "-v",
+      "-c",
+      "-n"
+    ],
+    "answer": 1,
+    "explanation": "-v inverts: prints lines that do not match the pattern. Useful for excluding noise like comment lines."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which grep option recursively searches subdirectories?",
+    "options": [
+      "-r",
+      "-l",
+      "-w",
+      "-q"
+    ],
+    "answer": 0,
+    "explanation": "-r recursively searches files under given directories. -R also follows symlinks. `grep -r pattern .` is a common workhorse."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which grep option prefixes each matching line with its line number?",
+    "options": [
+      "-l",
+      "-n",
+      "-c",
+      "-q"
+    ],
+    "answer": 1,
+    "explanation": "-n prefixes the line number. -c instead counts matches. -l lists only filenames containing matches."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which option enables extended regular expressions in grep (supporting + ? | () without escapes)?",
+    "options": [
+      "-E",
+      "-G",
+      "-F",
+      "-X"
+    ],
+    "answer": 0,
+    "explanation": "-E enables ERE (equivalent to running egrep). -G is basic regex (default). -F is fixed strings (equivalent to fgrep)."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "What does the sort command do by default?",
+    "options": [
+      "Sort lines in descending order",
+      "Sort lines alphabetically ascending",
+      "Remove duplicate lines",
+      "Reverse the order of input lines"
+    ],
+    "answer": 1,
+    "explanation": "sort sorts lines lexicographically ascending by default. Use -r to reverse, -n for numeric, -k for specific field, -u for unique."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which sort option sorts numerically rather than as text?",
+    "options": [
+      "-r",
+      "-n",
+      "-k",
+      "-c"
+    ],
+    "answer": 1,
+    "explanation": "-n treats input as numbers. Without it, 'sort' compares character by character, so 10 sorts before 2."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which sort option reverses the sort order?",
+    "options": [
+      "-r",
+      "-R",
+      "-n",
+      "-u"
+    ],
+    "answer": 0,
+    "explanation": "-r reverses sort order. -R (uppercase) randomizes — completely different behavior."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command removes adjacent duplicate lines from input?",
+    "options": [
+      "sort",
+      "uniq",
+      "dedup",
+      "filter"
+    ],
+    "answer": 1,
+    "explanation": "uniq filters adjacent duplicate lines. Typically used after sort: `sort file | uniq`. Use sort -u as a shortcut."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which uniq option prefixes each line with its occurrence count?",
+    "options": [
+      "-c",
+      "-d",
+      "-u",
+      "-i"
+    ],
+    "answer": 0,
+    "explanation": "-c prefixes the count. Combined with `sort | uniq -c | sort -rn` you can find the most frequent lines — a classic log analysis pattern."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which wc option counts only the number of lines?",
+    "options": [
+      "-w",
+      "-l",
+      "-c",
+      "-m"
+    ],
+    "answer": 1,
+    "explanation": "-l counts lines, -w counts words, -c counts bytes, -m counts characters."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which wc option counts only the number of words?",
+    "options": [
+      "-w",
+      "-l",
+      "-c",
+      "-b"
+    ],
+    "answer": 0,
+    "explanation": "-w counts words (whitespace-separated tokens). Default wc output without options shows lines, words, and bytes."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command extracts specific columns from each line of a delimited file?",
+    "options": [
+      "awk",
+      "cut",
+      "trim",
+      "slice"
+    ],
+    "answer": 1,
+    "explanation": "cut extracts characters (-c), bytes (-b), or fields (-f) per line. Common use: `cut -d: -f1 /etc/passwd` extracts the first colon-delimited field."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command translates or deletes specified characters from stdin?",
+    "options": [
+      "sed",
+      "tr",
+      "awk",
+      "trans"
+    ],
+    "answer": 1,
+    "explanation": "tr performs character-level translation: `tr 'A-Z' 'a-z'` lowercases. Operates only on stdin and writes to stdout, not files directly."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which sed command replaces the first occurrence of 'old' with 'new' on each line of file.txt?",
+    "options": [
+      "sed 's/new/old/g' file.txt",
+      "sed 's/old/new/' file.txt",
+      "sed 'replace old new' file.txt",
+      "sed -e 'old=new' file.txt"
+    ],
+    "answer": 1,
+    "explanation": "`sed 's/old/new/' file.txt` replaces the first match per line. Add /g to replace all matches per line. Add -i to edit in place."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "In awk, which variable refers to the first whitespace-separated field of the current input line?",
+    "options": [
+      "$0",
+      "$1",
+      "$F",
+      "$first"
+    ],
+    "answer": 1,
+    "explanation": "$1, $2, ... refer to fields. $0 is the whole line. NF is the number of fields. Default field separator is whitespace; override with -F."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command searches a directory tree for files matching specified criteria?",
+    "options": [
+      "search",
+      "find",
+      "locate",
+      "ls -R"
+    ],
+    "answer": 1,
+    "explanation": "find walks the filesystem and tests each entry against expressions (name, type, size, time). Powerful but more complex than locate, which uses a pre-built database."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which find command finds all files named ending in .log under /var?",
+    "options": [
+      "find /var -named *.log",
+      "find /var -name '*.log'",
+      "find -file *.log /var",
+      "find /var --filter *.log"
+    ],
+    "answer": 1,
+    "explanation": "`find /var -name '*.log'` matches by name (quote the pattern to keep shell from globbing first). Use -iname for case-insensitive matching."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which find option restricts results to directories only?",
+    "options": [
+      "-d",
+      "-type d",
+      "--directory",
+      "-folder"
+    ],
+    "answer": 1,
+    "explanation": "`-type d` matches directories. Other types: f (regular file), l (symlink), b (block device), c (character device), s (socket), p (named pipe)."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which line at the top of a script tells the system to interpret it with bash?",
+    "options": [
+      "#!bash",
+      "#!/bin/bash",
+      "// bash",
+      "# bash"
+    ],
+    "answer": 1,
+    "explanation": "The shebang is `#!` followed by the path to an interpreter. `#!/bin/bash` (or `#!/usr/bin/env bash`) is standard for bash scripts."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which command makes a script file 'deploy.sh' executable by its owner?",
+    "options": [
+      "chown +x deploy.sh",
+      "chmod +x deploy.sh",
+      "chgrp +x deploy.sh",
+      "setexec deploy.sh"
+    ],
+    "answer": 1,
+    "explanation": "`chmod +x deploy.sh` adds the execute bit. Without it, you can run via `bash deploy.sh` but not `./deploy.sh`."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which is the correct bash variable assignment syntax?",
+    "options": [
+      "NAME = value (with spaces)",
+      "NAME=value (no spaces)",
+      "var NAME = value",
+      "let NAME value"
+    ],
+    "answer": 1,
+    "explanation": "Bash requires no spaces around =. `NAME=value` works; `NAME = value` would try to run a command called NAME with arguments = and value."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "How do you reference the value of a variable called NAME in bash?",
+    "options": [
+      "@NAME",
+      "$NAME or ${NAME}",
+      "%NAME%",
+      "&NAME"
+    ],
+    "answer": 1,
+    "explanation": "$NAME expands the value. Braces ${NAME} are needed when the name is followed by other characters that could be part of it, like ${NAME}_test."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which is the preferred modern syntax to capture command output into a variable?",
+    "options": [
+      "DATE=`date`",
+      "DATE=$(date)",
+      "DATE='date'",
+      "DATE=$\"date\""
+    ],
+    "answer": 1,
+    "explanation": "$(date) is the preferred form. Backticks work but don't nest well. Single and double quotes capture the literal string, not command output."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which is correct bash if-then-else structure?",
+    "options": [
+      "if X then Y else Z endif",
+      "if [ X ]; then Y; else Z; fi",
+      "if X { Y } else { Z }",
+      "X ? Y : Z"
+    ],
+    "answer": 1,
+    "explanation": "Bash if-then-else terminates with fi (if backward). Test conditions use [ ], (( )), or [[ ]]."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "What is `[ -f /etc/passwd ]` testing?",
+    "options": [
+      "Whether /etc/passwd is empty",
+      "Whether /etc/passwd exists and is a regular file",
+      "Whether the user has read access",
+      "Whether the path is absolute"
+    ],
+    "answer": 1,
+    "explanation": "-f tests for a regular file. Other tests: -d (directory), -r (readable), -w (writable), -x (executable), -z (string empty), -n (string nonempty)."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which is correct bash for-loop syntax to iterate over a list?",
+    "options": [
+      "for x in a b c; do echo $x; done",
+      "for (x in a b c) echo $x",
+      "foreach x { a b c } echo $x",
+      "for $x { a, b, c } print"
+    ],
+    "answer": 0,
+    "explanation": "Bash for loop: `for var in list; do commands; done`. List items are whitespace-separated. Can use globs: `for f in *.txt; do ...; done`."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which is correct bash while-loop syntax?",
+    "options": [
+      "while [ $i -lt 10 ]; do echo $i; i=$((i+1)); done",
+      "while $i < 10 { echo $i; i++ }",
+      "while ($i < 10) do echo $i",
+      "do while $i < 10"
+    ],
+    "answer": 0,
+    "explanation": "Bash while: `while CONDITION; do BODY; done`. The condition is re-evaluated each iteration. Use `until` for the inverse logic."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which exit code conventionally indicates a successful command in Linux?",
+    "options": [
+      "1",
+      "0",
+      "200",
+      "-1"
+    ],
+    "answer": 1,
+    "explanation": "Exit code 0 = success. Nonzero = some error (specific code conventions vary). The shell tests this for if statements and pipelines."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which special variable holds the exit code of the previous command?",
+    "options": [
+      "$!",
+      "$?",
+      "$#",
+      "$$"
+    ],
+    "answer": 1,
+    "explanation": "$? is the exit status of the last foreground command. $! is the PID of the last background command. $$ is the current shell PID. $# is the argument count."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "In a bash script, which variable holds the first argument passed on the command line?",
+    "options": [
+      "$0",
+      "$1",
+      "$#",
+      "$@"
+    ],
+    "answer": 1,
+    "explanation": "$1, $2, ... are positional parameters. $0 is the script's own name. $# is the argument count. $@ and $* expand to all arguments (with subtle differences)."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which variable contains the number of arguments passed to a bash script?",
+    "options": [
+      "$@",
+      "$#",
+      "$*",
+      "$!"
+    ],
+    "answer": 1,
+    "explanation": "$# is the count of positional parameters. $@ and $* both list all arguments — $@ preserves quoting separately, $* joins them as one string."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which variable expands to all positional arguments when quoted, preserving each as a separate word?",
+    "options": [
+      "\"$#\"",
+      "\"$@\"",
+      "\"$*\"",
+      "\"$0\""
+    ],
+    "answer": 1,
+    "explanation": "\"$@\" expands to \"$1\" \"$2\" ... — each argument as a separate quoted word, preserving whitespace within arguments. \"$*\" joins all into one string."
+  },
+  {
+    "domain": "3: The Power of the Command Line",
+    "question": "Which bash command reads a line from stdin into a variable?",
+    "options": [
+      "input",
+      "read",
+      "get",
+      "scan"
+    ],
+    "answer": 1,
+    "explanation": "`read var` reads a line and assigns it to var. Common pattern: `read -p \"Enter name: \" name`. Add -s for silent (passwords)."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which is the dominant OS family running on public cloud compute instances?",
+    "options": [
+      "Windows Server",
+      "Linux distributions",
+      "macOS Server",
+      "OpenVMS"
+    ],
+    "answer": 1,
+    "explanation": "Linux dominates cloud workloads (estimated 70-90% depending on platform). All major clouds (AWS, GCP, Azure) heavily support and use Linux."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which is a common use of Linux in embedded systems?",
+    "options": [
+      "Heavy desktop workstations only",
+      "Routers, smart devices, and industrial controllers",
+      "Mainframe banking systems exclusively",
+      "Mechanical typewriters"
+    ],
+    "answer": 1,
+    "explanation": "Embedded Linux runs on routers (OpenWRT), smart TVs, automotive systems, industrial controllers, e-readers, and many IoT devices. Android phones are arguably embedded Linux too."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which distribution is often recommended to Linux newcomers for its polished desktop and easy installation?",
+    "options": [
+      "LFS (Linux From Scratch)",
+      "Ubuntu",
+      "Gentoo",
+      "Arch Linux"
+    ],
+    "answer": 1,
+    "explanation": "Ubuntu has a polished installer, large community, and substantial documentation, making it popular for newcomers. Linux Mint, Fedora, and Pop!_OS are other beginner-friendly choices."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which is a commonly chosen distribution for enterprise servers requiring long-term commercial support?",
+    "options": [
+      "Damn Small Linux",
+      "Red Hat Enterprise Linux",
+      "Slax",
+      "Knoppix"
+    ],
+    "answer": 1,
+    "explanation": "RHEL is a leading enterprise server distribution with paid commercial support. Ubuntu LTS, SUSE Linux Enterprise, and Oracle Linux are also common."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which Linux project is commonly used as firmware for consumer routers?",
+    "options": [
+      "Knoppix",
+      "OpenWRT",
+      "Pop!_OS",
+      "Lubuntu"
+    ],
+    "answer": 1,
+    "explanation": "OpenWRT is a Linux distribution for routers and embedded devices, offering advanced configuration beyond stock firmware. DD-WRT is a similar project."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "What percentage of TOP500 supercomputers run Linux?",
+    "options": [
+      "About 10%",
+      "Approximately 100%",
+      "About 50%",
+      "About 25%"
+    ],
+    "answer": 1,
+    "explanation": "Essentially all TOP500 supercomputers run Linux. The list ranks the world's fastest computers; Linux's flexibility and performance dominate this space."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which package manager is associated with the Debian/Ubuntu family?",
+    "options": [
+      "yum/dnf",
+      "apt",
+      "pacman",
+      "zypper"
+    ],
+    "answer": 1,
+    "explanation": "apt (Advanced Package Tool) is used by Debian-derived distros. yum/dnf is for Red Hat family; pacman for Arch; zypper for SUSE."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which package manager is used by Red Hat Enterprise Linux and Fedora?",
+    "options": [
+      "apt",
+      "dnf",
+      "pacman",
+      "snap"
+    ],
+    "answer": 1,
+    "explanation": "dnf is the modern successor to yum on Fedora and RHEL 8+. Both manage RPM packages. RHEL 7 used yum; functionality is largely equivalent."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which is a typical advantage of a rolling release distribution over a fixed release?",
+    "options": [
+      "More stability and longer testing cycles",
+      "Newer software available sooner without waiting for the next major release",
+      "No need to perform any updates",
+      "Smaller installation size"
+    ],
+    "answer": 1,
+    "explanation": "Rolling releases provide newer software faster but may have more frequent regressions. Fixed releases bundle tested versions with long support windows."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Why would an organization choose an Ubuntu LTS release over a regular release for a server?",
+    "options": [
+      "Newer kernel features",
+      "Long maintenance window with security updates, reducing upgrade frequency",
+      "Smaller download size",
+      "Lighter desktop"
+    ],
+    "answer": 1,
+    "explanation": "LTS releases get five years of standard maintenance (extended further with paid options), making them suitable for production where upgrade churn is costly."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command lists PCI devices attached to the system?",
+    "options": [
+      "lsusb",
+      "lspci",
+      "lscpu",
+      "lsblk"
+    ],
+    "answer": 1,
+    "explanation": "lspci enumerates devices on the PCI bus: graphics cards, network controllers, sound cards. Useful for hardware identification and driver troubleshooting."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command lists USB devices currently attached to the system?",
+    "options": [
+      "lspci",
+      "lsusb",
+      "lsdev",
+      "usbcheck"
+    ],
+    "answer": 1,
+    "explanation": "lsusb shows connected USB devices including manufacturer/product IDs, useful for troubleshooting and driver identification."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command displays block storage devices in a tree?",
+    "options": [
+      "fdisk",
+      "lsblk",
+      "df",
+      "mount"
+    ],
+    "answer": 1,
+    "explanation": "lsblk lists block devices (disks, partitions, mounted filesystems) in a hierarchical view. Quick way to see disk layout."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command displays kernel ring buffer messages, useful for hardware and driver troubleshooting?",
+    "options": [
+      "syslog",
+      "dmesg",
+      "kernlog",
+      "bootlog"
+    ],
+    "answer": 1,
+    "explanation": "dmesg shows kernel messages: boot diagnostics, driver loading, hardware events, errors. With systemd, `journalctl -k` shows the same."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which file provides information about the system's CPUs in real time?",
+    "options": [
+      "/etc/cpuinfo",
+      "/proc/cpuinfo",
+      "/sys/cpu",
+      "/var/cpu"
+    ],
+    "answer": 1,
+    "explanation": "/proc/cpuinfo is a virtual file in the procfs that reports CPU details (model, cores, flags) as the kernel sees them."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which file shows current memory usage details in real time?",
+    "options": [
+      "/etc/meminfo",
+      "/proc/meminfo",
+      "/var/log/memory",
+      "/sys/memory"
+    ],
+    "answer": 1,
+    "explanation": "/proc/meminfo provides detailed memory statistics: total, free, buffers, cache, swap, and various per-subsystem metrics."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command summarizes the CPU architecture, cores, and threads in a human-readable format?",
+    "options": [
+      "lspci",
+      "lscpu",
+      "uname -a",
+      "cat /proc/cpuinfo"
+    ],
+    "answer": 1,
+    "explanation": "lscpu summarizes CPU info: architecture, byte order, CPU(s), threads per core, vendor, model. More readable than /proc/cpuinfo for at-a-glance review."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command provides a detailed report of system hardware, often requiring root?",
+    "options": [
+      "lsmod",
+      "lshw",
+      "lsblk",
+      "lspci -v"
+    ],
+    "answer": 1,
+    "explanation": "lshw walks the system to report extensive hardware details: CPU, memory, storage, network. Best run as root for full detail. Output can be HTML or JSON."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command loads a Linux kernel module by name, resolving dependencies?",
+    "options": [
+      "insmod",
+      "modprobe",
+      "modload",
+      "lsmod"
+    ],
+    "answer": 1,
+    "explanation": "modprobe loads modules and their dependencies. insmod loads a single .ko file (no dependency resolution). lsmod lists currently loaded modules."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "What is /sys (sysfs) used for?",
+    "options": [
+      "Storing system logs",
+      "Exposing kernel and device information as files (for inspection and control)",
+      "Holding user accounts",
+      "Maintaining swap space"
+    ],
+    "answer": 1,
+    "explanation": "sysfs presents kernel objects and devices as files. udev, modern device management, and tools like systemd rely heavily on it."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which best describes the contents of /etc?",
+    "options": [
+      "User document files",
+      "System-wide configuration files",
+      "Compiled binaries",
+      "Source code archives"
+    ],
+    "answer": 1,
+    "explanation": "/etc holds system-wide configuration: passwd, shadow, group, fstab, ssh/, hosts, resolv.conf, and per-service config directories."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Where are individual user home directories typically located?",
+    "options": [
+      "/root for everyone",
+      "/home/<username>",
+      "/var/users/<username>",
+      "/etc/users/<username>"
+    ],
+    "answer": 1,
+    "explanation": "Non-root users typically have homes under /home/<username>. The root user's home is /root, separate from /home."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Where are most system log files typically stored on Linux?",
+    "options": [
+      "/etc/log",
+      "/var/log",
+      "/log",
+      "/sys/log"
+    ],
+    "answer": 1,
+    "explanation": "/var/log holds system and service logs: syslog, messages, auth.log, kern.log, plus service-specific subdirectories. systemd's journalctl reads its own journal."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which is typically TRUE about files in /tmp?",
+    "options": [
+      "They persist across reboots forever",
+      "They are subject to deletion at reboot or by policy",
+      "They are encrypted by default",
+      "They are accessible only to root"
+    ],
+    "answer": 1,
+    "explanation": "/tmp is for temporary files. Many distros use tmpfs (RAM) and clear /tmp on boot. Don't store anything meant to last there."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which is TRUE about /usr/bin vs /bin on most modern Linux systems?",
+    "options": [
+      "They contain entirely different types of files",
+      "On many systems /bin is now a symlink to /usr/bin (merged)",
+      "/bin is for users; /usr/bin is for admins",
+      "/bin holds only kernel binaries"
+    ],
+    "answer": 1,
+    "explanation": "Many distros have completed the 'usrmerge': /bin, /sbin, /lib, /lib64 are symlinks into /usr/. Historically /bin held essential commands needed for boot/recovery."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "What is /sbin traditionally used for?",
+    "options": [
+      "User commands",
+      "System administration commands (intended for root or sudo use)",
+      "Source code",
+      "Shared libraries"
+    ],
+    "answer": 1,
+    "explanation": "/sbin (and /usr/sbin) hold system administration commands like fdisk, mkfs, ip, iptables. Many systems now merge these into /usr/sbin."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which directory contains the kernel and bootloader files?",
+    "options": [
+      "/etc",
+      "/boot",
+      "/var",
+      "/sys"
+    ],
+    "answer": 1,
+    "explanation": "/boot contains the kernel image (vmlinuz), initramfs, and bootloader configuration (GRUB). Often on its own partition, especially with /boot/efi for UEFI."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command lists running processes?",
+    "options": [
+      "ls -p",
+      "ps",
+      "top -l",
+      "pinfo"
+    ],
+    "answer": 1,
+    "explanation": "`ps` lists processes. Common invocations: `ps aux` (BSD-style, all users), `ps -ef` (full listing), `ps -u user` (per user)."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which BEST distinguishes top from htop?",
+    "options": [
+      "top is interactive; htop is not",
+      "Both are interactive process viewers; htop has color, mouse support, and easier tree view",
+      "top runs only on macOS",
+      "htop replaces the kernel scheduler"
+    ],
+    "answer": 1,
+    "explanation": "Both top and htop show live process info. htop offers a friendlier UI (color, mouse, tree, easier sort/kill). Not always installed by default."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "What signal does `kill PID` send by default?",
+    "options": [
+      "SIGKILL (9)",
+      "SIGTERM (15)",
+      "SIGSTOP (19)",
+      "SIGHUP (1)"
+    ],
+    "answer": 1,
+    "explanation": "Default is SIGTERM (15), which asks the process to terminate gracefully. The process can catch it and clean up before exiting."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "What happens when you send signal 9 (SIGKILL) to a process?",
+    "options": [
+      "The process is asked nicely to terminate",
+      "The kernel forcibly terminates the process without giving it a chance to clean up",
+      "The process is paused indefinitely",
+      "The process restarts immediately"
+    ],
+    "answer": 1,
+    "explanation": "SIGKILL cannot be caught, blocked, or ignored. Use as a last resort — running cleanup (database flushes, lock removal) won't happen."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command reports disk space usage per mounted filesystem?",
+    "options": [
+      "du",
+      "df",
+      "lsblk -d",
+      "fsck"
+    ],
+    "answer": 1,
+    "explanation": "`df` (disk free) shows size, used, available, and mountpoint for each filesystem. Use `-h` for human-readable units."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command estimates disk usage of files and directories?",
+    "options": [
+      "df",
+      "du",
+      "lsdu",
+      "ls -s"
+    ],
+    "answer": 1,
+    "explanation": "`du` (disk usage) sums sizes of files. Common: `du -sh dir` shows a single summary in human-readable units. `du -h --max-depth=1` lists per-subdirectory."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command displays memory usage including total, used, free, and swap?",
+    "options": [
+      "mem",
+      "free",
+      "memstat",
+      "ramcheck"
+    ],
+    "answer": 1,
+    "explanation": "`free` displays memory and swap usage in real time. `free -h` formats human-readable. Cache/buffer columns indicate memory the kernel can reclaim for applications."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command mounts a filesystem at a specified mount point?",
+    "options": [
+      "fsmount",
+      "mount",
+      "attach",
+      "fdisk"
+    ],
+    "answer": 1,
+    "explanation": "`mount /dev/sdb1 /mnt/usb` mounts a filesystem. Edit /etc/fstab for persistent mounts. systemd uses mount units in newer setups."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command sends ICMP echo requests to test reachability of a host?",
+    "options": [
+      "traceroute",
+      "ping",
+      "netstat",
+      "ipcheck"
+    ],
+    "answer": 1,
+    "explanation": "ping sends ICMP echo requests and measures round-trip time. Default count varies (continuous on Linux, four on Windows). Some networks block ICMP entirely."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command shows the route packets take to reach a destination?",
+    "options": [
+      "tracepath only",
+      "traceroute (or tracepath)",
+      "ping -t",
+      "ifconfig route"
+    ],
+    "answer": 1,
+    "explanation": "traceroute (or tracepath) shows the hop-by-hop path by sending packets with increasing TTL. Useful for finding where connectivity breaks."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command displays IP addresses assigned to network interfaces using the modern ip tool?",
+    "options": [
+      "ipconfig",
+      "ip addr show (or ip a)",
+      "show ip",
+      "netaddr"
+    ],
+    "answer": 1,
+    "explanation": "`ip addr show` (or `ip a`) displays all interfaces and their addresses. `ip` is the modern replacement for ifconfig, route, and arp."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "What is the status of ifconfig on modern Linux distributions?",
+    "options": [
+      "Required for all networking",
+      "Considered legacy; ip command is preferred but ifconfig is often still available",
+      "Renamed to netconfig",
+      "Removed entirely from all systems"
+    ],
+    "answer": 1,
+    "explanation": "ifconfig is legacy; the ip command (from iproute2) is preferred. ifconfig may not be installed by default on minimal systems."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which modern command displays socket statistics, replacing netstat?",
+    "options": [
+      "sockstat",
+      "ss",
+      "netshow",
+      "tcpinfo"
+    ],
+    "answer": 1,
+    "explanation": "ss (socket statistics) is the modern replacement for netstat. Common uses: `ss -tuln` (TCP/UDP listening sockets), `ss -tp` (TCP with process info)."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "What is the purpose of /etc/hosts?",
+    "options": [
+      "Stores user account passwords",
+      "Maps hostnames to IP addresses, consulted before DNS",
+      "Lists allowed login times",
+      "Tracks system uptime"
+    ],
+    "answer": 1,
+    "explanation": "/etc/hosts is a local hostname-to-IP map consulted by the resolver before DNS (per /etc/nsswitch.conf order). Useful for local overrides and testing."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "What does /etc/resolv.conf contain?",
+    "options": [
+      "User password hashes",
+      "DNS resolver configuration (nameservers and search domains)",
+      "Routing tables",
+      "System load averages"
+    ],
+    "answer": 1,
+    "explanation": "/etc/resolv.conf specifies DNS servers (nameserver lines) and search domains. On modern systems, NetworkManager or systemd-resolved may manage it dynamically."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command opens an SSH session to user 'larry' on host server.example.com?",
+    "options": [
+      "ssh larry@server.example.com",
+      "ssh -h larry server.example.com",
+      "ssh server.example.com:larry",
+      "telnet larry server.example.com"
+    ],
+    "answer": 0,
+    "explanation": "`ssh user@host` is the standard syntax. Without user@, your local username is used. Default port is 22; override with -p."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which BEST distinguishes wget from curl in typical use?",
+    "options": [
+      "They are identical commands",
+      "wget specializes in downloading; curl is more versatile for any HTTP(S) request and other protocols",
+      "wget is only on Windows; curl is only on Linux",
+      "wget can only download text"
+    ],
+    "answer": 1,
+    "explanation": "wget is download-focused (resume, recursion). curl is a more general transfer tool supporting many protocols (HTTP/S, FTP, SCP, IMAP) and used heavily in APIs."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command queries DNS records for a hostname, with detailed output?",
+    "options": [
+      "traceroute",
+      "dig",
+      "ping",
+      "host -k"
+    ],
+    "answer": 1,
+    "explanation": "dig is a flexible DNS lookup tool with detailed output. `host` is simpler. `nslookup` exists but is considered legacy by some."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which TCP port does SSH use by default?",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "25"
+    ],
+    "answer": 1,
+    "explanation": "SSH defaults to TCP port 22. Some operators move it to deter automated scanning, though this is security through obscurity."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command displays the kernel routing table using the modern ip tool?",
+    "options": [
+      "showroute",
+      "ip route (or ip r)",
+      "route -n only",
+      "netstat -nr only"
+    ],
+    "answer": 1,
+    "explanation": "`ip route` (or `ip r`) shows the routing table. `route -n` is the legacy equivalent. Default route is the gateway used for traffic not matching other routes."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which is a typical purpose of dhclient or similar DHCP client tools?",
+    "options": [
+      "Encrypt network traffic",
+      "Obtain an IP address, netmask, gateway, and DNS settings dynamically from a DHCP server",
+      "Replace the kernel",
+      "Authenticate users"
+    ],
+    "answer": 1,
+    "explanation": "DHCP clients (dhclient, dhcpcd, NetworkManager's internal client) lease IP configuration from a DHCP server on the local network. Distros vary in which is default."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "Which command displays or sets the system hostname?",
+    "options": [
+      "who",
+      "hostname",
+      "uname -m",
+      "set-host"
+    ],
+    "answer": 1,
+    "explanation": "`hostname` shows the current hostname; `hostname newname` sets it for the current session (not persistent). For persistent: edit /etc/hostname or use hostnamectl."
+  },
+  {
+    "domain": "4: The Linux Operating System",
+    "question": "What does the 'default gateway' on a host route?",
+    "options": [
+      "DNS queries only",
+      "Traffic destined for networks not matching any more specific route",
+      "Multicast packets only",
+      "Local-subnet traffic only"
+    ],
+    "answer": 1,
+    "explanation": "Default gateway handles traffic destined off-subnet for any address not matching a more specific route. Usually the local router connecting to the internet."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which UID is assigned to the root (superuser) account on a standard Linux system?",
+    "options": [
+      "0",
+      "1",
+      "100",
+      "1000"
+    ],
+    "answer": 0,
+    "explanation": "UID 0 is the root superuser, with all privileges. Most distros reserve UIDs 1-999 for system users; regular users start at 1000."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What is the typical starting UID for regular human user accounts on most modern Linux distributions?",
+    "options": [
+      "100",
+      "500 or 1000 depending on distro",
+      "5000",
+      "10000"
+    ],
+    "answer": 1,
+    "explanation": "Modern distros typically start regular users at UID 1000. Older Red Hat-derived systems used 500. UIDs below this are reserved for system accounts."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which information does /etc/passwd contain for each user?",
+    "options": [
+      "The user's password hash",
+      "Username, UID, GID, home directory, default shell, and other account info",
+      "Only the password hash",
+      "Only group memberships"
+    ],
+    "answer": 1,
+    "explanation": "/etc/passwd is world-readable and holds basic account info. Password hashes were historically here but moved to /etc/shadow for security."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which file holds user password hashes and password aging information?",
+    "options": [
+      "/etc/passwd",
+      "/etc/shadow",
+      "/etc/group",
+      "/etc/login.defs"
+    ],
+    "answer": 1,
+    "explanation": "/etc/shadow holds password hashes and aging fields. It is readable only by root (or shadow group), protecting hashes from offline attacks via /etc/passwd leakage."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does sudo allow a regular user to do?",
+    "options": [
+      "Become permanently logged in as root",
+      "Run authorized commands with elevated privileges per /etc/sudoers",
+      "Disable security policies",
+      "Bypass file permissions"
+    ],
+    "answer": 1,
+    "explanation": "sudo executes commands as another user (default root) per configuration in /etc/sudoers. It also logs invocations, providing accountability."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the su command (with no arguments) typically do?",
+    "options": [
+      "Shows current users",
+      "Switches the current shell to the root user (with root's password)",
+      "Sets up SSH keys",
+      "Shows system uptime"
+    ],
+    "answer": 1,
+    "explanation": "`su` (without args) switches to root, prompting for root's password. `su - user` becomes another user with a fresh login environment. Many setups disable root login and use sudo exclusively."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command lists users currently logged in to the system?",
+    "options": [
+      "users-now",
+      "who",
+      "loggedin",
+      "checkin"
+    ],
+    "answer": 1,
+    "explanation": "`who` lists logged-in users with their terminal and login time. `w` shows additional info including what each user is currently running."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the w command show beyond what `who` shows?",
+    "options": [
+      "Disk usage",
+      "Each user's current activity (process they are running) plus load averages",
+      "Pending updates",
+      "Network throughput"
+    ],
+    "answer": 1,
+    "explanation": "w shows logged-in users, their terminals, idle time, and the JCPU/PCPU plus their current command. Includes load averages at the top."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the id command report?",
+    "options": [
+      "A list of all files in the home directory",
+      "The current user's UID, GID, and group memberships",
+      "Network identity (IP address)",
+      "System hardware identifier"
+    ],
+    "answer": 1,
+    "explanation": "`id` shows your UID, primary GID, and supplementary groups. `id username` shows that user's identities."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command displays the recent login history of users?",
+    "options": [
+      "history",
+      "last",
+      "logins",
+      "audit"
+    ],
+    "answer": 1,
+    "explanation": "`last` reads /var/log/wtmp to show login/logout history with timestamps and source IP/terminal. Useful for tracking session activity."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does /etc/sudoers configure?",
+    "options": [
+      "User password policy",
+      "Which users may run which commands via sudo, with which privileges",
+      "Network firewall rules",
+      "Cron schedules"
+    ],
+    "answer": 1,
+    "explanation": "/etc/sudoers grants specific sudo privileges. Edit only with visudo to prevent syntax errors that could lock out admin access."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which UID range is typically reserved for system service accounts (non-human)?",
+    "options": [
+      "0 only",
+      "1-999 (or 1-499 on older Red Hat)",
+      "10000+",
+      "65534 only"
+    ],
+    "answer": 1,
+    "explanation": "System accounts (1-999 on Debian/Ubuntu; 1-499 on older Red Hat) are for services like sshd, mail, www-data. Human users start at the next ID by distro convention."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command creates a new user account?",
+    "options": [
+      "createuser",
+      "useradd",
+      "mkuser",
+      "addaccount"
+    ],
+    "answer": 1,
+    "explanation": "useradd creates accounts. Distros also provide adduser, an interactive wrapper. Both ultimately update /etc/passwd, /etc/shadow, /etc/group."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command modifies an existing user account (changing shell, home, groups, etc.)?",
+    "options": [
+      "chuser",
+      "usermod",
+      "modaccount",
+      "edituser"
+    ],
+    "answer": 1,
+    "explanation": "usermod adjusts existing accounts. Examples: `usermod -aG group user` adds to group; `usermod -s /bin/zsh user` changes shell."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command deletes a user account?",
+    "options": [
+      "userrm",
+      "userdel",
+      "deluser only",
+      "removeuser"
+    ],
+    "answer": 1,
+    "explanation": "userdel deletes the account; -r also removes the home directory and mail spool. deluser is a Debian wrapper offering similar functionality."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command sets or changes a user's password?",
+    "options": [
+      "chpass",
+      "passwd",
+      "setpass",
+      "newpass"
+    ],
+    "answer": 1,
+    "explanation": "`passwd` (no args) changes the current user's password. `passwd username` (as root) changes another user's password."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command creates a new group?",
+    "options": [
+      "addgroup only",
+      "groupadd",
+      "mkgroup",
+      "createrole"
+    ],
+    "answer": 1,
+    "explanation": "groupadd creates a new group entry in /etc/group. addgroup is a Debian wrapper offering an interactive front-end."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command modifies an existing group (renaming, changing GID)?",
+    "options": [
+      "chgrp -m",
+      "groupmod",
+      "modgroup",
+      "groupedit"
+    ],
+    "answer": 1,
+    "explanation": "groupmod modifies group properties. Renaming a group with groupmod -n new old changes /etc/group; file ownerships referring to the GID continue to work."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command deletes a group?",
+    "options": [
+      "rmgroup",
+      "groupdel",
+      "delgroup only",
+      "deletegroup"
+    ],
+    "answer": 1,
+    "explanation": "groupdel removes a group entry. Cannot delete a group that is a user's primary group. delgroup is the Debian wrapper."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What is the first field of an /etc/passwd entry?",
+    "options": [
+      "UID",
+      "Username",
+      "Home directory",
+      "Login shell"
+    ],
+    "answer": 1,
+    "explanation": "Fields: username : x (password placeholder) : UID : GID : GECOS : home : shell. Colon-separated. The x means the actual hash lives in /etc/shadow."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What is the first field of an /etc/shadow entry?",
+    "options": [
+      "UID",
+      "Username",
+      "Password hash",
+      "Last password change date"
+    ],
+    "answer": 1,
+    "explanation": "Shadow fields: username : password_hash : last_change : min : max : warn : inactive : expire : reserved. Most numeric fields are days since the Unix epoch."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which BEST distinguishes a user's primary group from secondary groups?",
+    "options": [
+      "Primary is always 'users'; secondary is anything else",
+      "Primary GID becomes the owner of files the user creates; secondary groups grant additional access",
+      "Primary is for permissions; secondary is for cosmetics",
+      "Only secondary groups can have multiple members"
+    ],
+    "answer": 1,
+    "explanation": "The primary GID (from /etc/passwd) sets group ownership of files the user creates. Secondary group memberships (from /etc/group) grant access via group permissions."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command administers /etc/group, for example adding or removing a user from a group?",
+    "options": [
+      "chgrp",
+      "gpasswd",
+      "groupedit",
+      "passwd -g"
+    ],
+    "answer": 1,
+    "explanation": "gpasswd manages group membership: `gpasswd -a user group` adds; `gpasswd -d user group` removes. Group administrators (with -A) can manage members without root."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What is special about UID 0?",
+    "options": [
+      "It is reserved for guest accounts",
+      "It identifies the root user with full privileges",
+      "It is invalid",
+      "It is for the first regular user"
+    ],
+    "answer": 1,
+    "explanation": "UID 0 IS the superuser identifier. Any account with UID 0 has root privileges (multiple accounts can share UID 0, though it's not recommended)."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which file commonly defines the default shell for new users created with useradd?",
+    "options": [
+      "/etc/passwd",
+      "/etc/default/useradd",
+      "/etc/shells",
+      "/etc/skel"
+    ],
+    "answer": 1,
+    "explanation": "/etc/default/useradd holds defaults like the default shell, home directory base, and skeleton directory. Override per-user with the -s option."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What is /etc/skel used for?",
+    "options": [
+      "Storing skeleton kernel modules",
+      "Holding template files copied into a new user's home directory at account creation",
+      "System logs",
+      "Backup root passwords"
+    ],
+    "answer": 1,
+    "explanation": "/etc/skel files (e.g., .bashrc, .profile) are copied into each new user's home when the account is created with useradd -m, providing a baseline environment."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What permissions does `chmod 755 file` set?",
+    "options": [
+      "Read/write/execute for everyone",
+      "Read/write/execute for owner; read/execute for group and others",
+      "Read-only for everyone",
+      "Read/write for owner; nothing for others"
+    ],
+    "answer": 1,
+    "explanation": "755 = rwx (7) for owner, r-x (5) for group, r-x (5) for others. Standard for executables and directories accessible to all."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What permissions does `chmod 644 file` set?",
+    "options": [
+      "rwxrwxrwx",
+      "rw-r--r--",
+      "rwxr-xr-x",
+      "rw-rw----"
+    ],
+    "answer": 1,
+    "explanation": "644 = rw- (6) for owner, r-- (4) for group, r-- (4) for others. Standard for regular files: owner edits, others read."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does `chmod u+x script.sh` do?",
+    "options": [
+      "Removes execute for others",
+      "Adds execute permission for the owner (user)",
+      "Adds execute for everyone",
+      "Makes script setuid"
+    ],
+    "answer": 1,
+    "explanation": "Symbolic modes: u (user/owner), g (group), o (others), a (all). +/- adds/removes; = sets exactly. So u+x adds execute for the owner only."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does `chmod g-w file` do?",
+    "options": [
+      "Removes write permission for the group",
+      "Adds write for the group",
+      "Removes all permissions for others",
+      "Sets read-only for everyone"
+    ],
+    "answer": 0,
+    "explanation": "g-w removes write permission for the group. Owner and others permissions are unchanged."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does `chmod o+r file` do?",
+    "options": [
+      "Adds read for the owner",
+      "Adds read for others (anyone not the owner or in the group)",
+      "Removes read for others",
+      "Adds setuid bit"
+    ],
+    "answer": 1,
+    "explanation": "o+r adds the read permission for 'others' (sometimes called world). Owner and group permissions are unaffected."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does `chmod a+x file` do?",
+    "options": [
+      "Adds execute for owner only",
+      "Adds execute permission for all (owner, group, and others)",
+      "Removes execute for all",
+      "Sets only execute, removing read and write"
+    ],
+    "answer": 1,
+    "explanation": "a = all (equivalent to ugo). a+x adds the execute bit to all three permission triples."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does `chown alice:staff file.txt` do?",
+    "options": [
+      "Changes only the owner to alice",
+      "Changes the owner to alice and the group to staff",
+      "Changes only the group to staff",
+      "Adds alice to the staff group"
+    ],
+    "answer": 1,
+    "explanation": "chown user:group sets both. `chown user` sets only the owner. `chown :group` sets only the group (equivalent to chgrp group)."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which command changes the group ownership of a file?",
+    "options": [
+      "chmod g",
+      "chgrp",
+      "groupown",
+      "chown -g"
+    ],
+    "answer": 1,
+    "explanation": "chgrp changes group ownership: `chgrp staff file`. Equivalent to `chown :staff file`."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the umask determine?",
+    "options": [
+      "The default group for new files",
+      "Which permission bits are removed from the maximum default permissions for new files",
+      "Whether files can be deleted",
+      "The maximum file size"
+    ],
+    "answer": 1,
+    "explanation": "umask is a bitmask of permission bits to remove from new file creation. With umask 022, new files default to 666 - 022 = 644; new directories to 777 - 022 = 755."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which umask value is commonly the default for regular users on many Linux systems?",
+    "options": [
+      "000",
+      "022",
+      "777",
+      "111"
+    ],
+    "answer": 1,
+    "explanation": "022 is a common default umask, yielding 644 for new files and 755 for new directories. Some systems use 002 (more open within the group)."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the execute (x) permission allow on a regular file?",
+    "options": [
+      "Read the file's contents",
+      "Run the file as a program (when it has a valid format or shebang)",
+      "Edit the file contents",
+      "Delete the file"
+    ],
+    "answer": 1,
+    "explanation": "Execute permission lets the file be run as a program. Scripts also need the interpreter (per shebang). Without x, you can still read the file but not run it directly."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the execute (x) permission allow on a directory?",
+    "options": [
+      "List the directory's contents",
+      "Enter the directory and access files within it (cd into it)",
+      "Delete the directory",
+      "Encrypt the directory"
+    ],
+    "answer": 1,
+    "explanation": "On directories, x allows traversal (cd, accessing files by name). r alone lets you list contents but not access them. w lets you create/delete entries. All three are typically needed."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the first character of an `ls -l` output line represent?",
+    "options": [
+      "The file's permissions for the owner",
+      "The file type (-, d, l, b, c, s, p)",
+      "The number of hard links",
+      "The size in bytes"
+    ],
+    "answer": 1,
+    "explanation": "First char: - (regular file), d (directory), l (symlink), b (block device), c (character device), s (socket), p (named pipe). Following nine chars are the rwxrwxrwx permissions."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "In an ls -l output of -rw-r--r--, which permissions does the group have?",
+    "options": [
+      "Read and write",
+      "Read only",
+      "Execute only",
+      "Full access"
+    ],
+    "answer": 1,
+    "explanation": "Layout: -rwxrwxrwx as type/owner/group/others. -rw-r--r-- means: regular file, owner rw, group r, others r."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "In chmod octal notation, which digit represents read+write but no execute?",
+    "options": [
+      "7",
+      "6",
+      "5",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Octal: 4=read, 2=write, 1=execute. Sum gives the digit: rw=6, rx=5, rwx=7, r=4, w=2, x=1."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which option makes chmod recurse into subdirectories?",
+    "options": [
+      "-r",
+      "-R",
+      "-x",
+      "-a"
+    ],
+    "answer": 1,
+    "explanation": "-R (uppercase) recurses. Lowercase -r is for chmod symbolic mode... actually no — chmod uses -R. -r doesn't exist in chmod. The point: use uppercase R for recursive chmod."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "To cd into a directory, which permission must the user have on that directory?",
+    "options": [
+      "Read only",
+      "Execute",
+      "Write only",
+      "Setuid"
+    ],
+    "answer": 1,
+    "explanation": "Execute on a directory grants traversal. Even with read (to list contents), you cannot cd in without execute. Both are usually granted together."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which permission on a directory allows listing its contents (filenames)?",
+    "options": [
+      "Write",
+      "Read",
+      "Execute",
+      "Setuid"
+    ],
+    "answer": 1,
+    "explanation": "Read on a directory lets you list the entries (filenames). You can know names exist but not access them unless you also have execute on the directory."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which permission on a directory allows creating, renaming, or deleting files within it?",
+    "options": [
+      "Read only",
+      "Write (combined with execute)",
+      "Execute only",
+      "Setuid"
+    ],
+    "answer": 1,
+    "explanation": "Write on a directory (combined with execute) allows creating, renaming, or deleting files within. Note: deleting a file requires write on the parent directory, regardless of the file's own permissions."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "When a regular user creates a new file, who owns it by default?",
+    "options": [
+      "The root user",
+      "The user who created it, with the user's primary group",
+      "The system",
+      "The owner of the parent directory"
+    ],
+    "answer": 1,
+    "explanation": "New files are owned by the creating user and that user's primary group. SGID on the parent directory can override to inherit the directory's group instead."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the SUID (Set User ID) bit on an executable file cause?",
+    "options": [
+      "The file runs with the owner's privileges regardless of who launched it",
+      "The file is automatically backed up",
+      "The file becomes hidden",
+      "The file cannot be deleted"
+    ],
+    "answer": 0,
+    "explanation": "SUID causes the program to execute with the file owner's privileges (often root). Used carefully for tools like passwd and ping that need elevated privileges briefly."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the SGID (Set Group ID) bit on an executable file cause?",
+    "options": [
+      "The file runs with the group permissions of its owning group regardless of caller",
+      "The file is rotated daily",
+      "The file is compressed",
+      "The file is hidden"
+    ],
+    "answer": 0,
+    "explanation": "SGID on an executable causes it to run with the file's group permissions, similar to SUID but for the group."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the SGID bit on a directory cause?",
+    "options": [
+      "Files created in the directory inherit the directory's group ownership",
+      "Only the owner can enter the directory",
+      "The directory is read-only",
+      "The directory cannot be deleted"
+    ],
+    "answer": 0,
+    "explanation": "SGID on a directory makes new files inherit the directory's group, useful for shared-group collaboration where files should be group-owned consistently."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does the sticky bit on a directory accomplish?",
+    "options": [
+      "Only the file's owner (or root) can delete files within the directory, regardless of directory write permission",
+      "Files cannot be modified at all",
+      "Files are automatically encrypted",
+      "New files inherit the parent's owner"
+    ],
+    "answer": 0,
+    "explanation": "Sticky bit on a directory restricts file deletion/renaming to the file's owner (or root), even if others have write permission on the directory. Used on /tmp."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Why does /tmp typically have the sticky bit set?",
+    "options": [
+      "To reduce storage costs",
+      "So users cannot delete each other's temporary files even though /tmp is world-writable",
+      "To make /tmp persist across reboots",
+      "To encrypt /tmp contents"
+    ],
+    "answer": 1,
+    "explanation": "/tmp is world-writable so any user can create temp files. The sticky bit prevents users from deleting files owned by other users, maintaining isolation."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which leading octal digit sets the SUID bit?",
+    "options": [
+      "1xxx",
+      "2xxx",
+      "4xxx",
+      "7xxx"
+    ],
+    "answer": 2,
+    "explanation": "Leading digit: 4 = SUID, 2 = SGID, 1 = sticky. Combine: 7 = all three. So chmod 4755 sets SUID + 755."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which leading octal digit sets the SGID bit?",
+    "options": [
+      "1xxx",
+      "2xxx",
+      "4xxx",
+      "6xxx"
+    ],
+    "answer": 1,
+    "explanation": "2 sets SGID. Combine: chmod 2755 sets SGID + 755 (rwxr-sr-x). On directories, SGID causes group inheritance for new files."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which leading octal digit sets the sticky bit?",
+    "options": [
+      "1xxx",
+      "2xxx",
+      "3xxx",
+      "4xxx"
+    ],
+    "answer": 0,
+    "explanation": "1 sets the sticky bit. Combine: chmod 1777 sets sticky + 777 (rwxrwxrwt). Standard for /tmp."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Which permissions does /tmp typically have?",
+    "options": [
+      "755 (rwxr-xr-x)",
+      "1777 (rwxrwxrwt)",
+      "0644",
+      "0750"
+    ],
+    "answer": 1,
+    "explanation": "/tmp is typically 1777: world-writable so any user can create temp files, with the sticky bit so users can't delete each other's files."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "Why does /usr/bin/passwd have the SUID bit set?",
+    "options": [
+      "Performance optimization",
+      "It needs to modify /etc/shadow, which is owned by root and requires root privileges",
+      "It is a debugging feature",
+      "By accident"
+    ],
+    "answer": 1,
+    "explanation": "passwd must update /etc/shadow (root-owned). SUID-root lets non-root users invoke it to change their own password while restricted to safe operations."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does `chmod 4755 program` set?",
+    "options": [
+      "SUID plus rwxr-xr-x",
+      "Sticky bit plus rwxr-xr-x",
+      "SGID plus rwxr-xr-x",
+      "Read-only for everyone"
+    ],
+    "answer": 0,
+    "explanation": "4 = SUID, 755 = rwxr-xr-x. Result: -rwsr-xr-x (the s in owner-execute position indicates SUID + execute)."
+  },
+  {
+    "domain": "5: Security and File Permissions",
+    "question": "What does `chmod 2775 directory` set on a directory used for shared group work?",
+    "options": [
+      "SUID plus rwxrwxr-x",
+      "SGID plus rwxrwxr-x, causing new files to inherit the directory's group",
+      "Sticky bit plus 775",
+      "World-writable with no protections"
+    ],
+    "answer": 1,
+    "explanation": "2 = SGID; 775 = rwxrwxr-x. On a directory, SGID makes new files inherit the directory's group — a common pattern for collaborative directories."
+  }
+];
