@@ -133,7 +133,15 @@ function renderHome() {
     const qs = pickQuestions(domain, count, order);
     if (qs.length === 0) { alert("No questions match that selection."); return; }
     state.session = {
-      questions: qs, index: 0, answers: [], startedAt: Date.now(),
+      questions: qs.map(q => {
+        const order = shuffle([0, 1, 2, 3]);
+        return {
+          ...q,
+          options: order.map(i => q.options[i]),
+          answer: order.indexOf(q.answer),
+        };
+      }),
+      index: 0, answers: [], startedAt: Date.now(),
       timeLimit, deadline: timeLimit > 0 ? Date.now() + timeLimit * 1000 : null,
       timerId: null, expired: false
     };
