@@ -1,0 +1,1202 @@
+window.QUESTIONS = [
+  {
+    "domain": "1: Logic and Proof",
+    "question": "Which of the following is a proposition?",
+    "options": [
+      "What time is it?",
+      "The integer 7 is prime.",
+      "Please close the door.",
+      "x + 2"
+    ],
+    "answer": 1,
+    "explanation": "A proposition is a declarative sentence that is either true or false. '7 is prime' is true; questions, commands, and expressions with free variables are not propositions."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "The implication p → q is false in which case?",
+    "options": [
+      "p true, q true",
+      "p true, q false",
+      "p false, q true",
+      "p false, q false"
+    ],
+    "answer": 1,
+    "explanation": "An implication is false only when the hypothesis is true and the conclusion is false (T → F = F). All other combinations are true, including vacuously when p is false."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "When is p ↔ q true?",
+    "options": [
+      "When at least one of p, q is true",
+      "When p and q have the same truth value",
+      "Only when both are true",
+      "Only when both are false"
+    ],
+    "answer": 1,
+    "explanation": "The biconditional p ↔ q is true exactly when p and q share the same truth value (both true or both false)."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "Which BEST describes a tautology?",
+    "options": [
+      "A proposition that is always false",
+      "A proposition that is true for every assignment of truth values to its variables",
+      "A proposition that depends on its variables",
+      "A self-contradictory proposition"
+    ],
+    "answer": 1,
+    "explanation": "A tautology is always true regardless of variable assignments. Example: p ∨ ¬p. A contradiction is always false; a contingency depends on the assignment."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "Which is logically equivalent to ¬(p ∧ q)?",
+    "options": [
+      "¬p ∧ ¬q",
+      "¬p ∨ ¬q",
+      "p ∨ q",
+      "p ∧ ¬q"
+    ],
+    "answer": 1,
+    "explanation": "De Morgan's laws: ¬(p ∧ q) ≡ ¬p ∨ ¬q, and ¬(p ∨ q) ≡ ¬p ∧ ¬q. Negation distributes over conjunction/disjunction by flipping the connective."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "What is the contrapositive of 'If p, then q'?",
+    "options": [
+      "If q, then p",
+      "If ¬q, then ¬p",
+      "If ¬p, then ¬q",
+      "If p, then ¬q"
+    ],
+    "answer": 1,
+    "explanation": "The contrapositive of p → q is ¬q → ¬p. It is logically equivalent to the original implication, which is the basis of proof by contrapositive."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "What is the converse of 'If p, then q'?",
+    "options": [
+      "If ¬p, then ¬q",
+      "If q, then p",
+      "If ¬q, then ¬p",
+      "If p, then ¬q"
+    ],
+    "answer": 1,
+    "explanation": "The converse of p → q is q → p. It is NOT generally equivalent to the original. Confusing an implication with its converse is a common logical error."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "What is the inverse of 'If p, then q'?",
+    "options": [
+      "If q, then p",
+      "If ¬p, then ¬q",
+      "If ¬q, then ¬p",
+      "If p, then ¬q"
+    ],
+    "answer": 1,
+    "explanation": "The inverse of p → q is ¬p → ¬q. The inverse is logically equivalent to the converse (q → p) but NOT to the original implication."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "What does ∀x ∈ ℝ, x² ≥ 0 mean?",
+    "options": [
+      "There exists a real x with x² ≥ 0",
+      "For every real x, x² ≥ 0",
+      "x² is always 0",
+      "Some real numbers have negative squares"
+    ],
+    "answer": 1,
+    "explanation": "∀ is the universal quantifier ('for all'). The statement asserts that x² ≥ 0 holds for every real x — a true statement."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "What does ∃x ∈ ℤ, x² = 4 mean?",
+    "options": [
+      "Every integer has square 4",
+      "There exists an integer whose square is 4",
+      "No integer has square 4",
+      "All integers equal 4"
+    ],
+    "answer": 1,
+    "explanation": "∃ is the existential quantifier ('there exists'). The statement says some integer satisfies x² = 4 — true (x = 2 or x = −2)."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "Which is equivalent to ¬(∀x P(x))?",
+    "options": [
+      "∀x ¬P(x)",
+      "∃x ¬P(x)",
+      "¬∃x P(x)",
+      "∀x P(x)"
+    ],
+    "answer": 1,
+    "explanation": "Negating a universal flips it to existential with the inner predicate negated: ¬∀x P(x) ≡ ∃x ¬P(x). 'Not everyone' means 'someone doesn't.'"
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "Which is equivalent to ¬(∃x P(x))?",
+    "options": [
+      "∃x ¬P(x)",
+      "∀x ¬P(x)",
+      "∃x P(x)",
+      "¬∀x P(x)"
+    ],
+    "answer": 1,
+    "explanation": "Negating an existential flips it to universal with the inner predicate negated: ¬∃x P(x) ≡ ∀x ¬P(x). 'No one' means 'everyone doesn't.'"
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "Modus ponens allows you to conclude q from which premises?",
+    "options": [
+      "q and p → q",
+      "p and p → q",
+      "¬p and p → q",
+      "¬q and p → q"
+    ],
+    "answer": 1,
+    "explanation": "Modus ponens: from p and p → q, conclude q. The most basic forward-reasoning inference rule."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "Modus tollens allows you to conclude ¬p from which premises?",
+    "options": [
+      "p and p → q",
+      "¬q and p → q",
+      "q and p → q",
+      "¬p and q → p"
+    ],
+    "answer": 1,
+    "explanation": "Modus tollens: from ¬q and p → q, conclude ¬p. Contrapositive reasoning in disguise."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "In a proof by contradiction of statement S, you typically:",
+    "options": [
+      "Assume S and derive S directly",
+      "Assume ¬S and derive a contradiction, concluding S",
+      "Assume nothing and try cases",
+      "Assume S and derive ¬S"
+    ],
+    "answer": 1,
+    "explanation": "Proof by contradiction: assume the statement is false, derive a contradiction from that assumption, and conclude the original statement must be true."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "To prove p → q by contrapositive, you instead prove:",
+    "options": [
+      "q → p",
+      "¬q → ¬p",
+      "p ∧ q",
+      "p ∨ ¬q"
+    ],
+    "answer": 1,
+    "explanation": "Since p → q is logically equivalent to ¬q → ¬p (the contrapositive), proving the contrapositive proves the original. Often easier when q has structure that's hard to start from."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "A standard induction proof of P(n) for all n ≥ 1 consists of which two parts?",
+    "options": [
+      "Base case P(0) and prove P(n) directly",
+      "Base case P(1) and inductive step P(k) → P(k+1)",
+      "Prove P(1) and P(2) only",
+      "Show P(n) is always false"
+    ],
+    "answer": 1,
+    "explanation": "Induction: prove the base case (often P(1) or P(0)) and the inductive step P(k) → P(k+1). Strong induction lets the step assume P(1)…P(k)."
+  },
+  {
+    "domain": "1: Logic and Proof",
+    "question": "What is the purpose of a counterexample in a proof?",
+    "options": [
+      "Prove a universal statement",
+      "Disprove a universal statement by exhibiting one case where it fails",
+      "Prove an existential statement",
+      "Verify a tautology"
+    ],
+    "answer": 1,
+    "explanation": "A single counterexample disproves a universal claim. To disprove ∀x P(x), find one x with ¬P(x). It does NOT suffice to prove an existential — one example proves existence."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "Which symbol denotes that x is an element of set A?",
+    "options": [
+      "x ⊆ A",
+      "x ∈ A",
+      "x ⊂ A",
+      "x ⊕ A"
+    ],
+    "answer": 1,
+    "explanation": "∈ denotes membership: x ∈ A means 'x is an element of A.' ⊆ and ⊂ are subset relations between sets, not membership."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "A ⊆ B means:",
+    "options": [
+      "Every element of B is in A",
+      "Every element of A is in B",
+      "A and B have no common elements",
+      "A equals B"
+    ],
+    "answer": 1,
+    "explanation": "A ⊆ B (A is a subset of B) means every element of A is also in B. The empty set ∅ is a subset of every set. A ⊊ B (proper subset) adds A ≠ B."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "Which is true about A ⊊ B?",
+    "options": [
+      "A and B have the same elements",
+      "Every element of A is in B AND A ≠ B (B has an element not in A)",
+      "A and B are disjoint",
+      "B is empty"
+    ],
+    "answer": 1,
+    "explanation": "A proper subset relation requires A ⊆ B AND A ≠ B. Some texts write ⊂ for proper subset, but ⊊ is unambiguous."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "A ∪ B equals:",
+    "options": [
+      "{x : x ∈ A AND x ∈ B}",
+      "{x : x ∈ A OR x ∈ B}",
+      "{x : x ∈ A but x ∉ B}",
+      "{x : x ∉ A AND x ∉ B}"
+    ],
+    "answer": 1,
+    "explanation": "Union: A ∪ B is the set of elements in A or in B (or both). The OR is inclusive in set notation."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "A ∩ B equals:",
+    "options": [
+      "{x : x ∈ A AND x ∈ B}",
+      "{x : x ∈ A OR x ∈ B}",
+      "{x : x ∈ A XOR x ∈ B}",
+      "{x : x ∈ A and x ∉ B}"
+    ],
+    "answer": 0,
+    "explanation": "Intersection: A ∩ B is the set of elements that are in BOTH A and B. If A and B are disjoint, A ∩ B = ∅."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "A \\ B (set difference) equals:",
+    "options": [
+      "{x : x ∈ A AND x ∈ B}",
+      "{x : x ∈ A AND x ∉ B}",
+      "{x : x ∈ B AND x ∉ A}",
+      "{x : x ∉ A AND x ∉ B}"
+    ],
+    "answer": 1,
+    "explanation": "Set difference A \\ B (sometimes A − B) contains elements of A that are NOT in B. Asymmetric: A \\ B is generally different from B \\ A."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "If |A| = 3 and |B| = 4, what is |A × B|?",
+    "options": [
+      "7",
+      "12",
+      "3",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "The Cartesian product A × B has |A| · |B| ordered pairs (a, b) with a ∈ A, b ∈ B. For |A| = 3 and |B| = 4, that's 3 · 4 = 12."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "If |A| = n, what is the cardinality of the power set 𝒫(A)?",
+    "options": [
+      "n",
+      "n²",
+      "2ⁿ",
+      "2n"
+    ],
+    "answer": 2,
+    "explanation": "The power set 𝒫(A) is the set of all subsets of A. For each element you independently choose to include or not, giving 2ⁿ total subsets."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "What is 𝒫({a, b})?",
+    "options": [
+      "{a, b}",
+      "{∅, {a}, {b}, {a, b}}",
+      "{{a, b}}",
+      "{a, b, ∅}"
+    ],
+    "answer": 1,
+    "explanation": "The power set lists every subset, including ∅ and the full set. {a, b} has 2² = 4 subsets."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "Which statement is TRUE?",
+    "options": [
+      "∅ is a proper subset of every set",
+      "∅ ⊆ A for every set A",
+      "∅ ∈ A for every set A",
+      "∅ contains exactly one element"
+    ],
+    "answer": 1,
+    "explanation": "The empty set is a subset of every set (vacuously, every element of ∅ is in any A — there are no elements). It's a PROPER subset of any non-empty set."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "Which is equivalent to (A ∪ B)ᶜ (complement)?",
+    "options": [
+      "Aᶜ ∪ Bᶜ",
+      "Aᶜ ∩ Bᶜ",
+      "A ∩ B",
+      "A \\ B"
+    ],
+    "answer": 1,
+    "explanation": "De Morgan's for sets: (A ∪ B)ᶜ = Aᶜ ∩ Bᶜ, and (A ∩ B)ᶜ = Aᶜ ∪ Bᶜ. Complement converts ∪ to ∩ and vice versa."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "If |A| = 10, |B| = 8, and |A ∩ B| = 3, what is |A ∪ B|?",
+    "options": [
+      "18",
+      "15",
+      "21",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Inclusion-exclusion: |A ∪ B| = |A| + |B| − |A ∩ B| = 10 + 8 − 3 = 15. We subtract the intersection to avoid double-counting."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "Which set is countably infinite?",
+    "options": [
+      "ℝ",
+      "ℕ",
+      "𝒫(ℕ)",
+      "(0, 1)"
+    ],
+    "answer": 1,
+    "explanation": "ℕ (the natural numbers) is the prototypical countably infinite set. ℤ and ℚ are also countable. ℝ, (0,1), and 𝒫(ℕ) are uncountable (per Cantor's diagonal argument)."
+  },
+  {
+    "domain": "2: Sets",
+    "question": "Which set is uncountable?",
+    "options": [
+      "The set of integers",
+      "The set of real numbers in [0, 1]",
+      "The set of rational numbers",
+      "The set of finite subsets of ℕ"
+    ],
+    "answer": 1,
+    "explanation": "Cantor proved the real interval [0, 1] is uncountable via the diagonal argument. ℤ, ℚ, and the finite subsets of ℕ are all countable."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "A relation R from set A to set B is BEST defined as:",
+    "options": [
+      "A function from A to B",
+      "A subset of the Cartesian product A × B",
+      "A mapping that is bijective",
+      "A set of unordered pairs"
+    ],
+    "answer": 1,
+    "explanation": "A relation R from A to B is any subset of A × B. The elements are ordered pairs (a, b). Functions are a special case where each a maps to exactly one b."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "A relation R on set A is reflexive when:",
+    "options": [
+      "(a, b) ∈ R for all a, b ∈ A",
+      "(a, a) ∈ R for every a ∈ A",
+      "(a, b) ∈ R implies (b, a) ∈ R",
+      "R has no elements"
+    ],
+    "answer": 1,
+    "explanation": "Reflexive: every element is related to itself. Equality on any set is reflexive; 'strictly less than' on integers is NOT reflexive (a < a is false)."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "A relation R on A is symmetric when:",
+    "options": [
+      "For every a, (a, a) ∈ R",
+      "For all a, b, (a, b) ∈ R implies (b, a) ∈ R",
+      "For all a, b, c, (a, b) and (b, c) implies (a, c)",
+      "No element is related to itself"
+    ],
+    "answer": 1,
+    "explanation": "Symmetric: if a is related to b, then b is related to a. Equality is symmetric; 'less than' is not."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "A relation R on A is transitive when:",
+    "options": [
+      "For every a, (a, a) ∈ R",
+      "For all a, b, c: if (a, b) ∈ R and (b, c) ∈ R, then (a, c) ∈ R",
+      "For all a, b: (a, b) ∈ R implies (b, a) ∈ R",
+      "R has at most one pair"
+    ],
+    "answer": 1,
+    "explanation": "Transitive: relations chain. If a ≤ b and b ≤ c, then a ≤ c. Equality and ordering relations are transitive."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "A relation R is antisymmetric when:",
+    "options": [
+      "For all a, b: (a, b) ∈ R and (b, a) ∈ R implies a = b",
+      "(a, a) ∉ R for any a",
+      "(a, b) ∈ R implies (b, a) ∉ R",
+      "R is symmetric"
+    ],
+    "answer": 0,
+    "explanation": "Antisymmetric: if a is related to b AND b is related to a, then a = b. ≤ on integers is antisymmetric. Note this differs from 'asymmetric' (no a R b with b R a)."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "An equivalence relation must be:",
+    "options": [
+      "Reflexive, symmetric, and antisymmetric",
+      "Reflexive, symmetric, and transitive",
+      "Symmetric and transitive only",
+      "Antisymmetric and transitive only"
+    ],
+    "answer": 1,
+    "explanation": "Equivalence relations are reflexive, symmetric, and transitive. They partition the underlying set into equivalence classes. Examples: equality, congruence mod n."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "The equivalence class [a] under relation R contains:",
+    "options": [
+      "All elements not related to a",
+      "All elements b such that a R b",
+      "Just a alone",
+      "The complement of {a}"
+    ],
+    "answer": 1,
+    "explanation": "[a] = {b ∈ A : a R b}. Equivalence classes partition the set; two elements share a class iff they're equivalent."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "Which pair of integers belongs to the same equivalence class under x ≡ y (mod 5)?",
+    "options": [
+      "(7, 12)",
+      "(8, 14)",
+      "(3, 10)",
+      "(2, 6)"
+    ],
+    "answer": 0,
+    "explanation": "x ≡ y (mod 5) means 5 divides (x − y). 7 − 12 = −5, divisible by 5. The others: 8−14 = −6, 3−10 = −7, 2−6 = −4, none divisible by 5."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "A partial order on A is a relation that is:",
+    "options": [
+      "Reflexive, symmetric, and transitive",
+      "Reflexive, antisymmetric, and transitive",
+      "Symmetric and antisymmetric",
+      "Only transitive"
+    ],
+    "answer": 1,
+    "explanation": "Partial orders are reflexive, antisymmetric, and transitive. Examples: ≤ on integers, ⊆ on sets. They allow incomparable elements; a total order additionally has every pair comparable."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "A total (linear) order is a partial order with the additional property that:",
+    "options": [
+      "Every two distinct elements are comparable (one is related to the other)",
+      "Every element is related to itself only",
+      "The relation is symmetric",
+      "The set is finite"
+    ],
+    "answer": 0,
+    "explanation": "Total orders require comparability: for any a, b, either a R b or b R a (or both, forcing equality by antisymmetry). ≤ on ℝ is total; ⊆ on sets is partial but not total."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "A function f: A → B requires that:",
+    "options": [
+      "Every element of B has at least one preimage",
+      "Every element of A maps to exactly one element of B",
+      "f is one-to-one",
+      "A and B have the same cardinality"
+    ],
+    "answer": 1,
+    "explanation": "A function assigns each a ∈ A exactly one f(a) ∈ B. No element of A may be unmapped or mapped to multiple values. Properties like injective/surjective are additional constraints."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "The domain of a function f: A → B is:",
+    "options": [
+      "The set B",
+      "The set A (the inputs)",
+      "The range of f",
+      "The set of outputs that are achieved"
+    ],
+    "answer": 1,
+    "explanation": "Domain = the input set A. Codomain = the declared output set B. Range = {f(a) : a ∈ A} ⊆ B (actual outputs achieved)."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "Which BEST distinguishes the codomain from the range of f: A → B?",
+    "options": [
+      "They are always equal",
+      "Codomain is the declared set B; range is the actual image f(A) ⊆ B",
+      "Codomain is a subset of the range",
+      "Range is the input set"
+    ],
+    "answer": 1,
+    "explanation": "Codomain is the declared target B. Range (image) is the subset of B that actually has preimages. They're equal exactly when f is surjective."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "f: A → B is injective (one-to-one) when:",
+    "options": [
+      "f(a) = b for some a, for every b ∈ B",
+      "f(a₁) = f(a₂) implies a₁ = a₂",
+      "Every a maps to multiple values",
+      "A and B have the same size"
+    ],
+    "answer": 1,
+    "explanation": "Injective: distinct inputs produce distinct outputs. Equivalently, f(a₁) = f(a₂) ⇒ a₁ = a₂. No two inputs collide."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "f: A → B is surjective (onto) when:",
+    "options": [
+      "Every element of A has a unique image",
+      "For every b ∈ B, there exists a ∈ A with f(a) = b",
+      "f is invertible only as a function",
+      "A is finite"
+    ],
+    "answer": 1,
+    "explanation": "Surjective: every b in the codomain has at least one preimage. Equivalently, the range equals the codomain B."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "f: A → B is bijective when:",
+    "options": [
+      "f is either injective or surjective",
+      "f is both injective and surjective",
+      "f maps every element of A to itself",
+      "f is neither injective nor surjective"
+    ],
+    "answer": 1,
+    "explanation": "Bijective = injective AND surjective. Bijections have inverses and establish a one-to-one correspondence between sets, central to comparing cardinalities."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "Which function from ℝ to ℝ is injective?",
+    "options": [
+      "f(x) = x²",
+      "f(x) = 2x + 5",
+      "f(x) = |x|",
+      "f(x) = sin(x)"
+    ],
+    "answer": 1,
+    "explanation": "f(x) = 2x + 5 is strictly increasing, hence injective. x² maps 2 and −2 to the same value; |x| same; sin is periodic — none of those are injective on ℝ."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "Which function from ℝ to ℝ is surjective?",
+    "options": [
+      "f(x) = eˣ",
+      "f(x) = x³",
+      "f(x) = sin(x)",
+      "f(x) = x²"
+    ],
+    "answer": 1,
+    "explanation": "f(x) = x³ is surjective onto ℝ — every real number has a real cube root. eˣ outputs positive numbers only; sin outputs [−1, 1]; x² outputs [0, ∞)."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "If f(x) = 2x and g(x) = x + 3, what is (f ∘ g)(x)?",
+    "options": [
+      "2x + 3",
+      "2(x + 3) = 2x + 6",
+      "x + 3 + 2x = 3x + 3",
+      "2x · (x + 3)"
+    ],
+    "answer": 1,
+    "explanation": "(f ∘ g)(x) = f(g(x)) = f(x + 3) = 2(x + 3) = 2x + 6. Composition applies the inner function first."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "For f(x) = x² and g(x) = x + 1, compute (g ∘ f)(2):",
+    "options": [
+      "9",
+      "5",
+      "6",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "(g ∘ f)(2) = g(f(2)) = g(4) = 4 + 1 = 5. Apply f first, then g. (f ∘ g)(2) would be (2+1)² = 9 — confirming order matters."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "The identity function id: A → A satisfies which property?",
+    "options": [
+      "id(a) = 0 for all a",
+      "id(a) = a for all a",
+      "id is not a function",
+      "id is the constant function"
+    ],
+    "answer": 1,
+    "explanation": "The identity function on A maps each element to itself: id(a) = a. It is both injective and surjective. For any f: A → A, f ∘ id = id ∘ f = f."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "A function f: A → B has an inverse f⁻¹: B → A if and only if:",
+    "options": [
+      "f is injective",
+      "f is bijective",
+      "f is surjective",
+      "f is constant"
+    ],
+    "answer": 1,
+    "explanation": "An inverse exists exactly when f is bijective. Injectivity ensures the inverse is well-defined; surjectivity ensures it's defined on all of B."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "If f(x) = 3x − 6, what is f⁻¹(x)?",
+    "options": [
+      "(x + 6) / 3",
+      "3x + 6",
+      "x − 6 / 3",
+      "1 / (3x − 6)"
+    ],
+    "answer": 0,
+    "explanation": "To invert: y = 3x − 6 → x = (y + 6)/3. So f⁻¹(x) = (x + 6) / 3. Check: f(f⁻¹(x)) = 3·(x+6)/3 − 6 = x. ✓"
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "What is ⌊3.7⌋?",
+    "options": [
+      "4",
+      "3",
+      "3.7",
+      "−4"
+    ],
+    "answer": 1,
+    "explanation": "The floor ⌊x⌋ is the greatest integer ≤ x. ⌊3.7⌋ = 3. For negatives: ⌊−2.3⌋ = −3, not −2 (rounding toward −∞)."
+  },
+  {
+    "domain": "3: Functions and Relations",
+    "question": "What is ⌈−1.4⌉?",
+    "options": [
+      "−2",
+      "−1",
+      "1",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "The ceiling ⌈x⌉ is the least integer ≥ x. For −1.4, that's −1 (the integers ≥ −1.4 are −1, 0, 1, ...; the smallest is −1)."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "If task A can be done in 5 ways and task B (disjoint from A) in 3 ways, how many ways are there to do A or B?",
+    "options": [
+      "15",
+      "8",
+      "5",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Sum rule: for mutually exclusive choices, total ways = sum of individual options. 5 + 3 = 8."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "If a sequence consists of choosing one of 4 entrées and one of 3 desserts, how many distinct meals are possible?",
+    "options": [
+      "7",
+      "12",
+      "4",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Product rule: independent sequential choices multiply. 4 entrées × 3 desserts = 12 meals."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "How many distinct ways can 5 objects be arranged in a row?",
+    "options": [
+      "25",
+      "120",
+      "60",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Arrangements of n distinct objects = n!. For n = 5: 5! = 120."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "How many ways can 3 books be selected and arranged in order from a shelf of 7 books?",
+    "options": [
+      "21",
+      "210",
+      "35",
+      "5040"
+    ],
+    "answer": 1,
+    "explanation": "P(7,3) = 7! / 4! = 7 · 6 · 5 = 210. Order matters because we're arranging."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "C(n, r) (combinations) equals:",
+    "options": [
+      "n! / (n − r)!",
+      "n! / (r! (n − r)!)",
+      "n^r",
+      "r! / (n − r)!"
+    ],
+    "answer": 1,
+    "explanation": "Combinations count subsets of size r from n items. C(n, r) = n! / (r! · (n − r)!). Order doesn't matter, unlike permutations."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "How many 5-card poker hands can be dealt from a 52-card deck?",
+    "options": [
+      "52 · 5 = 260",
+      "C(52, 5) = 2,598,960",
+      "5! = 120",
+      "52⁵"
+    ],
+    "answer": 1,
+    "explanation": "Hands are unordered subsets, so C(52, 5) = 52! / (5! · 47!) = 2,598,960."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "Which BEST distinguishes a permutation from a combination?",
+    "options": [
+      "They are the same",
+      "Permutations care about order; combinations do not",
+      "Combinations are always larger",
+      "Only combinations allow repetition"
+    ],
+    "answer": 1,
+    "explanation": "Permutation: ordered arrangement. Combination: unordered selection. For the same n and r, P(n,r) = r! · C(n,r) — permutations are r! times larger."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "The number of ways to choose r items from n types, with repetition allowed, equals:",
+    "options": [
+      "nʳ",
+      "C(n + r − 1, r)",
+      "P(n, r)",
+      "n! / r!"
+    ],
+    "answer": 1,
+    "explanation": "Combinations with repetition (multisets): C(n + r − 1, r). Models distributing r identical balls into n distinguishable bins ('stars and bars')."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "How many distinct arrangements are there of the letters in 'MISSISSIPPI'?",
+    "options": [
+      "11!",
+      "11! / (4! · 4! · 2!)",
+      "11! / 4!",
+      "11¹¹"
+    ],
+    "answer": 1,
+    "explanation": "11 letters with repetitions: 4 I's, 4 S's, 2 P's, 1 M. Distinct arrangements = 11! / (4! · 4! · 2! · 1!) = 34,650."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "What does the pigeonhole principle state?",
+    "options": [
+      "If n+1 items are placed into n boxes, at least one box contains at least two items",
+      "Items can be placed evenly into boxes",
+      "Every box must contain exactly one item",
+      "No box can be empty"
+    ],
+    "answer": 0,
+    "explanation": "Pigeonhole: more items than containers forces at least one container to hold multiple items. Generalized: ⌈n/k⌉ items in the most-loaded box when distributing n items among k boxes."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "What is the minimum number of people needed to guarantee at least two share a birthday month?",
+    "options": [
+      "12",
+      "13",
+      "30",
+      "365"
+    ],
+    "answer": 1,
+    "explanation": "By pigeonhole, with 12 months as pigeonholes, 13 people guarantees at least one shared month. (12 might all differ; the 13th forces a repeat.)"
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "If |A| = 30, |B| = 20, and |A ∩ B| = 12, what is |A ∪ B|?",
+    "options": [
+      "50",
+      "38",
+      "62",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "|A ∪ B| = |A| + |B| − |A ∩ B| = 30 + 20 − 12 = 38."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "For three sets, |A ∪ B ∪ C| equals:",
+    "options": [
+      "|A| + |B| + |C|",
+      "|A| + |B| + |C| − |A ∩ B| − |A ∩ C| − |B ∩ C| + |A ∩ B ∩ C|",
+      "|A| · |B| · |C|",
+      "|A ∩ B ∩ C|"
+    ],
+    "answer": 1,
+    "explanation": "Inclusion-exclusion alternates: add singles, subtract pairwise intersections, add the triple intersection. Generalizes by signs alternating with subset size."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "The binomial coefficient C(n, k) gives:",
+    "options": [
+      "The factorial of n",
+      "The coefficient of xᵏ in the expansion of (1 + x)ⁿ",
+      "Only the value of n!",
+      "The sum of n and k"
+    ],
+    "answer": 1,
+    "explanation": "C(n, k) is both the count of k-subsets of an n-set and the coefficient of xᵏ (or xᵏyⁿ⁻ᵏ in (x+y)ⁿ). Two interpretations of the same number."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "Pascal's rule states:",
+    "options": [
+      "C(n, k) = C(n, n − k)",
+      "C(n, k) = C(n − 1, k − 1) + C(n − 1, k)",
+      "C(n, k) = n · k",
+      "C(n, k) = 2ⁿ"
+    ],
+    "answer": 1,
+    "explanation": "Pascal's rule: C(n, k) = C(n−1, k−1) + C(n−1, k). Each Pascal's-triangle entry is the sum of the two above it. Combinatorially: either include or exclude the new element."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "What is Σₖ₌₀ⁿ C(n, k)?",
+    "options": [
+      "n",
+      "2ⁿ",
+      "n!",
+      "n²"
+    ],
+    "answer": 1,
+    "explanation": "Σ C(n, k) = (1 + 1)ⁿ = 2ⁿ (set x = 1 in (1+x)ⁿ). Combinatorially: total subsets of an n-set, including ∅ and the whole set."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "How many ways are there to distribute 7 identical candies among 3 distinguishable kids?",
+    "options": [
+      "7 · 3 = 21",
+      "C(7 + 3 − 1, 3 − 1) = C(9, 2) = 36",
+      "3⁷ = 2187",
+      "7! / 3! = 840"
+    ],
+    "answer": 1,
+    "explanation": "Stars and bars: distributing n identical objects into k distinct bins = C(n + k − 1, k − 1). Here C(9, 2) = 36."
+  },
+  {
+    "domain": "4: Counting and Combinatorics",
+    "question": "The number of ways to partition 10 distinct items into groups of size 4, 3, 2, 1 equals:",
+    "options": [
+      "10!",
+      "10! / (4! · 3! · 2! · 1!)",
+      "C(10, 4) only",
+      "4 · 3 · 2 · 1"
+    ],
+    "answer": 1,
+    "explanation": "Multinomial coefficient: 10! / (4! · 3! · 2! · 1!) = 12,600. Generalizes binomial coefficients to multi-way partitions of distinct items."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "A simple graph G = (V, E) is defined by:",
+    "options": [
+      "Only a set of edges",
+      "A set of vertices V and a set of edges E (each edge a pair of vertices), with no loops or multi-edges",
+      "A list of numbers",
+      "A function from V to V"
+    ],
+    "answer": 1,
+    "explanation": "A simple graph has a vertex set V and an edge set E ⊆ V × V (often pairs), with no self-loops or duplicated edges. Multigraphs allow multiple edges; pseudo-graphs allow loops."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "The degree of a vertex v in an undirected graph is:",
+    "options": [
+      "The number of vertices in V",
+      "The number of edges incident to v",
+      "The total number of edges in the graph",
+      "The shortest distance to any other vertex"
+    ],
+    "answer": 1,
+    "explanation": "Degree counts edges touching v (loops count twice in graphs that allow them). In a directed graph we distinguish in-degree and out-degree."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "In an undirected graph, the sum of degrees over all vertices equals:",
+    "options": [
+      "The number of vertices",
+      "Twice the number of edges",
+      "Half the number of edges",
+      "The number of components"
+    ],
+    "answer": 1,
+    "explanation": "Handshake lemma: Σ deg(v) = 2|E|, because each edge contributes to two endpoints' degrees. Corollary: the number of odd-degree vertices is even."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "How many edges does the complete graph Kₙ have?",
+    "options": [
+      "n",
+      "n(n − 1) / 2",
+      "n²",
+      "2n"
+    ],
+    "answer": 1,
+    "explanation": "Kₙ has every possible edge between its n vertices: C(n, 2) = n(n−1)/2. Each pair contributes exactly one edge."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "A graph is bipartite when:",
+    "options": [
+      "Every vertex has the same degree",
+      "Its vertices can be partitioned into two sets such that every edge connects a vertex in one set to a vertex in the other",
+      "It is necessarily complete",
+      "It has no edges"
+    ],
+    "answer": 1,
+    "explanation": "Bipartite graphs split V into two independent sets with all edges crossing between. Equivalently, they contain no odd-length cycles."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "Which BEST distinguishes a path from a cycle in a graph?",
+    "options": [
+      "They are the same",
+      "A path is an open walk with no repeated vertices; a cycle is a closed walk (starts and ends at the same vertex) with no other repeated vertices",
+      "Cycles must have even length",
+      "Paths must have odd length"
+    ],
+    "answer": 1,
+    "explanation": "Path: no repeated vertices, starts and ends at different vertices. Cycle: closed (start = end), no other repeated vertices. Both have no repeated edges."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "An undirected graph is connected when:",
+    "options": [
+      "Every vertex has degree at least 1",
+      "There is a path between every pair of vertices",
+      "It has no cycles",
+      "It is complete"
+    ],
+    "answer": 1,
+    "explanation": "Connected: every pair of vertices is joined by some path. Disconnected graphs decompose into components, each of which is internally connected."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "A tree is:",
+    "options": [
+      "A graph with at least one cycle",
+      "A connected undirected graph with no cycles",
+      "A graph where every vertex has the same degree",
+      "A disconnected acyclic graph (forest)"
+    ],
+    "answer": 1,
+    "explanation": "A tree is connected and acyclic. A forest is a disjoint union of trees. Removing any edge from a tree disconnects it; adding any edge creates a cycle."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "A tree on n vertices has how many edges?",
+    "options": [
+      "n",
+      "n − 1",
+      "n + 1",
+      "n(n − 1) / 2"
+    ],
+    "answer": 1,
+    "explanation": "Any tree on n vertices has exactly n − 1 edges. This is a defining property: connected with n − 1 edges, or acyclic with n − 1 edges."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "An Eulerian circuit exists in a connected undirected graph if and only if:",
+    "options": [
+      "The graph is a tree",
+      "Every vertex has even degree",
+      "The graph is bipartite",
+      "Every vertex has odd degree"
+    ],
+    "answer": 1,
+    "explanation": "Euler's theorem: a connected graph has an Eulerian circuit (uses every edge exactly once, returning to start) iff every vertex has even degree. An Eulerian path needs exactly 0 or 2 odd-degree vertices."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "A connected graph has an Eulerian path (but not necessarily a circuit) when:",
+    "options": [
+      "Every vertex has odd degree",
+      "Exactly two vertices have odd degree (and the rest even)",
+      "Every vertex has even degree",
+      "It has no cycles"
+    ],
+    "answer": 1,
+    "explanation": "Eulerian path: an open walk using every edge once. Exists iff the graph has exactly two odd-degree vertices, which must be the start and end of the walk."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "A Hamiltonian cycle visits:",
+    "options": [
+      "Every edge exactly once",
+      "Every vertex exactly once, returning to the start",
+      "Only odd-degree vertices",
+      "Vertices in degree order"
+    ],
+    "answer": 1,
+    "explanation": "Hamiltonian cycle: visits every vertex exactly once and returns. Determining existence is NP-complete — no simple if-and-only-if condition like Euler's."
+  },
+  {
+    "domain": "5: Graphs",
+    "question": "Two graphs G and H are isomorphic when:",
+    "options": [
+      "They have the same number of edges",
+      "There is a bijection between their vertex sets that preserves adjacency",
+      "They look visually identical",
+      "They have the same chromatic number"
+    ],
+    "answer": 1,
+    "explanation": "Isomorphic graphs have the same structure: a vertex bijection that maps edges to edges. They share all structural properties (degrees, cycles, connectivity, etc.)."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "What does a | b mean in number theory?",
+    "options": [
+      "a is greater than b",
+      "a divides b (b = ak for some integer k)",
+      "a equals b modulo something",
+      "a is irrational"
+    ],
+    "answer": 1,
+    "explanation": "a | b reads 'a divides b' and means there exists an integer k with b = a · k. Example: 3 | 12 because 12 = 3 · 4. a ∤ b denotes 'a does not divide b.'"
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "An integer p > 1 is prime when:",
+    "options": [
+      "p has no divisors at all",
+      "p has exactly two positive divisors: 1 and p",
+      "p is even",
+      "p is the sum of two primes"
+    ],
+    "answer": 1,
+    "explanation": "Primes are integers > 1 with exactly two positive divisors: 1 and themselves. 2, 3, 5, 7, 11, ... 1 is not prime by convention; this preserves unique factorization."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "The greatest common divisor gcd(a, b) is:",
+    "options": [
+      "The largest integer that divides both a and b",
+      "The smallest integer divisible by both a and b",
+      "The product a · b",
+      "The sum a + b"
+    ],
+    "answer": 0,
+    "explanation": "gcd(a, b) is the largest positive integer dividing both. gcd(12, 18) = 6. The lcm (least common multiple) is the smallest positive integer divisible by both."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "What is gcd(24, 36)?",
+    "options": [
+      "6",
+      "12",
+      "24",
+      "72"
+    ],
+    "answer": 1,
+    "explanation": "Divisors of 24: 1,2,3,4,6,8,12,24. Divisors of 36: 1,2,3,4,6,9,12,18,36. Greatest common one: 12."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "Which is true about gcd(a, b) and lcm(a, b)?",
+    "options": [
+      "gcd · lcm = a · b",
+      "gcd + lcm = a + b",
+      "gcd = lcm always",
+      "lcm = 0 always"
+    ],
+    "answer": 0,
+    "explanation": "For positive a, b: gcd(a, b) · lcm(a, b) = a · b. This identity lets you compute one from the other when you have either."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "The Euclidean algorithm computes gcd(a, b) by:",
+    "options": [
+      "Listing all divisors",
+      "Repeatedly replacing the pair (a, b) with (b, a mod b) until b is 0",
+      "Multiplying a and b",
+      "Adding a and b"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean algorithm: gcd(a, b) = gcd(b, a mod b). Terminates because the second argument shrinks each step. Final non-zero value is the gcd."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "What is 17 mod 5?",
+    "options": [
+      "3",
+      "2",
+      "12",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "17 = 5 · 3 + 2, so 17 mod 5 = 2. The result is the remainder, always in 0 ≤ r < n for positive divisor n."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "a ≡ b (mod n) means:",
+    "options": [
+      "a = b for all n",
+      "n divides (a − b)",
+      "a is greater than b",
+      "a and b are both primes"
+    ],
+    "answer": 1,
+    "explanation": "a ≡ b (mod n) means n | (a − b), or equivalently a and b leave the same remainder when divided by n."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "Which is TRUE?",
+    "options": [
+      "20 ≡ 5 (mod 6)",
+      "20 ≡ 2 (mod 6)",
+      "20 ≡ 0 (mod 6)",
+      "20 ≡ 4 (mod 6)"
+    ],
+    "answer": 1,
+    "explanation": "20 = 6·3 + 2, so 20 mod 6 = 2 and 20 ≡ 2 (mod 6). Equivalent: 6 | (20 − 2) = 18."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "The fundamental theorem of arithmetic states:",
+    "options": [
+      "Every integer is prime",
+      "Every integer > 1 has a unique factorization into primes (up to ordering)",
+      "Primes are finite",
+      "Every integer is a sum of two primes"
+    ],
+    "answer": 1,
+    "explanation": "Every integer > 1 factors uniquely into primes. 60 = 2² · 3 · 5. Uniqueness depends on excluding 1 from the primes."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "What is the binary (base-2) representation of decimal 13?",
+    "options": [
+      "1011",
+      "1101",
+      "1110",
+      "10101"
+    ],
+    "answer": 1,
+    "explanation": "13 = 8 + 4 + 1 = 2³ + 2² + 2⁰ = 1101₂. Read positions (MSB first): 1, 1, 0, 1."
+  },
+  {
+    "domain": "6: Number Theory",
+    "question": "What is decimal 255 in hexadecimal?",
+    "options": [
+      "FF",
+      "100",
+      "FE",
+      "EE"
+    ],
+    "answer": 0,
+    "explanation": "255 = 15·16 + 15 = F·16 + F = FF₁₆. Hex uses 0-9 then A-F for 10-15. Famously the maximum value of an 8-bit unsigned byte."
+  }
+];

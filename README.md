@@ -8,12 +8,13 @@ If you're studying for a different cert, the [ADAPTING.md](ADAPTING.md) walkthro
 
 ## What's in here
 
-| Folder | Cert | Questions | Topics/Domains |
+| Folder | Cert / Course | Questions | Topics/Domains |
 |---|---|---:|---:|
 | `sscp/` | ISC2 SSCP | 500 | 7 |
 | `ccsp/` | ISC2 CCSP | 253 | 6 |
 | `linux-essentials/` | LPI Linux Essentials (010-160) | 250 | 5 |
 | `data-plus/` | CompTIA Data+ (DA0-002) | 265 | 5 |
+| `discrete-math/` | Discrete Mathematics (course quiz) | 100 | 6 |
 
 Each quiz is self-contained — just open the `index.html` inside the folder. There's no server, no install, no build step.
 
